@@ -13,7 +13,7 @@
     "clean": "gulp clean-assets",
     "lint": "gulp eslint scss-lint",
     "prestart": "bundle && gulp build",
-    "start": "bundle exec jekyll serve",
+    "start": "bundle exec jekyll serve --host 0.0.0.0",
     "test": "npm run lint",
     "watch": "nswatch"
   },

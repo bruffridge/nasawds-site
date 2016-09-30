@@ -17,19 +17,19 @@ order: 01
 <div class="usa-grid-full usa-color-row usa-primary-color-section">
   <div class="usa-color-square usa-color-primary">
     <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#0071bc</p>
+      <p class="usa-color-hex">#105bd8</p>
       <p class="usa-color-name">primary</p>
     </div>
   </div>
   <div class="usa-color-square usa-color-primary-darker usa-mobile-end-row">
     <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#205493</p>
+      <p class="usa-color-hex">#1d4893</p>
       <p class="usa-color-name">primary-darker</p>
     </div>
   </div>
   <div class="usa-color-square usa-color-primary-darkest">
     <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#112e51</p>
+      <p class="usa-color-hex">#112951</p>
       <p class="usa-color-name">primary-darkest</p>
     </div>
   </div>
@@ -44,7 +44,7 @@ order: 01
 <div class="usa-grid-full usa-color-row usa-primary-color-section">
   <div class="usa-color-square usa-color-gray-dark">
     <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#323a45</p>
+      <p class="usa-color-hex">#313744</p>
       <p class="usa-color-name">gray-dark</p>
     </div>
   </div>
@@ -103,31 +103,31 @@ order: 01
   <div class="color-big">
     <div class="usa-color-short usa-color-secondary">
     </div>
-      <p class="usa-color-hex">#e31c3d</p>
+      <p class="usa-color-hex">#e2371d</p>
       <p class="usa-color-name">secondary</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short usa-color-secondary-darkest">
     </div>
-      <p class="usa-color-hex">#981b1e</p>
+      <p class="usa-color-hex">#99231b</p>
       <p class="usa-color-name">secondary-darkest</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short usa-color-secondary-dark">
     </div>
-      <p class="usa-color-hex">#cd2026</p>
+      <p class="usa-color-hex">#cc2e20</p>
       <p class="usa-color-name">secondary-dark</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short usa-color-secondary-light">
     </div>
-      <p class="usa-color-hex">#e59393</p>
+      <p class="usa-color-hex">#e59892</p>
       <p class="usa-color-name">secondary-light</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short usa-color-secondary-lightest">
     </div>
-      <p class="usa-color-hex">#f9dede</p>
+      <p class="usa-color-hex">#f9e0de</p>
       <p class="usa-color-name">secondary-lightest</p>
   </div>
 </div>
@@ -140,13 +140,13 @@ order: 01
   <div class="color-big">
     <div class="usa-color-short usa-color-gray-dark">
     </div>
-      <p class="usa-color-hex">#323a45</p>
+      <p class="usa-color-hex">#313744</p>
       <p class="usa-color-name">gray-dark</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short usa-color-gray">
     </div>
-      <p class="usa-color-hex">#5b616b</p>
+      <p class="usa-color-hex">#5b606b</p>
       <p class="usa-color-name">gray</p>
   </div>
   <div class="color-small">
@@ -188,7 +188,7 @@ order: 01
   <div class="color-big">
     <div class="usa-color-short usa-color-primary-darkest">
     </div>
-      <p class="usa-color-hex">#112e51</p>
+      <p class="usa-color-hex">#112951</p>
       <p class="usa-color-name">primary-darkest</p>
   </div>
   <div class="color-small usa-end-row">
