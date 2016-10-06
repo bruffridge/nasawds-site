@@ -103,7 +103,7 @@ order: 01
   <div class="color-big">
     <div class="usa-color-short usa-color-secondary">
     </div>
-      <p class="usa-color-hex">#e2371d</p>
+      <p class="usa-color-hex">#dd361c</p>
       <p class="usa-color-name">secondary</p>
   </div>
   <div class="color-small">
@@ -115,7 +115,7 @@ order: 01
   <div class="color-small">
     <div class="usa-color-short usa-color-secondary-dark">
     </div>
-      <p class="usa-color-hex">#cc2e20</p>
+      <p class="usa-color-hex">#c62d1f</p>
       <p class="usa-color-name">secondary-dark</p>
   </div>
   <div class="color-small">
