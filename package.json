@@ -1,17 +1,17 @@
 {
   "name": "uswds-docs",
-  "version": "0.1.0",
   "description": "Website and documentation on using the Draft U.S. Web Design Standards.",
   "scripts": {
-    "build": "bundle && gulp build && bundle exec jekyll build",
-    "build-css": "gulp sass && bundle exec jekyll build",
-    "build-js": "gulp javascript && bundle exec jekyll build",
-    "build-img": "gulp images && bundle exec jekyll build",
-    "build-fonts": "gulp fonts && bundle exec jekyll build",
-    "build-html": "gulp html && bundle exec jekyll build",
+    "build": "gulp build && bundle exec jekyll build",
+    "build-css": "gulp sass",
+    "build-js": "gulp javascript",
+    "build-img": "gulp images",
+    "build-fonts": "gulp fonts",
+    "build-html": "gulp html",
     "clean": "gulp clean-assets",
     "lint": "gulp eslint scss-lint",
-    "prestart": "bundle && gulp build",
+    "postinstall": "bundle",
+    "prestart": "gulp build",
     "start": "bundle exec jekyll serve --host 0.0.0.0",
     "test": "npm run lint",
     "watch": "nswatch"
@@ -55,6 +55,7 @@
     "Marco Segreto <marco.segreto@gsa.gov>",
     "Maya Benari <maya.ben-ari@gsa.gov>",
     "Roger Steve Ruiz <roger.ruiz@gsa.gov>",
+    "Shawn Allen <shawn.allen@gsa.gov>",
     "Yoz Grahame <jeremy.grahame@gsa.gov>"
   ],
   "license": "SEE LICENSE in LICENSE.md",
@@ -83,7 +84,7 @@
     "politespace": "^0.1.4",
     "prismjs": "^1.5.1",
     "run-sequence": "^1.1.5",
-    "uswds": "~0.12.1",
+    "uswds": "~0.13.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }
