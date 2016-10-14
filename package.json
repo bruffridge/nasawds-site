@@ -12,7 +12,7 @@
     "lint": "gulp eslint scss-lint",
     "postinstall": "bundle",
     "prestart": "gulp build",
-    "start": "bundle exec jekyll serve --host 0.0.0.0",
+    "start": "bundle exec jekyll serve -V -t --host 0.0.0.0",
     "test": "npm run lint",
     "watch": "nswatch"
   },
