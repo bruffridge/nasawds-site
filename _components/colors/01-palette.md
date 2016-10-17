@@ -35,7 +35,7 @@ order: 01
   </div>
   <div class="usa-color-square usa-color-base usa-end-row">
     <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#212121</p>
+      <p class="usa-color-hex">#22262f</p>
       <p class="usa-color-name">base</p>
     </div>
   </div>

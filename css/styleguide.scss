@@ -14,7 +14,7 @@ $font-monospace:       Consolas, Monaco, 'Andale Mono', monospace;
 
 .site-header {
   @include position(fixed, 0 null null 0);
-  background-color: $color-primary-darkest;
+  background-color: $color-base;
 
   @include media($nav-width) {
     border-bottom: none;
