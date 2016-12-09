@@ -54,7 +54,7 @@ gulp.task( 'default', function ( done ) {
 
   dutil.logCommand(
     'gulp html',
-    'This task generates the code snippets based off of uswds package html files.'
+    'This task generates the code snippets based off of nasawds package html files.'
   );
 
   done();

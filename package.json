@@ -1,6 +1,6 @@
 {
-  "name": "uswds-docs",
-  "description": "Website and documentation on using the Draft U.S. Web Design Standards.",
+  "name": "nasawds-docs",
+  "description": "Website and documentation on using the Draft NASA Web Design Standards.",
   "scripts": {
     "build": "gulp build && bundle exec jekyll build",
     "build-css": "gulp sass",
@@ -26,27 +26,27 @@
     "./js/**/*.js": [
       "build-js"
     ],
-    "./node_modules/uswds/src/stylesheets": [
+    "./node_modules/nasawds/src/stylesheets": [
       "build-css"
     ],
-    "./node_modules/uswds/src/fonts": [
+    "./node_modules/nasawds/src/fonts": [
       "build-fonts"
     ],
-    "./node_modules/uswds/src/html": [
+    "./node_modules/nasawds/src/html": [
       "build-html"
     ],
-    "./node_modules/uswds/src/img": [
+    "./node_modules/nasawds/src/img": [
       "build-img"
     ],
-    "./node_modules/uswds/src/js": [
+    "./node_modules/nasawds/src/js": [
       "build-js"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/18F/web-design-standards-docs.git"
+    "url": "git+https://github.com/bruffridge/web-design-standards-docs.git"
   },
-  "author": "18F",
+  "author": "18F + NASA",
   "contributors": [
     "Erica Deahl <erica.deahl@gsa.gov>",
     "Jeremia Kimelman <jeremia.kimelman@gsa.gov>",
@@ -56,13 +56,14 @@
     "Maya Benari <maya.ben-ari@gsa.gov>",
     "Roger Steve Ruiz <roger.ruiz@gsa.gov>",
     "Shawn Allen <shawn.allen@gsa.gov>",
-    "Yoz Grahame <jeremy.grahame@gsa.gov>"
+    "Yoz Grahame <jeremy.grahame@gsa.gov>",
+    "Brandon Ruffridge <bruffridge@nasa.gov>"
   ],
   "license": "SEE LICENSE in LICENSE.md",
   "bugs": {
-    "url": "https://github.com/18F/web-design-standards-docs/issues"
+    "url": "https://github.com/bruffridge/web-design-standards-docs/issues"
   },
-  "homepage": "https://github.com/18F/web-design-standards-docs#readme",
+  "homepage": "https://github.com/bruffridge/web-design-standards-docs#readme",
   "devDependencies": {
     "browserify": "^13.0.0",
     "del": "^2.2.0",
@@ -84,7 +85,7 @@
     "politespace": "^0.1.4",
     "prismjs": "^1.5.1",
     "run-sequence": "^1.1.5",
-    "uswds": "~0.13.3",
+    "nasawds": "~0.13.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }

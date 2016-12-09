@@ -6,7 +6,7 @@ var Prism = require('prismjs');
 
 gulp.task('html', function () {
 
-  return gulp.src('./node_modules/uswds/src/html/**/*.html')
+  return gulp.src('./node_modules/nasawds/src/html/**/*.html')
     .pipe(generateCodeSnippets())
     .pipe(gulp.dest('_includes/code/components'));
 

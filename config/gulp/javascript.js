@@ -23,18 +23,18 @@ gulp.task('eslint', function (done) {
 
 });
 
-gulp.task('copy-uswds-javascript', function (done) {
+gulp.task('copy-nasawds-javascript', function (done) {
 
-  dutil.logMessage(task, 'Copying JS from uswds');
+  dutil.logMessage(task, 'Copying JS from nasawds');
 
-  var stream = gulp.src('./node_modules/uswds/dist/js/**/*')
+  var stream = gulp.src('./node_modules/nasawds/dist/js/**/*')
     .pipe(gulp.dest('assets/js/vendor'));
 
   return stream;
 
 });
 
-gulp.task(task, [ 'copy-uswds-javascript', 'eslint' ], function (done) {
+gulp.task(task, [ 'copy-nasawds-javascript', 'eslint' ], function (done) {
 
   dutil.logMessage(task, 'Compiling JavaScript');
 

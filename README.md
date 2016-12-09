@@ -48,7 +48,7 @@ Here are a few other utility commands you may find useful:
 
 - `npm run watch`: Runs a series of commands that watches for any changes in both the Standards node module and the root level asset folders in this repo.
 
-### Using the latest version of the `uswds` package
+### Using the latest version of the `nasawds` package
 
 Sometimes you will want to use the latest version of the `web-design-standards` repo. Follow these steps to do so:
 
@@ -56,11 +56,11 @@ Sometimes you will want to use the latest version of the `web-design-standards` 
 1. Run `npm install` to install the dependencies required for the package in the `web-design-standards` directory.
 1. Run `npm run build:package` to create the built version of the Standards in the `web-design-standards` directory.
 1. Run `npm link` in the _root level_ of the `web-design-standards` directory on your local machine.
-1. Run `npm link uswds` in the _root level_ of the `web-design-standards-docs` directory on your local machine.
+1. Run `npm link nasawds` in the _root level_ of the `web-design-standards-docs` directory on your local machine.
 1. Run `npm run watch` in both project directories to have changes automatically built and compiled on changes to any asset files.
 1. In a new terminal window, run `npm start` in the `web-design-standards-docs` directory to start the Jekyll server locally.
 
-You are now using the latest version of the Standards via your cloned version on your local machine. To stop using this version, type `npm unlink uswds` from the _root level_ of the `web-design-standards-docs` directory.
+You are now using the latest version of the Standards via your cloned version on your local machine. To stop using this version, type `npm unlink nasawds` from the _root level_ of the `web-design-standards-docs` directory.
 
 ### Continuously Delivered Demo Sites
 

@@ -14,12 +14,12 @@ gulp.task('copy-doc-styles', function (done) {
 
 });
 
-gulp.task('copy-uswds-styles', function (done) {
+gulp.task('copy-nasawds-styles', function (done) {
 
-  dutil.logMessage('copy-uswds-styles', 'Copying Sass files from uswds');
+  dutil.logMessage('copy-nasawds-styles', 'Copying Sass files from nasawds');
 
-  var stream = gulp.src('./node_modules/uswds/src/stylesheets/**/*')
-    .pipe(gulp.dest('assets/css/vendor/uswds'));
+  var stream = gulp.src('./node_modules/nasawds/src/stylesheets/**/*')
+    .pipe(gulp.dest('assets/css/vendor/nasawds'));
 
   return stream;
 
@@ -48,7 +48,7 @@ gulp.task('sass', function (done) {
   runSequence(
     [
       'copy-doc-styles',
-      'copy-uswds-styles',
+      'copy-nasawds-styles',
       'scss-lint'
     ],
     done
