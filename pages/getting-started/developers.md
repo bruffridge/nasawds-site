@@ -16,7 +16,7 @@ To use the Draft Web Design Standards on your project, you’ll need to include 
 
 First, download the Draft Web Design Standards assets:
 
-<a class="link-download" href="https://github.com/bruffridge/web-design-standards/releases/download/v{{ site.version }}/nasawds-{{ site.version }}.zip">Download code</a>
+<a class="link-download" href="https://github.com/bruffridge/web-design-standards/releases/download/v{{ site.version }}-nasa/nasawds-{{ site.version }}.zip">Download code</a>
 <span class="link-download-subtext">Version {{ site.version }}</span>
 
 Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:
@@ -109,9 +109,9 @@ If you’re interested in maintaining a package that helps us distribute the Dra
 
 Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:
 
-[https://github.com/18F/web-design-standards/issues](https://github.com/18F/web-design-standards/issues).
+[https://github.com/bruffridge/web-design-standards/issues](https://github.com/bruffridge/web-design-standards/issues).
 
-You can also email us directly at uswebdesignstandards@gsa.gov.
+You can also email us directly at grc-webteam@lists.nasa.gov.
 
 ## CSS architecture<a id="css-architecture"></a>
 
@@ -184,9 +184,3 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 We’ve designed the Standards to support older and newer browsers through progressive enhancement, and they officially support Internet Explorer 9 and up, along with the latest versions of Chrome, Firefox, and Safari. Internet Explorer 8 and below generally see very low usage, and most agency websites should be able to safely begin support at Internet Explorer 9.
 
 The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and are compliant with [Section 508 of the Rehabilitation Act](http://www.section508.gov/). We’re happy to answer questions about accessibility — email us for more information.
-
-## Contribution guidelines<a id="contribution-guidelines"></a>
-
-We're so glad you're thinking about contributing to the Standards! You can find our complete [contribution guidelines](https://github.com/18F/web-design-standards/blob/staging/CONTRIBUTING.md) in our repo — please review them before submitting your contribution.
-
-If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to [email us](mailto:uswebdesignstandards@gsa.gov) — we’ll get back to you within 48 hours.

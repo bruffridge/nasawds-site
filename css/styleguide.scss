@@ -1251,8 +1251,8 @@ $font-light: 300;
     }
   }
 }
-
-.page-design-principles {
+  
+.page-design-principles, .page-about-our-work {
   @include media($medium-screen) {
     .usa-grid-full {
       @include margin(4rem null 3rem null);
@@ -1315,10 +1315,7 @@ $font-light: 300;
   }
 }
 
-.page-product-roadmap,
-.page-for-developers,
-.page-for-designers,
-.page-component-maturity-scale {
+.page-for-developers {
   .usa-content {
     > ul:not(.usa-content-list) {
       max-width: $text-max-width;
@@ -1326,20 +1323,9 @@ $font-light: 300;
   }
 }
 
-.page-for-developers,
-.page-for-designers,
-.page-product-roadmap,
-.page-component-maturity-scale,
-.page-research {
+.page-for-developers {
   h2 {
     color: $color-primary-darker;
-  }
-}
-
-.page-product-roadmap {
-  .usa-label {
-    display: inline-block;
-    position: relative;
   }
 }
 
