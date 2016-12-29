@@ -16,21 +16,21 @@ To use the Draft Web Design Standards on your project, you’ll need to include 
 
 First, download the Draft Web Design Standards assets:
 
-<a class="link-download" href="https://github.com/18F/web-design-standards/releases/download/v{{ site.version }}/uswds-{{ site.version }}.zip">Download code</a>
+<a class="link-download" href="https://github.com/bruffridge/web-design-standards/releases/download/v{{ site.version }}-nasa/nasawds-{{ site.version }}.zip">Download code</a>
 <span class="link-download-subtext">Version {{ site.version }}</span>
 
 Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:
 
 ```
-uswds-{{ site.version }}/
+nasawds-{{ site.version }}/
 ├── js/
-│   ├── uswds.min.js.map
-│   ├── uswds.min.js
-│   └── uswds.js
+│   ├── nasawds.min.js.map
+│   ├── nasawds.min.js
+│   └── nasawds.js
 ├── css/
-│   ├── uswds.min.css.map
-│   ├── uswds.min.css
-│   └── uswds.css
+│   ├── nasawds.min.css.map
+│   ├── nasawds.min.css
+│   └── nasawds.css
 ├── img/
 └── fonts/
 ```
@@ -41,13 +41,13 @@ into your HTML pages:
 Add this to your `<head>` element:
 
 ```
-<link rel="stylesheet" href="/path/to/your/assets/css/lib/uswds.min.css">
+<link rel="stylesheet" href="/path/to/your/assets/css/lib/nasawds.min.css">
 ```
 
 Add this before the closing `</body>` tag:
 
 ```
-<script src="/path/to/your/assets/js/lib/uswds.min.js"></script>
+<script src="/path/to/your/assets/js/lib/nasawds.min.js"></script>
 ```
 
 We offer two versions — a minified version, and an un-minified one. Use the minified version in a production environment or to reduce the file size
@@ -61,18 +61,18 @@ And that’s it — you should be set to use the Standards.
 
 Note: Using npm to install the Standards will include jQuery version `2.2.0`. Please make sure that you're not including any other version of jQuery on your page.
 
-If you have `node` installed on your machine, you can use npm to install the Standards. Add `uswds`
+If you have `node` installed on your machine, you can use npm to install the Standards. Add `nasawds`
 to your project's `package.json` as a dependency:
 
 ```shell
-npm install --save uswds
+npm install --save nasawds
 ```
 
-The package will be installed in `node_modules/uswds`. You can use the un-compiled files
+The package will be installed in `node_modules/nasawds`. You can use the un-compiled files
 found in the `src/` or the compiled files in the `dist/` directory.
 
 ```
-node_modules/uswds/
+node_modules/nasawds/
 ├── dist/
 │   ├── css/
 │   ├── fonts/
@@ -85,18 +85,18 @@ node_modules/uswds/
     └── stylesheets/
 ```
 
-`require('uswds')` will load all of the Draft U.S. Web Design Standard's JavaScript onto the page. The `uswds` module itself does not export anything.
+`require('nasawds')` will load all of the Draft NASA Web Design Standard's JavaScript onto the page. The `nasawds` module itself does not export anything.
 
 The main Sass (SCSS) source file is here:
 
 ```
-node_modules/uswds/src/stylesheets/all.scss
+node_modules/nasawds/src/stylesheets/nasawds.scss
 ```
 
 The non-minified CSS that’s been precompiled is here:
 
 ```
-node_modules/uswds/dist/css/uswds.css
+node_modules/nasawds/dist/css/nasawds.css
 ```
 
 ### Using another framework or package manager
@@ -109,9 +109,9 @@ If you’re interested in maintaining a package that helps us distribute the Dra
 
 Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:
 
-[https://github.com/18F/web-design-standards/issues](https://github.com/18F/web-design-standards/issues).
+[https://github.com/bruffridge/web-design-standards/issues](https://github.com/bruffridge/web-design-standards/issues).
 
-You can also email us directly at uswebdesignstandards@gsa.gov.
+You can also email us directly at grc-webteam@lists.nasa.gov.
 
 ## CSS architecture<a id="css-architecture"></a>
 
@@ -139,7 +139,7 @@ To start theming through Sass, copy the `core/variables` file into your own proj
 ```scss
 // src/main.scss
 @import 'path/to/my/scss/files/main/scss/my-custom-vars';
-@import 'lib/uswds/src/stylesheets/all';
+@import 'lib/nasawds/src/stylesheets/all';
 ```
 
 ```scss
@@ -174,7 +174,7 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 ## Where things live<a id="where-things-live"></a>
 
 * **HTML** markup for the components are located in: `docs/_components` in the site root.
-* **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file]({{ site.repos[0].url }}/releases/download/v{{ site.version }}/uswds-{{ site.version }}.zip) .
+* **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file]({{ site.repos[0].url }}/releases/download/v{{ site.version }}/nasawds-{{ site.version }}.zip) .
 * **JS** is located in: `src/js/components (accordion.js, toggle-field-mark.js, toggle-form-input.js, validator.js)`.
 * **Fonts** are located in: `src/fonts`.
 * **Images** and icons are located in: `src/img`.
@@ -184,9 +184,3 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 We’ve designed the Standards to support older and newer browsers through progressive enhancement, and they officially support Internet Explorer 9 and up, along with the latest versions of Chrome, Firefox, and Safari. Internet Explorer 8 and below generally see very low usage, and most agency websites should be able to safely begin support at Internet Explorer 9.
 
 The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and are compliant with [Section 508 of the Rehabilitation Act](http://www.section508.gov/). We’re happy to answer questions about accessibility — email us for more information.
-
-## Contribution guidelines<a id="contribution-guidelines"></a>
-
-We're so glad you're thinking about contributing to the Standards! You can find our complete [contribution guidelines](https://github.com/18F/web-design-standards/blob/staging/CONTRIBUTING.md) in our repo — please review them before submitting your contribution.
-
-If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to [email us](mailto:uswebdesignstandards@gsa.gov) — we’ll get back to you within 48 hours.

@@ -103,29 +103,11 @@
         href="{{ site.baseurl }}/design-principles/">Design principles</a>
       </li>
       <li>
-        <button class="usa-accordion-button"
-          {% if page.category == 'About our work' %}
-            class="usa-current"
-          {% endif %}
-          {% if page.category == 'About our work' %}
-            {% unless page.path contains 'overview' %}
-              aria-expanded="true"
-            {% endunless %}
-          {% else %}
-            aria-expanded="false"
-          {% endif %}
-         aria-controls="sidenav-3" {% if current[1] == 'about-our-work' %}class="usa-current"{% endif %}>About our work</button>
-        <ul id="sidenav-3" class="usa-sidenav-sub_list">
-          <li>
-            <a {% if page.url == '/about-our-work/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/about-our-work/">Overview</a>
-          </li>
-          <li>
-            <a {% if page.url contains 'about-our-work/product-roadmap' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/about-our-work/product-roadmap/">Product roadmap</a>
-          </li>
-          <li>
-            <a {% if page.url contains 'about-our-work/component-maturity-scale' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/about-our-work/component-maturity-scale/">Component maturity scale</a>
-          </li>
-        </ul>
+        <a
+        {% if page.title == 'About our work' %}
+          class="usa-current"
+        {% endif %}
+        href="{{ site.baseurl }}/about-our-work/">About our work</a>
       </li>
       <li>
         <a

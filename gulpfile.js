@@ -1,6 +1,7 @@
 // Bring in individual Gulp configurations
 //
 require( './config/gulp/build' );
+require( './config/gulp/deploy' );
 require( './config/gulp/flags' );
 require( './config/gulp/fonts' );
 require( './config/gulp/html' );
@@ -9,6 +10,7 @@ require( './config/gulp/javascript' );
 require( './config/gulp/sass' );
 
 var gulp  = require( 'gulp' );
+var ghPages = require('gulp-gh-pages');
 var dutil = require( './config/gulp/doc-util' );
 
 gulp.task( 'default', function ( done ) {
@@ -23,6 +25,11 @@ gulp.task( 'default', function ( done ) {
   dutil.logHelp(
     'gulp build',
     'This task is an alias for running `gulp clean-assets javascript images sass fonts` and is the recommended task to build all assets.'
+  );
+  
+  dutil.logHelp(
+    'gulp deploy',
+    'This task will push the ./_site folder to the gh-pages branch in GitHub.'
   );
 
   dutil.logCommand(
@@ -47,7 +54,7 @@ gulp.task( 'default', function ( done ) {
 
   dutil.logCommand(
     'gulp html',
-    'This task generates the code snippets based off of uswds package html files.'
+    'This task generates the code snippets based off of nasawds package html files.'
   );
 
   done();

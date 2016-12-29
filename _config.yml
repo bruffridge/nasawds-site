@@ -1,16 +1,18 @@
 # Site settings
-name: Draft U.S. Web Design Standards Documentation
+name: Draft NASA Web Design Standards Documentation
 version: 0.14.0
 permalink: pretty
 google_analytics_ua: UA-48605964-43
 
+baseurl: /web-design-standards-docs
+
 repos:
-- name: Draft U.S. Web Design Standards
-  description: Main repository for the Draft U.S. Web Design Standards package
-  url: https://github.com/18F/web-design-standards
-- name: Draft U.S. Web Design Standards Documentation
-  description: Documentation for the Draft U.S. Web Design Standards
-  url: https://github.com/18F/web-design-standards-docs
+- name: Draft NASA Web Design Standards
+  description: Main repository for the Draft NASA Web Design Standards package
+  url: https://github.com/bruffridge/web-design-standards
+- name: Draft NASA Web Design Standards Documentation
+  description: Documentation for the Draft NASA Web Design Standards
+  url: https://github.com/bruffridge/web-design-standards-docs
 - name: Draft U.S. Web Design Standards Assets
   description: Draft U.S. Web Design Standards visual design assets
   url: https://github.com/18F/web-design-standards-assets
@@ -42,13 +44,13 @@ exclude:
 - Gemfile.lock
 - LICENSE.md
 - README.md
-- config
-- css
-- img
-- js
+- "config/*"
+- "css/*"
+- "img/*"
+- "js/*"
 - manifest.yml
 - node_modules
 - package.json
-- vendor
+- "vendor/*"
 - gulpfile.js
 - circle.yml
