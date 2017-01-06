@@ -207,25 +207,25 @@ order: 01
   <div class="color-big">
     <div class="usa-color-short usa-color-gold">
     </div>
-      <p class="usa-color-hex">#fdb81e</p>
+      <p class="usa-color-hex">#ff9d1e</p>
       <p class="usa-color-name">gold</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short usa-color-gold-light">
     </div>
-      <p class="usa-color-hex">#f9c642</p>
+      <p class="usa-color-hex">#f9aa43</p>
       <p class="usa-color-name">gold-light</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short usa-color-gold-lighter">
     </div>
-      <p class="usa-color-hex">#fad980</p>
+      <p class="usa-color-hex">#ffc375</p>
       <p class="usa-color-name">gold-lighter</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short usa-color-gold-lightest usa-end-row">
     </div>
-      <p class="usa-color-hex">#fff1d2</p>
+      <p class="usa-color-hex">#ffebd1</p>
       <p class="usa-color-name">gold-lightest</p>
   </div>
 </div>
