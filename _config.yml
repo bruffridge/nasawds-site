@@ -35,7 +35,11 @@ collections:
     permalink: /:path/
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - tables
+
 exclude:
 - ".ruby-version"
 - ".sass-cache"

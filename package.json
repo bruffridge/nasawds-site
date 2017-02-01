@@ -1,5 +1,6 @@
 {
   "name": "nasawds-docs",
+  "version": "0.14.0",
   "description": "Website and documentation on using the Draft NASA Web Design Standards.",
   "scripts": {
     "build": "gulp build && bundle exec jekyll build",
