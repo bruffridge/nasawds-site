@@ -12,7 +12,7 @@ lead: "We designed the Draft NASA Web Design Standards to help you create better
   </div>
   <div class="usa-width-one-half">
     <h4>Offer accessibility out of the box.</h4>
-    <p>Every asset we offer should meet the high accessibility standards outlined in Section 508. For teams that need to customize the NASAWDS to meet their agency needs, guidance will be offered to ensure any extensions and customizations that are made comply with Section 508 guideline.</p>
+    <p>Every asset we offer should meet the high accessibility standards outlined in Section 508. For teams that need to customize the NASAWDS to meet their needs, guidance will be offered to ensure any extensions and customizations that are made comply with Section 508 guidelines.</p>
   </div>
 </div>
 <div class="usa-grid-full">
@@ -22,7 +22,7 @@ lead: "We designed the Draft NASA Web Design Standards to help you create better
   </div>
   <div class="usa-width-one-half">
     <h4>Showcase benefits for agency and users</h4>
-    <p>Teams around NASA should easily be able to find inspiration from among their peers. This inspiration can jumpstart many teams own efforts but also lay the groundwork for making the business case for adopting the Draft NASA Web Design Standards. The success of both NASAWDS and its users will be cataloged both quantitatively and qualitatively.</p>
+    <p>Teams around NASA should easily be able to find inspiration from among their peers. This inspiration can jumpstart many teams own efforts but also lay the groundwork for making the business case for adopting the Draft NASA Web Design Standards.</p>
   </div>
 </div>
 <div class="usa-grid-full">

@@ -12,7 +12,7 @@ order: 01
 
 <h4 class="usa-heading">Primary colors</h4>
 
-<p>This palette’s primary colors are blue, gray, and white. Blue is commonly associated with trust, confidence, and sincerity; it is also used to represent calmness and responsibility.</p>
+<p>This palette’s primary colors are blue, black, and white. Blue is commonly associated with trust, confidence, and sincerity; it is also used to represent calmness and responsibility.</p>
 
 <div class="usa-grid-full usa-color-row usa-primary-color-section">
   <div class="usa-color-square usa-color-primary">
@@ -35,7 +35,7 @@ order: 01
   </div>
   <div class="usa-color-square usa-color-base usa-end-row">
     <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#22262f</p>
+      <p class="usa-color-hex">#000000</p>
       <p class="usa-color-name">base</p>
     </div>
   </div>
