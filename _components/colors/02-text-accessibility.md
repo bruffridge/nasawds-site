@@ -69,6 +69,9 @@ order: 02
     <div class="usa-color-text usa-color-base usa-color-text-white">
       white on base
     </div>
+    <div class="usa-color-text usa-color-gray-darker usa-color-text-white">
+      white on gray-darker
+    </div>
     <div class="usa-color-text usa-color-gray-warm-dark usa-color-text-white">
       white on gray-warm-dark
     </div>
