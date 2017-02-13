@@ -23,34 +23,28 @@ order: 01
   </div>
   <div class="usa-color-square usa-color-primary-darker usa-mobile-end-row">
     <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#1d4893</p>
+      <p class="usa-color-hex">#0b3d91</p>
       <p class="usa-color-name">primary-darker</p>
     </div>
   </div>
   <div class="usa-color-square usa-color-primary-darkest">
     <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#112951</p>
+      <p class="usa-color-hex">#061f4a</p>
       <p class="usa-color-name">primary-darkest</p>
     </div>
   </div>
   <div class="usa-color-square usa-color-base usa-end-row">
     <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#000000</p>
+      <p class="usa-color-hex">#212121</p>
       <p class="usa-color-name">base</p>
     </div>
   </div>
 </div>
 
 <div class="usa-grid-full usa-color-row usa-primary-color-section">
-  <div class="usa-color-square usa-color-gray-darker">
-    <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#22262f</p>
-      <p class="usa-color-name">gray-darker</p>
-    </div>
-  </div>
   <div class="usa-color-square usa-color-gray-dark">
     <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#313744</p>
+      <p class="usa-color-hex">#323a45</p>
       <p class="usa-color-name">gray-dark</p>
     </div>
   </div>
@@ -146,13 +140,13 @@ order: 01
   <div class="color-big">
     <div class="usa-color-short usa-color-gray-dark">
     </div>
-      <p class="usa-color-hex">#313744</p>
+      <p class="usa-color-hex">#323a45</p>
       <p class="usa-color-name">gray-dark</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short usa-color-gray">
     </div>
-      <p class="usa-color-hex">#5b606b</p>
+      <p class="usa-color-hex">#5b616b</p>
       <p class="usa-color-name">gray</p>
   </div>
   <div class="color-small">
