@@ -1,12 +1,12 @@
-# Draft NASA Web Design Standards documentation
+# NASA Web Design Standards documentation
 
-This repo includes code and documentation for the Draft NASA Web Design Standards website. For information on the Standards (components) themselves, please visit [web-design-standards](https://github.com/bruffridge/web-design-standards).
+This repo includes code and documentation for the NASA Web Design Standards website. For information on the Standards (components) themselves, please visit [web-design-standards](https://github.com/bruffridge/web-design-standards).
 
 Note that this README includes steps to pull the latest version of the Standards into your local instance of the documentation.
 
 ## Running locally
 
-The Draft NASA Web Design Standards documentation is built using Jekyll for the file framework, gulp for task management, and the node module for the Standards.
+The NASA Web Design Standards documentation is built using Jekyll for the file framework, gulp for task management, and the node module for the Standards.
 
 ### Before you start
 
