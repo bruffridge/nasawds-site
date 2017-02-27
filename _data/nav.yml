@@ -3,7 +3,7 @@ primary:
   - href: /page-templates/
   - href: /getting-started/
   - href: /design-principles/
-  - href: /whats-new/
+  - href: /releases/
 
 mobile:
   - href: /components/
@@ -12,8 +12,7 @@ mobile:
   - href: /getting-started/
     collapsible: true
   - href: /design-principles/
-  - href: /whats-new/
-    collapsible: true
+  - href: /releases/
   
 
 UI components:
@@ -37,16 +36,9 @@ UI components:
 Getting started:
   - href: /getting-started/
   - href: /getting-started/developers/
-  - href: /getting-started/designers/
-  - href: /getting-started/code-guidelines/
-  - href: /getting-started/video-tutorials/
-  - href: /getting-started/implementations/
 
 Page templates:
   - href: /page-templates/
 
-What’s new:
-  - href: /whats-new/
-  - href: /whats-new/product-roadmap/
-  - href: /whats-new/research/
-  - href: /whats-new/releases/
+Release notes:
+  - href: /releases/
