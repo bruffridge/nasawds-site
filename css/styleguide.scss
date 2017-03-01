@@ -214,7 +214,6 @@
   }
 
   a {
-    @include padding (1.5rem null);
     color: $color-gray;
     font-size: $h5-font-size;
     font-weight: bold;
@@ -229,7 +228,6 @@
 
     &.usa-current {
       color: $color-primary;
-      font-weight: $font-bold;
     }
   }
 }
