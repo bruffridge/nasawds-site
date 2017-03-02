@@ -20,9 +20,9 @@ layout: default
   {% if page.hero %}
   <section class="usa-hero">
     <div class="usa-grid">
-      <div class="usa-hero-callout usa-section-dark">
+      <div class="usa-hero-callout">
         {% if page.hero.callout %}
-        <h2><span class="usa-hero-callout-alt">{{ page.hero.callout }}</h2>
+        <h2>{{ page.hero.callout }}</h2>
         {% endif %}
 
         {{ page.hero.content | markdownify }}
