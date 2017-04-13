@@ -98,7 +98,7 @@ node_modules/nasawds/
     └── stylesheets/
 ```
 
-`require('nasawds')` will load all of the NASA Web Design Standard's JavaScript onto the page. The `nasawds` module itself does not export anything.
+`require('nasawds')` will load all of the NASA GRC Web Design Standard's JavaScript onto the page. The `nasawds` module itself does not export anything.
 
 The main Sass (SCSS) source file is here:
 

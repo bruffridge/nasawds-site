@@ -2,13 +2,13 @@
 permalink: /design-principles/
 layout: styleguide
 title: Design principles
-lead: "We designed the NASA Web Design Standards to help you create better experiences for the American public. Here’s how using the Standards can help you:"
+lead: "We designed the NASA GRC Web Design Standards to help you create better experiences for the American public. Here’s how using the Standards can help you:"
 ---
 
 <div class="usa-grid-full">
   <div class="usa-width-one-half">
     <h2>Make the best thing the easiest thing.</h2>
-    <p>The NASA Web Design Standards is the easiest path for teams around NASA to comply with the latest federal policy for websites and digital services. The NASAWDS support modern web development practices, such as mobile first and responsive frameworks. By offering open-source, quick-to-download code and assets, the Standards make it easy to deliver the highest-quality NASA websites to the public.</p>
+    <p>The NASA GRC Web Design Standards is the easiest path for teams around NASA to comply with the latest federal policy for websites and digital services. The NASAWDS support modern web development practices, such as mobile first and responsive frameworks. By offering open-source, quick-to-download code and assets, the Standards make it easy to deliver the highest-quality NASA websites to the public.</p>
   </div>
   <div class="usa-width-one-half">
     <h2>Offer accessibility out of the box.</h2>
@@ -22,7 +22,7 @@ lead: "We designed the NASA Web Design Standards to help you create better exper
   </div>
   <div class="usa-width-one-half">
     <h2>Showcase benefits for agency and users</h2>
-    <p>Teams around NASA should easily be able to find inspiration from among their peers. This inspiration can jumpstart many teams own efforts but also lay the groundwork for making the business case for adopting the NASA Web Design Standards.</p>
+    <p>Teams around NASA should easily be able to find inspiration from among their peers. This inspiration can jumpstart many teams own efforts but also lay the groundwork for making the business case for adopting the NASA GRC Web Design Standards.</p>
   </div>
 </div>
 <div class="usa-grid-full">
