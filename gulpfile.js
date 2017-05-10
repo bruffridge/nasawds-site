@@ -4,7 +4,6 @@ require( './config/gulp/build' );
 require( './config/gulp/deploy' );
 require( './config/gulp/flags' );
 require( './config/gulp/fonts' );
-require( './config/gulp/html' );
 require( './config/gulp/images' );
 require( './config/gulp/javascript' );
 require( './config/gulp/sass' );

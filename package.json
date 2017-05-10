@@ -9,12 +9,11 @@
     "build-js": "gulp javascript",
     "build-img": "gulp images",
     "build-fonts": "gulp fonts",
-    "build-html": "gulp html",
     "clean": "gulp clean-assets",
     "lint": "gulp eslint scss-lint",
     "postinstall": "bundle",
     "prestart": "gulp build",
-    "start": "bundle exec jekyll serve --host 0.0.0.0",
+    "start": "bundle exec jekyll serve --host 0.0.0.0 --drafts --future",
     "test": "npm run lint",
     "watch": "nswatch"
   },
@@ -33,9 +32,6 @@
     ],
     "./node_modules/nasawds/src/fonts": [
       "build-fonts"
-    ],
-    "./node_modules/nasawds/src/html": [
-      "build-html"
     ],
     "./node_modules/nasawds/src/img": [
       "build-img"
@@ -67,7 +63,7 @@
     "url": "https://github.com/bruffridge/web-design-standards-docs/issues"
   },
   "homepage": "https://github.com/bruffridge/web-design-standards-docs#readme",
-  "devDependencies": {
+  "dependencies": {
     "browserify": "^13.0.0",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
