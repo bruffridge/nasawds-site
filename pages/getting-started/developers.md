@@ -29,7 +29,7 @@ To use the Web Design Standards on your project, you’ll need to include the CS
 
 First, download the Web Design Standards assets:
 
-<a class="link-download" href="https://github.com/bruffridge/web-design-standards/releases/download/v{{ site.version }}-nasa/nasawds-{{ site.version }}.zip">Download code</a>
+<a class="link-download" href="https://github.com/bruffridge/web-design-standards/releases/download/v{{ site.version }}/nasawds-{{ site.version }}.zip">Download code</a>
 <span class="link-download-subtext">Version {{ site.version }}</span>
 
 Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:
