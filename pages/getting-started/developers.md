@@ -29,13 +29,13 @@ To use the Web Design Standards on your project, you’ll need to include the CS
 
 First, download the Web Design Standards assets:
 
-<a class="link-download" href="https://github.com/bruffridge/web-design-standards/releases/download/v{{ site.version }}/nasawds-{{ site.version }}.zip">Download code</a>
-<span class="link-download-subtext">Version {{ site.version }}</span>
+<a class="link-download" href="https://github.com/bruffridge/web-design-standards/releases/download/v{{ site.data.nasawds_version }}/nasawds-{{ site.data.nasawds_version }}.zip">Download code</a>
+<span class="link-download-subtext">Version {{ site.data.nasawds_version }}</span>
 
 Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:
 
 ```
-nasawds-{{ site.version }}/
+nasawds-{{ site.data.nasawds_version }}/
 ├── js/
 │   ├── nasawds.min.js.map
 │   ├── nasawds.min.js
@@ -72,10 +72,8 @@ And that’s it — you should be set to use the Standards.
 
 ### Using npm
 
-Note: Using npm to install the Standards will include jQuery version `2.2.0`. Please make sure that you’re not including any other version of jQuery on your page.
-
 If you have `node` installed on your machine, you can use npm to install the Standards. Add `nasawds`
-to your project's `package.json` as a dependency:
+to your project’s `package.json` as a dependency:
 
 ```shell
 npm install --save nasawds
@@ -123,7 +121,7 @@ Do you have questions or need help with setup? Did you run into any weird errors
 
 [https://github.com/bruffridge/web-design-standards/issues](https://github.com/bruffridge/web-design-standards/issues).
 
-You can also email us directly at grc-webteam@lists.nasa.gov.
+You can also email us directly at [grc-webteam@lists.nasa.gov](mailto:grc-webteam@lists.nasa.gov).
 
 ## CSS architecture
 
@@ -141,6 +139,25 @@ You can also email us directly at grc-webteam@lists.nasa.gov.
 **For more information, visit:
 [https://pages.18f.gov/frontend/css-coding-styleguide/](https://pages.18f.gov/frontend/css-coding-styleguide/)**
 
+## JS customization
+
+**Unfortunately, customizing the JavaScript for the standards currently requires NodeJS and a module bundler like Browserify or Webpack. We apologize for this inconvenience, and are working to resolve it in a future release of the Standards.**
+
+The JavaScript for the standards is separated into components in the same manner as the visual interface which is all initialized with event handlers when the DOM is ready. These components are accessible as CommonJS modules that can be required in other JavaScript files which then must be built for the browser. The components are currently not accessible in the global browser scope, but can be extended to be included by requiring `components` and setting it to a global scope:
+
+```js
+window.nasawds = require('./components');
+```
+
+Each component has a standardized interface that can be used to extend it further. The components store a HTML class name (e.g. `.usa-accordion-button[aria-controls]`) that's used to link HTML elements with the JS component, so when a component is initialized, it will search through the current HTML DOM finding all elements that match its class and inialize the component JavaScript for those elements. The primary methods each component has are as follows:
+
+- `on`: Initialize a component's JavaScript behavior by passing the root element, such as `window.document`.
+- `off`: The opposite of `on`, de-initializes a component, removing any JavaScript event handlers on the component.
+- `hide`: Hide the whole component.
+- `show`: Shows a whole, hidden component.
+- `toggle`: Toggles the visibility of a component on and off based on the previous state.
+
+Some components have additional methods for manipulating specific aspects of them based on what they are and what they do. These can be found in the component's JS file.
 
 ## Customization and theming
 
@@ -186,13 +203,15 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 ## Where things live
 
 * **HTML** markup for the components is located in: `src/html` in the site root.
-* **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file]({{ site.repos[0].url }}/releases/download/v{{ site.version }}/nasawds-{{ site.version }}.zip) .
+* **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file]({{ site.repos[0].url }}/releases/download/v{{ site.data.nasawds_version }}/nasawds-{{ site.data.nasawds_version }}.zip) .
 * **JS** is located in: `src/js/components (accordion.js, toggle-field-mark.js, toggle-form-input.js, validator.js)`.
 * **Fonts** are located in: `src/fonts`.
 * **Images** and icons are located in: `src/img`.
 
-## Notes on accessibility
+## Browser support
 
-We’ve designed the Standards to support older and newer browsers through progressive enhancement, and they officially support Internet Explorer 9 and up, along with the latest versions of Chrome, Firefox, and Safari. Internet Explorer 8 and below generally see very low usage, and most agency websites should be able to safely begin support at Internet Explorer 9.
+We’ve designed the Standards to support older and newer browsers through progressive enhancement. The Standards will officially support any browser **above 2% usage** as defined on [analytics.usa.gov](https://analytics.usa.gov/). This currently means the Standards supports the newest versions of Chrome, Firefox, Safari and Internet Explorer 11 and up. Due to the Standards originally browser support, the Standards will continue to support Internet Explorer 9 and up until the next major release, `2.0`.
+
+## Accessibility
 
 The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and are compliant with [Section 508 of the Rehabilitation Act](http://www.section508.gov/). We’re happy to answer questions about accessibility — email us for more information.
