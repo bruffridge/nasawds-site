@@ -4,7 +4,7 @@ module USWDSVersion
   def make_version_nice(version)
     # If we're using a particular 'commit-ish' of the official repo,
     # just grab the 'commit-ish' part.
-    m = /^18F\/web-design-standards#(.+)/.match(version)
+    m = /^bruffridge\/web-design-standards#(.+)/.match(version)
     if m
       version = m[1]
 
@@ -22,7 +22,7 @@ module USWDSVersion
 
     def generate(site)
       package = JSON.load(File.read('package.json'))
-      version = make_version_nice(package['dependencies']['uswds'])
+      version = make_version_nice(package['dependencies']['nasawds'])
       site.data['nasawds_version'] = version
     end
   end

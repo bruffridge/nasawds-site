@@ -9,11 +9,11 @@ RSpec.describe USWDSVersion do
     end
 
     it 'gets the commit-ish if based on official repo' do
-      expect(make_version_nice('18F/web-design-standards#foo')).to eq('foo')
+      expect(make_version_nice('bruffridge/web-design-standards#foo')).to eq('foo')
     end
 
     it 'removes the "v" in a version tag if needed' do
-      expect(make_version_nice('18F/web-design-standards#v1.2.3')).to \
+      expect(make_version_nice('bruffridge/web-design-standards#v1.2.3')).to \
         eq('1.2.3')
     end
   end
