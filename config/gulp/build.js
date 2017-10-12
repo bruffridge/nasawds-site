@@ -56,30 +56,30 @@ function spawnP(cmd, args, opts) {
         if (code === 0) {
           resolve();
         } else {
-          reject(new Error("Building USWDS failed!"));
+          reject(new Error("Building NASAWDS failed!"));
         }
       });
   });
 }
 
-// We might be using USWDS from a git repository instead of npm, in
+// We might be using NASAWDS from a git repository instead of npm, in
 // which case it might not have the pre-built assets we need. If that's
 // the case, we'll want to build those assets.
-gulp.task('build-uswds-if-needed', function () {
+gulp.task('build-nasawds-if-needed', function () {
   const rootDir = path.normalize(path.join(__dirname, '..', '..'));
-  const uswdsDir = path.join(rootDir, 'node_modules', 'uswds');
+  const uswdsDir = path.join(rootDir, 'node_modules', 'nasawds');
   const fractalIndex = path.join(uswdsDir, 'build', 'index.html');
   const gulpfile = path.join(uswdsDir, 'gulpfile.js');
 
   if (fs.existsSync(fractalIndex)) {
-    dutil.logMessage('build-uswds-if-needed', 'USWDS is already built.');
+    dutil.logMessage('build-nasawds-if-needed', 'NASAWDS is already built.');
     return Promise.resolve();
   } else {
-    dutil.logMessage('build-uswds-if-needed', 'Building USWDS...');
+    dutil.logMessage('build-nasawds-if-needed', 'Building NASAWDS...');
 
     if (!fs.existsSync(gulpfile)) {
       return Promise.reject(new Error(
-        `${gulpfile} does not exist! You need a newer version of USWDS; ` +
+        `${gulpfile} does not exist! You need a newer version of NASAWDS; ` +
         `specifically, one that includes the following PR: ` +
         `https://github.com/18F/web-design-standards/pull/2050`
       ));
@@ -99,7 +99,7 @@ gulp.task('build', function (done) {
 
   runSequence(
     'clean-assets',
-    'build-uswds-if-needed',
+    'build-nasawds-if-needed',
     [
       'fonts',
       'images',

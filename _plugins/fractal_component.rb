@@ -8,7 +8,7 @@ module Jekyll
       super
       @name = name.strip
       @base_url = ENV[BASE_URL_ENV_VAR]
-      @fs_path = "node_modules/uswds/build/components/render/#{@name}.html"
+      @fs_path = "node_modules/nasawds/build/components/render/#{@name}.html"
     end
 
     def get_from_server()
@@ -38,7 +38,7 @@ module Jekyll
           raise (
             "Unable to find the fractal component #{@name}! " +
             "Please either define #{BASE_URL_ENV_VAR} or run " +
-            "'fractal build' in the uswds directory."
+            "'fractal build' in the nasawds directory."
           )
         end
         html.gsub! "../../dist/", "#{site.baseurl}/assets/"
