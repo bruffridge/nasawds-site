@@ -10,6 +10,7 @@
     "build-img": "gulp images",
     "build-fonts": "gulp fonts",
     "clean": "gulp clean-assets",
+    "deploy": "gulp deploy",
     "lint": "gulp eslint scss-lint",
     "postinstall": "bundle",
     "prestart": "gulp build",
