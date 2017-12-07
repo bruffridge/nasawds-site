@@ -2,6 +2,7 @@
 permalink: /
 layout: landing
 title: A design system for NASA digital services
+class: home
 hero:
   callout: NASA Glenn Web Design Standards
   content: The Standards are a design system that allows NASA to quickly prototype and deploy digital products using a baseline of design patterns.
@@ -12,14 +13,23 @@ graphic_list:
       image:
         src: img/home/get-started.svg
         alt:
-    - topic: UI Components
+      link:
+        text: Take the first step
+        url: getting-started
+    - topic: UI components
       description: Discover all the different components that the Standards provide as both design and development assets.
       image:
         src: img/home/ui-component.svg
         alt:
-    - topic: Page Templates
+      link:
+        text: Browse the components
+        url: components
+    - topic: Page templates
       description: Explore the different page templates that have been created to jump start your product development.
       image:
         src: img/home/page-templates.svg
         alt:
+      link:
+        text: Start from a template
+        url: page-templates
 ---

@@ -12,65 +12,68 @@ body {
 
 // USWDS Overrides
 
-.usa-footer-secondary_section {
-  background-color: $color-primary-alt-lightest;
-}
-
-.usa-graphic_list .usa-media_block-img {
-  max-width: 7rem;
-}
-
-.usa-hero {
-  background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
-  padding-bottom: 7.2rem;
-  padding-top: 3.5rem;
-}
-
-.usa-hero-callout .usa-button {
-  margin-top: 2em;
-}
-
-.usa-hero-callout {
-  border-radius: 0.3rem;
-  max-width: 46rem;
-  padding: 3.6rem 3rem;
-
-  & > *:first-child {
-    margin-bottom: 0;
-  }
-}
-
-.usa-hero-callout-alt {
-  font-size: 2.7rem;
-}
-
-.usa-media_block-body {
-  & > *:first-child {
-    font-size: $media-block-header-font-size;
-    margin-top: 0;
-    margin-bottom: 0;
+.page-home {
+  .usa-graphic_list .usa-media_block-img {
+    max-width: 7rem;
+    margin-right: 2rem;
   }
 
-  & > p {
-    margin: 0.5rem 0;
-    font-size: $media-block-body-font-size;
+  .usa-hero {
+    background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
+    padding-bottom: 7.2rem;
+    padding-top: 3.5rem;
   }
-}
 
-.usa-media_block-img {
-  float: none;
-  margin-bottom: 1rem;
-}
+  .usa-hero-callout .usa-button {
+    margin-top: 2em;
+  }
 
-.usa-section-dark p {
-  margin-top: 0.8rem;
-  font-weight: $font-light;
-}
+  .usa-hero-callout {
+    border-radius: 0.3rem;
+    max-width: 46rem;
+    padding: 3.6rem 3rem;
 
-// Override for 4x1 media grid when it collapses to 2x2
-@media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
-  .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
-    margin-bottom: 6rem;
+    & > *:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .usa-hero-callout-alt {
+    font-size: 2.7rem;
+  }
+
+  .usa-graphic_list {
+    .usa-media_block-body {
+      & > *:first-child {
+        font-size: $media-block-header-font-size;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      & > p {
+        margin: 0.5rem 0;
+        font-size: $media-block-body-font-size;
+      }
+    }
+
+    .usa-media_block-img {
+      margin-bottom: 1rem;
+
+      @include media($large-screen) {
+        float: none;
+      }
+    }
+  }
+
+  .usa-section-dark p {
+    margin-top: 0.8rem;
+  }
+
+  // Override for 4x1 media grid when it collapses to 2x2
+  @media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
+    .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
+      margin-bottom: 6rem;
+    }
   }
 }
 
@@ -279,11 +282,11 @@ body {
 
   @include media($nav-width) {
     background-color: $color-white;
-    border-bottom: 1px solid $color-gray-light;
+    border-bottom: 1px solid $color-gray-lighter;
     clear: both;
     display: block;
     height: $height-nav-secondary;
-    padding-left: 3rem;
+    padding-left: 1.5rem;
     z-index: $z-nav-secondary;
   }
 
@@ -292,25 +295,30 @@ body {
 
     li {
       display: inline;
-      padding-right: 3rem;
     }
   }
 
   a {
-    color: $color-gray-dark;
-    font-size: $site-nav-font-size;
-    font-weight: normal;
-    letter-spacing: 0.3px;
+    color: $color-gray;
+    font-size: $h5-font-size;
+    font-weight: $font-bold;
     line-height: $height-nav-secondary;
+    padding: 1.5rem;
     text-decoration: none;
+    -webkit-font-smoothing: antialiased;
 
     &:hover {
-      color: $color-primary;
-      text-decoration: underline;
+      span {
+        @include nav-border-thick;
+        color: $color-primary;
+      }
     }
+  }
 
-    &.usa-current {
-      color: $color-primary;
+  .usa-current {
+    span {
+      @include nav-border-thick;
+      color: $color-base;
     }
   }
 }
@@ -346,16 +354,14 @@ body {
 // Main Content --------- //
 
 .main-content {
-  @include position(absolute, 4rem 0 0 null);
+  @include position(absolute, null 0 0 null);
   display: inline-block; // starting: not scrolled
   margin-top: 4rem; // starting: not scrolled
   position: relative;
   width: 100%;
-  top: 6.3rem; // height of disclaimer + navbar on mobile
 
   @include media($nav-width) {
     width: calc(100% - #{$width-nav-sidebar});
-    top: 0;
   }
 
   .lt-ie9 & {
@@ -377,7 +383,6 @@ body {
 
   header {
     > h1 {
-      display: inline-block;
       margin-top: 0;
     }
 
@@ -393,10 +398,6 @@ body {
   }
 
   section {
-    > h2 {
-      display: inline-block;
-    }
-
     > .tooltip {
       margin-top: 56px;
     }
@@ -484,12 +485,15 @@ a.cta {
 // Footer --------------- //
 
 footer.site {
-
   clear: both;
 
+  h3 {
+    margin-top: 0;
+  }
+
   .logo-links {
-    margin-bottom: 3rem;
-    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
 
     @include media($medium-screen) {
       float: left;
@@ -497,7 +501,6 @@ footer.site {
     }
 
     img {
-      margin-right: 1.2rem;
       width: 3.2rem;
 
       &.logo-nasa {
@@ -507,27 +510,86 @@ footer.site {
 
     a {
       @include media-link;
-      color: $color-gray-lighter;
+    }
+  }
 
-      &:hover {
-        color: $color-white;
+  .usa-footer-secondary_section {
+    background-color: $color-primary-alt-lightest;
+
+    @include media($medium-screen) {
+      @include padding(3rem null 4rem null);
+    }
+  }
+}
+
+.footer-main-img {
+  display: none;
+  max-width: 18.1rem;
+
+  @include media($large-screen) {
+    display: block;
+  }
+}
+
+.footer-content {
+  p {
+    max-width: 75ch;
+  }
+}
+
+.footer-contact-links {
+  margin-top: 3rem;
+
+  h4, a {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-family: $font-sans;
+    font-weight: $font-normal;
+    margin-bottom: 0;
+    margin-top: 3px;
+  }
+
+  a {
+    color: $color-primary-darker;
+    text-decoration: underline;
+  }
+
+  img {
+    width: 4rem;
+  }
+
+  .usa-media_block {
+    clear: both;
+    line-height: $heading-line-height;
+    margin-top: 2rem;
+
+    @include media($medium-screen) {
+      margin-top: 0;
+    }
+  }
+}
+
+.footer-section-bottom {
+  @include padding(1.6rem null 1.3rem null);
+  background-color: $color-primary-darkest;
+
+  p {
+    color: $color-white;
+    font-size: $small-font-size;
+    margin-top: 0;
+    overflow: hidden;
+
+    &:first-of-type {
+      @include media($medium-screen) {
+        margin-bottom: 0;
       }
     }
   }
 
-  .usa-footer-contact-links {
-    text-align: left;
-
-    h4 {
-      margin-top: 1em;
-    }
-
-    .usa-button {
-      color: $color-white;
-      margin-bottom: 0;
-      margin-top: 0;
-      width: 100%;
-    }
+  a {
+    color: $color-white;
   }
 }
 
@@ -579,6 +641,18 @@ footer.site {
 }
 
 // Custom styles to illustrate invisible grid for web design standards
+
+.page-grids {
+  .preview {
+    @include margin(0 null 2em);
+    border: 0;
+    padding: 0;
+
+    > *:first-child {
+      margin-top: 1.5em;
+    }
+  }
+}
 
 .grid-example {
   .usa-grid {

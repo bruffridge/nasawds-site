@@ -48,6 +48,7 @@ Here are a few other utility commands you may find useful:
 - `npm run watch`: Runs a series of commands that watches for any changes in both the Standards node module and the root level asset folders in this repo.
 
 ### Using the latest version of the `nasawds` package
+- `npm start -- --incremental`: Runs your local server with incremental regeneration enabled to greatly improve build time. Use instead of `npm start`.
 
 Sometimes you will want to use the latest version of the `web-design-standards` repo. Follow these steps to do so:
 
