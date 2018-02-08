@@ -1,6 +1,7 @@
 # Site settings
-title:  NASA Glenn Web Design Standards
-components_url: 'https://components.standards.usa.gov'
+title:  NASA Glenn Web Design System
+description: Design and build fast, accessible, mobile-friendly NASA websites backed by user research.
+components_url: 'https://components.designsystem.digital.gov'
 
 # this is for pages that don't have a permalink (primarily posts)
 permalink: /whats-new/updates/:year/:month/:day/:title/
@@ -21,24 +22,24 @@ incremental_regeneration_fixer:
 
 jekyll_get:
   - data: releases
-    json: 'https://api.github.com/repos/bruffridge/web-design-standards/releases'
+    json: 'https://api.github.com/repos/bruffridge/nasawds/releases'
   - data: contributing
-    json: 'https://api.github.com/repos/18F/web-design-standards/contents/CONTRIBUTING.md'
+    json: 'https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md'
     decode_content: true
   - data: standards-sites
-    json: 'https://api.github.com/repos/18F/web-design-standards/contents/WHO_IS_USING_USWDS.md'
+    json: 'https://api.github.com/repos/uswds/uswds/contents/WHO_IS_USING_USWDS.md'
     decode_content: true
 
 repos:
-- name: NASA Web Design Standards
-  description: Main repository for the NASA Web Design Standards package
-  url: https://github.com/bruffridge/web-design-standards
-- name: NASA Web Design Standards Documentation
-  description: Documentation for the NASA Web Design Standards
-  url: https://github.com/bruffridge/web-design-standards-docs
-- name: U.S. Web Design Standards Assets
-  description: U.S. Web Design Standards visual design assets
-  url: https://github.com/18F/web-design-standards-assets
+- name: NASA Web Design System
+  description: Main repository for the NASA Web Design System package
+  url: https://github.com/bruffridge/nasawds
+- name: NASA Web Design System Documentation
+  description: Documentation for the NASA Web Design System
+  url: https://github.com/bruffridge/nasawds-site
+- name: U.S. Web Design System Assets
+  description: U.S. Web Design System visual design assets
+  url: https://github.com/uswds/uswds-assets
 
 sass:
   load_paths:

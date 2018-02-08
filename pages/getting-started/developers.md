@@ -21,15 +21,15 @@ subnav:
 
 ## Installation
 
-Here are a few different ways to use the Standards within your project.
+Here are a few different ways to use the Design System within your project.
 
 ### Download
 
-To use the Web Design Standards on your project, you’ll need to include the CSS and JavaScript files in each HTML page in your project.
+To use the Design System on your project, you’ll need to include the CSS and JavaScript files in each HTML page in your project.
 
-First, download the Web Design Standards assets:
+First, download the Design System assets:
 
-<a class="link-download" href="https://github.com/bruffridge/web-design-standards/releases/download/v{{ site.data.nasawds_version }}/nasawds-{{ site.data.nasawds_version }}.zip">Download code</a>
+<a class="link-download" href="https://github.com/bruffridge/nasawds/releases/download/v{{ site.data.nasawds_version }}/nasawds-{{ site.data.nasawds_version }}.zip">Download code</a>
 <span class="link-download-subtext">Version {{ site.data.nasawds_version }}</span>
 
 Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:
@@ -68,11 +68,11 @@ of your downloaded assets. And the un-minified version is better if you are in a
 development environment or would like to debug the CSS or JavaScript assets in
 the browser. The examples above recommend using the minified versions.
 
-And that’s it — you should be set to use the Standards.
+And that’s it — you should be set to use the Design System.
 
 ### Using npm
 
-If you have `node` installed on your machine, you can use npm to install the Standards. Add `nasawds`
+If you have `node` installed on your machine, you can use npm to install the Design System. Add `nasawds`
 to your project’s `package.json` as a dependency:
 
 ```shell
@@ -112,14 +112,14 @@ node_modules/nasawds/dist/css/nasawds.css
 
 ### Using another framework or package manager
 
-If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the [download instructions](#download). Please note that the core team [isn’t responsible for all frameworks’ implementations](https://github.com/18F/web-design-standards/issues/877).
+If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the [download instructions](#download). Please note that the core team [isn’t responsible for all frameworks’ implementations](https://github.com/uswds/uswds/issues/877).
 
 
 ### Need installation help?
 
 Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:
 
-[https://github.com/bruffridge/web-design-standards/issues](https://github.com/bruffridge/web-design-standards/issues).
+[https://github.com/bruffridge/nasawds/issues](https://github.com/bruffridge/nasawds/issues).
 
 You can also email us directly at [grc-webteam@lists.nasa.gov](mailto:grc-webteam@lists.nasa.gov).
 
@@ -127,23 +127,23 @@ You can also email us directly at [grc-webteam@lists.nasa.gov](mailto:grc-webtea
 
 * The CSS foundation of this site is built with the **[Sass](https://sass-lang.com)** preprocessor language.
 * Uses **[Bourbon](http://bourbon.io/)** for its simple and lightweight Sass mixin library, and the **[Neat](http://neat.bourbon.io/)** library for the grid framework. Bourbon and Neat are open-source products from **[thoughtbot](https://thoughtbot.com/)**.
-* The CSS organization and naming conventions follow **[18F’s CSS Coding Styleguide](https://pages.18f.gov/frontend/css-coding-styleguide/)**.
-* CSS selectors are **prefixed** with `usa` (For example: `.usa-button`). This identifier helps the design system avoid conflicts with other styles on a site which are not part of the U.S. Web Design Standards.
-* Uses a **[modified BEM](https://pages.18f.gov/frontend/css-coding-styleguide/naming/)** approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: `.usa-button-cool_feature-active`).
+* The CSS organization and naming conventions follow **[18F’s CSS Front End Guide](https://frontend.18f.gov/css/)**.
+* CSS selectors are **prefixed** with `usa` (For example: `.usa-button`). This identifier helps the design system avoid conflicts with other styles on a site which are not part of the U.S. Web Design System.
+* Uses a **[modified BEM](https://frontend.18f.gov/css/naming/)** approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: `.usa-button-cool_feature-active`).
 * Uses **modular CSS** for scalable, modular, and flexible code.
 * Uses **nesting** when appropriate. Nest minimally with up to two levels of nesting.
 * Hard-coded magic numbers are avoided and, if necessary, defined in the `core/variables` scss file.
 * Media queries are built **mobile first**.
 * **Spacing units** are as much as possible defined as rem or em units so they scale appropriately with text size. Pixels can be used for detail work and should not exceed 5px (For example: 3px borders).
 
-**For more information, visit:
-[https://pages.18f.gov/frontend/css-coding-styleguide/](https://pages.18f.gov/frontend/css-coding-styleguide/)**
+**For more information, visit:**
+[18F’s CSS Front End Guide](https://frontend.18f.gov/css/)
 
 ## JS customization
 
-**Unfortunately, customizing the JavaScript for the standards currently requires NodeJS and a module bundler like Browserify or Webpack. We apologize for this inconvenience, and are working to resolve it in a future release of the Standards.**
+**Unfortunately, customizing the JavaScript for the USWDS currently requires NodeJS and a module bundler like Browserify or Webpack. We apologize for this inconvenience, and are working to resolve it in a future release of the Design System.**
 
-The JavaScript for the standards is separated into components in the same manner as the visual interface which is all initialized with event handlers when the DOM is ready. These components are accessible as CommonJS modules that can be required in other JavaScript files which then must be built for the browser. The components are currently not accessible in the global browser scope, but can be extended to be included by requiring `components` and setting it to a global scope:
+The JavaScript for the USWDS is separated into components in the same manner as the visual interface which is all initialized with event handlers when the DOM is ready. These components are accessible as CommonJS modules that can be required in other JavaScript files which then must be built for the browser. The components are currently not accessible in the global browser scope, but can be extended to be included by requiring `components` and setting it to a global scope:
 
 ```js
 window.nasawds = require('./components');
@@ -161,9 +161,9 @@ Some components have additional methods for manipulating specific aspects of the
 
 ## Customization and theming
 
-The Standards can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Standards’ global variables. If it isn’t possible to use Sass, do theming by overriding the CSS rules in the Standards set.
+The Design System can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Design System’s global variables. If it isn’t possible to use Sass, do theming by overriding the CSS rules in the Design System set.
 
-To start theming through Sass, copy the `core/variables` file into your own project’s Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the import of the Standards all.scss file.
+To start theming through Sass, copy the `core/variables` file into your own project’s Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the import of the Design System's all.scss file.
 
 ```scss
 // src/main.scss
@@ -191,13 +191,13 @@ $medium-screen: 620px !default;
 $large-screen:  1120px !default;
 ```
 
-NOTE: If you plan on upgrading to newer versions of the Standards in the future, or are not using your own forked version of the Standards, try to avoid making changes in the Standards folder themselves. Doing so could make it impossible to upgrade in the future without undoing your custom changes.
+NOTE: If you plan on upgrading to newer versions of the Design System in the future, or are not using your own forked version of the Design System, try to avoid making changes in the Design System folder itself. Doing so could make it impossible to upgrade in the future without undoing your custom changes.
 
 ### Main variables that can be customized
-* Colors can be found in the `core/variables` [file, line 35](https://github.com/18F/web-design-standards/blob/develop/src/stylesheets/core/_variables.scss#L35).
-* Font families can be found in the `core/variables` [file, line 28](https://github.com/18F/web-design-standards/blob/develop/src/stylesheets/core/_variables.scss#L28).
-* Typography sizing can be found in `core/variables` [file, line 13](https://github.com/18F/web-design-standards/blob/develop/src/stylesheets/core/_variables.scss#L13).
-* Grid and breakpoint settings can be found in `core/variables` [file, line 87](https://github.com/18F/web-design-standards/blob/develop/src/stylesheets/core/_variables.scss#L87).
+* Colors can be found in the `core/variables` [file, line 35](https://github.com/bruffridge/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L35).
+* Font families can be found in the `core/variables` [file, line 28](https://github.com/bruffridge/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L28).
+* Typography sizing can be found in `core/variables` [file, line 13](https://github.com/bruffridge/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L13).
+* Grid and breakpoint settings can be found in `core/variables` [file, line 108](https://github.com/bruffridge/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L108).
 
 
 ## Where things live
@@ -210,8 +210,8 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 
 ## Browser support
 
-We’ve designed the Standards to support older and newer browsers through [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement). The current major version of the Standards (1.0) is designed to support the newest versions of Chrome, Firefox, Safari, and Internet Explorer 9 and up. The next major release (2.0) will follow the [2% rule](https://gds.blog.gov.uk/2012/01/25/support-for-browsers/): we will officially support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/). Currently, this means that the Standards version 2.0 will support the newest versions of Chrome, Firefox, Safari, and Internet Explorer 11 and up.
+We’ve designed the Design System to support older and newer browsers through [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement). The current major version of the Design System (1.0) is designed to support the newest versions of Chrome, Firefox, Safari, and Internet Explorer 9 and up. The next major release (2.0) will follow the [2% rule](https://gds.blog.gov.uk/2012/01/25/support-for-browsers/): we will officially support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/). Currently, this means that the Design System version 2.0 will support the newest versions of Chrome, Firefox, Safari, and Internet Explorer 11 and up.
 
 ## Accessibility
 
-The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and are compliant with [Section 508 of the Rehabilitation Act](http://www.section508.gov/). We’re happy to answer questions about accessibility — email us for more information.
+The Design System also meets the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and conforms to the standards of [Section 508 of the Rehabilitation Act](http://www.section508.gov/). We’re happy to answer questions about accessibility — email us for more information.

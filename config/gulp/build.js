@@ -81,7 +81,7 @@ gulp.task('build-nasawds-if-needed', function () {
       return Promise.reject(new Error(
         `${gulpfile} does not exist! You need a newer version of NASAWDS; ` +
         `specifically, one that includes the following PR: ` +
-        `https://github.com/18F/web-design-standards/pull/2050`
+        `https://github.com/uswds/uswds/pull/2050`
       ));
     }
 
