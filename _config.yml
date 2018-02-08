@@ -90,3 +90,6 @@ exclude:
 - "vendor/*"
 - gulpfile.js
 - circle.yml
+- package-lock.json
+- yarn-error.log
+- yarn.lock
