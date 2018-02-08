@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Why track performance | NASA Glenn Web Design System</title>
+<meta property="og:title" content="Why track performance | NASA Glenn Web Design System">
+
+
+
+<meta name="description" content="Performance is an important part of user experience that shouldn’t go unnoticed">
+<meta property="og:description" content="Performance is an important part of user experience that shouldn’t go unnoticed">
+
+<meta name="twitter:card" value="summary">
+<meta name="twitter:site" content="@USWDS">
+<meta property="og:type" content="article">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/performance/why/">
+<meta property="og:url" content="http://localhost:4000/performance/why/">
+
+
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/nasawds-site/assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/nasawds-site/assets/img/favicons/favicon.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/nasawds-site/assets/img/favicons/favicon-192.png">
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/nasawds-site/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/nasawds-site/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/nasawds-site/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/nasawds-site/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/nasawds-site/css/styleguide.css">
+
+  </head>
+  <body class="page-why-track-performance layout-styleguide ">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-header site-header usa-header-dark" role="banner">
+  <div class="usa-navbar site-header-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo-text">
+        <a href="/nasawds-site/" title="Home" aria-label="NASA Glenn Web Design System home">
+          <img src="/nasawds-site/assets/img/logo-nasa.svg" alt="NASA logo">NASA Glenn Web Design System
+        </a>
+      </em>
+    </div>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/nasawds-site/getting-started/download/" onclick="ga('send', 'event', 'Downloaded code', 'Clicked Download code from inside site');">
+      Download code
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="https://github.com/nasa/nasawds" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">
+      View on GitHub
+    </a>
+  </li>
+</ul>
+
+  </div>
+</header>  
+<nav class="site-nav-secondary sticky">
+  <ul>
+    
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/">
+  <span>
+    UI components
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/page-templates/">
+  <span>
+    Page templates
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/">
+  <span>
+    Getting started
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/design-principles/">
+  <span>
+    Design principles
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/releases/">
+  <span>
+    Release notes
+  </span>
+</a>
+
+
+    
+  </li>
+
+
+  </ul>
+</nav>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav sidenav-mobile">
+  <div class="usa-nav-inner">
+    <button class="usa-nav-close">
+      <img src="/nasawds-site/assets/img/close.svg" alt="close">
+    </button>
+    <ul class="usa-sidenav-list usa-accordion">
+      
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-ui-components"
+  
+  aria-expanded="false"
+  >
+  UI components
+</button>
+<ul id="nav-ui-components" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/">
+  <span>
+    Overview
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/typography/">
+  <span>
+    Typography
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/colors/">
+  <span>
+    Colors
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/accessibility/">
+  <span>
+    Accessibility
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/grids/">
+  <span>
+    Grids
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/buttons/">
+  <span>
+    Buttons
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/labels/">
+  <span>
+    Labels
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/tables/">
+  <span>
+    Tables
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/alerts/">
+  <span>
+    Alerts
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/accordions/">
+  <span>
+    Accordions
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/form-controls/">
+  <span>
+    Form controls
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/form-templates/">
+  <span>
+    Form templates
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/search-bar/">
+  <span>
+    Search bar
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/sidenav/">
+  <span>
+    Side navigation
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/headers/">
+  <span>
+    Headers
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/footers/">
+  <span>
+    Footers
+  </span>
+</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/nasawds-site/page-templates/">
+  <span>
+    Page templates
+  </span>
+</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-getting-started"
+  
+  class="usa-current"
+  aria-expanded="true"
+  >
+  Getting started
+</button>
+<ul id="nav-getting-started" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/">
+  <span>
+    Getting started
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/developers/">
+  <span>
+    For developers
+  </span>
+</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/nasawds-site/design-principles/">
+  <span>
+    Design principles
+  </span>
+</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/nasawds-site/releases/">
+  <span>
+    Release notes
+  </span>
+</a>
+
+
+  
+  </li>
+
+
+    </ul>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/nasawds-site/getting-started/download/" onclick="ga('send', 'event', 'Downloaded code', 'Clicked Download code from inside site');">
+      Download code
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="https://github.com/nasa/nasawds" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">
+      View on GitHub
+    </a>
+  </li>
+</ul>
+
+  </div>
+</nav>
+
+
+<aside class="sidenav sticky">
+  
+  
+  <ul class="usa-sidenav-list">
+    
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/">
+  
+    Getting started
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/developers/">
+  
+    For developers
+  
+</a>
+
+
+    
+  </li>
+
+
+  </ul>
+  
+</aside>
+
+<main id="main-content" class="main-content">
+
+  <div class="styleguide-content usa-content">
+    <header>
+      
+        
+          <p class="site-subheading">Getting started</p>
+        
+      
+      <h1 id="why-track-performance">Why track performance</h1>
+      
+    </header>
+
+    
+<p class="usa-font-lead">Performance is an important part of user experience that shouldn’t go unnoticed</p>
+
+
+
+
+    <p>Through the Design System team’s research around performance, we found government teams that were purposefully deciding not to track performance, as it wasn’t a priority for them. This section of our Website Performance Guide goes over why tracking performance is always a good idea, for a new or old site. The Guide covers:</p>
+
+<ul>
+<li>How performance affects conversion rate</li>
+<li>Why different factors such as network and computer speed must be considered when tracking performance</li>
+<li>How users perceive differences in the speed of an interface</li>
+<li>Why the measurement of performance over time is important</li>
+</ul>
+<h2 id="conversion-rate">Conversion rate</h2>
+<p>Conversion is the rate at which customers of a website product take a desired action. The desired action depends on the website&rsquo;s goals and purpose. The conversion action for an e-commerce site is often a user completing a purchase, but public sector sites that don&rsquo;t sell anything can also use the idea of conversion. For example, the IRS site&rsquo;s conversion action could be when somebody successfully submits their tax returns; or the Federal Election Commission&rsquo;s conversion action could be when somebody successfully finds data they were looking for.</p>
+
+<p>Performance has been known to be an influencing factor when it comes to the conversion rate for a site. Regardless of the user interface and its purpose, multiple studies have shown that improving performance consistently improves conversion rates over a wide range of applications. According to <a href="https://www.akamai.com/us/en/about/news/press/2009-press/akamai-reveals-2-seconds-as-the-new-threshold-of-acceptability-for-ecommerce-web-page-response-times.jsp">surveys done by Akamai</a>, nearly half of web users expect a site to load in two seconds or less, and they tend to abandon a site that isn’t loaded within three seconds. This means that even a relatively fast site may be losing conversion due to speed. There are real-world examples of how performance can affect conversion, such as:</p>
+
+<ul>
+<li><a href="http://www.getelastic.com/site-speed-infographic/">Google found out that slowing search results by just 4/10ths of a second would reduce the number of searches by 8,000,000 per day</a>.</li>
+<li><a href="http://www.webperformancetoday.com/2012/02/28/4-awesome-slides-showing-how-page-speed-correlates-to-business-metrics-at-walmart-com/">At Walmart, for every one second of improvement they experienced up to a 2% increase in conversions</a>.</li>
+<li><a href="https://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales">Amazon calculated that a page load slowdown of just one second could cost it $1.6 billion in sales each year</a>.</li>
+</ul>
+
+<p>How fast a site loads is often the first indication of what a web experience will be for a user, and a slow loading site can cause a user to quickly lose trust and patience with a website.</p>
+<h2 id="factors-of-performance">Factors of performance</h2>
+<p>A common excuse by a team  for not tracking web performance, is that the site appears fast enough for them to use. This ignores a couple of important factors, including what a user might be experiencing in  performance. A site’s performance depends on factors like:</p>
+
+<ul>
+<li>Different network speeds, such as mobile networks</li>
+<li>Computing capacity of the current device</li>
+</ul>
+
+<p>At 18F, currently, most people working on the sites being built are working on fast laptops, on wired or relatively fast connections within the United States. These factors are all conducive to good performance. A user of a site could instead be on a mobile device and mobile network, a computer outside of the United States, or a network that is congested or just plain slow. Being on a network outside the U.S., alone, could mean an extra 150 milliseconds in round trip time to the server due to the longer distance the signal has to travel, meaning seconds more time in loading a page. Different types of networks, such as satellite networks, have much higher round trip times, which again leads to longer times when loading a page. When considering how fast a site loads, it&rsquo;s important to consider that the network the site&rsquo;s users are on could perform much differently than the development team&rsquo;s network.</p>
+
+<p>The prevelance of mobile usage of websites also signifigantly contributes to a site&rsquo;s speed for a customer. According to the <a href="https://analytics.usa.gov/">Digital analytics program</a>, roughly 37% of traffic to government sites is from mobile devices. While wired and wi-fi networks provide relatively consistent performance, mobile networks can rapidly change from fast 4G connections, to slow 3G connections, to periods of being disconnected. Smaller devices, such as mobile phones and older devices don&rsquo;t have as much CPU power to quickly download and process multiple resources. By limiting the measurement of the performance of a site to just a user on a fast connection and device, a huge amount of the site’s user base could be left with a site that’s very difficult to use and interact with, due to poor performance.</p>
+<h2 id="perception-of-performance">Perception of performance</h2>
+<p>Studies have shown that users perceive differences in speed of a user interface (UI) <a href="https://www.sitepoint.com/the-perception-of-performance/">when it changes by a ratio of 20%</a>. To put it more simply, if a website wants to create a difference in speed that is noticeable to its users, it should perform at least 20% faster than it previously did. Changes less than 20% are usually not perceptible. This means that 20% is (somewhat of) a “golden number” when working on performance.</p>
+<h2 id="measurement-of-performance">Measurement of performance</h2>
+<p>It’s been shown why performance itself is important, but what does measuring it do?
+Measuring performance ensures the team:</p>
+
+<ul>
+<li>Is aware of its importance so it doesn’t degrade</li>
+<li>Has a sense about what code or design changes cause performance differences, making prioritization and design decisions easier</li>
+<li>Understands what the user of the site’s true experience is, not just the ideal experience on a fast device and network</li>
+<li>Has a sense of the features they can build while designing, to stay within performance budgets, ensuring performance problems don’t even come up during the site’s development</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>As technology becomes more prevelant in the Unites States, it&rsquo;s more common that the primary way Americans interact with the government is through the web. Ensuring that government sites perform quickly for all ensures that all Americans have a good user experience and aren&rsquo;t blocked from the web services they require. Tracking and improving a site&rsquo;s performance is a first step towards ensuring that a site can reach as wide of an audience as possible.</p>
+
+  </div>
+
+</main>
+
+
+<footer class="usa-footer usa-footer-medium site" role="contentinfo">
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-width-one-fourth">
+        <img class="footer-main-img" src="/nasawds-site/img/home/homepage_illustrations_best_easiest_2x.png" alt="">
+      </div>
+      <div class="usa-width-three-fourths footer-content">
+        <h3>Become part of the community</h3>
+        <p>The NASA Glenn Web Design System is based on the <a href="https://designsystem.digital.gov/">U.S. Web Design System</a> which has grown into a blossoming, open source community of government engineers, content specialists, and designers. They currently support dozens of agencies and more than 100 sites, which is fueled through an active community of contributors both in and out of government.</p>
+        <div class="usa-grid-full footer-contact-links">
+          <div class="usa-width-one-third">
+            <div class="usa-media_block">
+              <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-question.svg" alt="">
+              <div class="usa-media_block-body">
+                <h4>Running into an issue?</h4>
+                <a href="https://github.com/nasa/nasawds/issues/new">
+                  Ask questions on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="usa-width-one-third">
+            <div class="usa-media_block">
+              <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-slack.svg" alt="">
+              <div class="usa-media_block-body">
+                <h4>Engage with the community</h4>
+                <a href="https://chat.18f.gov/">
+                  Join the Slack channel
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="usa-width-one-third">
+            <div class="usa-media_block">
+              <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-envelope.svg" alt="">
+              <div class="usa-media_block-body">
+                <h4>Reach the team</h4>
+                <a href="mailto:uswds@gsa.gov">
+                  Send an email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-section-bottom">
+    <div class="usa-grid">
+      <div class="logo-links">
+        <a href="http://www.gsa.gov/">
+          <img src="/nasawds-site/img/logo-gsa.png" alt="GSA">
+        </a>
+      </div>
+      <p>The U.S. Web Design System is a project of GSA’s <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">Technology Transformation Service</a>, maintained by the Office of Products and Programs.</p>
+    </div>
+  </div>
+</footer>
+
+
+    	<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+	<script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA"></script>
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-48605964-43', 'gsa.gov');
+
+	  // anonymize user IPs (chops off the last IP triplet)
+	  ga('set', 'anonymizeIp', true);
+
+	  // forces SSL even if the page were somehow loaded over http://
+	  ga('set', 'forceSSL', true);
+
+	  ga('send', 'pageview');
+	</script>
+
+<script src="/nasawds-site/assets/js/styleguide.js"></script>
+
+<script src="/nasawds-site/assets/js/vendor/nasawds.min.js"></script>
+
+  </body>
+</html>

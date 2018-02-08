@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Search bar | NASA Glenn Web Design System</title>
+<meta property="og:title" content="Search bar | NASA Glenn Web Design System">
+
+
+
+<meta name="description" content="A box that allows users to search for specific content if they know what search terms to use or can’t find desired content in the main navigation">
+<meta property="og:description" content="A box that allows users to search for specific content if they know what search terms to use or can’t find desired content in the main navigation">
+
+<meta name="twitter:card" value="summary">
+<meta name="twitter:site" content="@USWDS">
+<meta property="og:type" content="article">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/components/search-bar/">
+<meta property="og:url" content="http://localhost:4000/components/search-bar/">
+
+
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/nasawds-site/assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/nasawds-site/assets/img/favicons/favicon.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/nasawds-site/assets/img/favicons/favicon-192.png">
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/nasawds-site/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/nasawds-site/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/nasawds-site/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/nasawds-site/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/nasawds-site/css/styleguide.css">
+
+  </head>
+  <body class="page-search-bar layout-styleguide ">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-header site-header usa-header-dark" role="banner">
+  <div class="usa-navbar site-header-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo-text">
+        <a href="/nasawds-site/" title="Home" aria-label="NASA Glenn Web Design System home">
+          <img src="/nasawds-site/assets/img/logo-nasa.svg" alt="NASA logo">NASA Glenn Web Design System
+        </a>
+      </em>
+    </div>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/nasawds-site/getting-started/download/" onclick="ga('send', 'event', 'Downloaded code', 'Clicked Download code from inside site');">
+      Download code
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="https://github.com/nasa/nasawds" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">
+      View on GitHub
+    </a>
+  </li>
+</ul>
+
+  </div>
+</header>  
+<nav class="site-nav-secondary sticky">
+  <ul>
+    
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/">
+  <span>
+    UI components
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/page-templates/">
+  <span>
+    Page templates
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/">
+  <span>
+    Getting started
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/design-principles/">
+  <span>
+    Design principles
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/releases/">
+  <span>
+    Release notes
+  </span>
+</a>
+
+
+    
+  </li>
+
+
+  </ul>
+</nav>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav sidenav-mobile">
+  <div class="usa-nav-inner">
+    <button class="usa-nav-close">
+      <img src="/nasawds-site/assets/img/close.svg" alt="close">
+    </button>
+    <ul class="usa-sidenav-list usa-accordion">
+      
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-ui-components"
+  
+  class="usa-current"
+  aria-expanded="true"
+  >
+  UI components
+</button>
+<ul id="nav-ui-components" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/">
+  <span>
+    Overview
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/typography/">
+  <span>
+    Typography
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/colors/">
+  <span>
+    Colors
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/accessibility/">
+  <span>
+    Accessibility
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/grids/">
+  <span>
+    Grids
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/buttons/">
+  <span>
+    Buttons
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/labels/">
+  <span>
+    Labels
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/tables/">
+  <span>
+    Tables
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/alerts/">
+  <span>
+    Alerts
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/accordions/">
+  <span>
+    Accordions
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/form-controls/">
+  <span>
+    Form controls
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/form-templates/">
+  <span>
+    Form templates
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/search-bar/" class="usa-current">
+  <span>
+    Search bar
+  </span>
+</a>
+
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/sidenav/">
+  <span>
+    Side navigation
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/headers/">
+  <span>
+    Headers
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/footers/">
+  <span>
+    Footers
+  </span>
+</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/nasawds-site/page-templates/">
+  <span>
+    Page templates
+  </span>
+</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-getting-started"
+  
+  aria-expanded="false"
+  >
+  Getting started
+</button>
+<ul id="nav-getting-started" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/">
+  <span>
+    Getting started
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/developers/">
+  <span>
+    For developers
+  </span>
+</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/nasawds-site/design-principles/">
+  <span>
+    Design principles
+  </span>
+</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/nasawds-site/releases/">
+  <span>
+    Release notes
+  </span>
+</a>
+
+
+  
+  </li>
+
+
+    </ul>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/nasawds-site/getting-started/download/" onclick="ga('send', 'event', 'Downloaded code', 'Clicked Download code from inside site');">
+      Download code
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="https://github.com/nasa/nasawds" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">
+      View on GitHub
+    </a>
+  </li>
+</ul>
+
+  </div>
+</nav>
+
+
+<aside class="sidenav sticky">
+  
+  
+  <ul class="usa-sidenav-list">
+    
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/">
+  
+    Overview
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/typography/">
+  
+    Typography
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/colors/">
+  
+    Colors
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/accessibility/">
+  
+    Accessibility
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/grids/">
+  
+    Grids
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/buttons/">
+  
+    Buttons
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/labels/">
+  
+    Labels
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/tables/">
+  
+    Tables
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/alerts/">
+  
+    Alerts
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/accordions/">
+  
+    Accordions
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/form-controls/">
+  
+    Form controls
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/form-templates/">
+  
+    Form templates
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/search-bar/" class="usa-current">
+  
+    Search bar
+  
+</a>
+
+  
+    
+    
+    
+    
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/sidenav/">
+  
+    Side navigation
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/headers/">
+  
+    Headers
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/footers/">
+  
+    Footers
+  
+</a>
+
+
+    
+  </li>
+
+
+  </ul>
+  
+</aside>
+
+<main id="main-content" class="main-content">
+
+  <div class="styleguide-content usa-content">
+    <header>
+      
+        
+          <p class="site-subheading">UI components</p>
+        
+      
+      <h1 id="search-bar">Search bar</h1>
+      
+    </header>
+
+    
+<p class="usa-font-lead">A box that allows users to search for specific content if they know what search terms to use or can’t find desired content in the main navigation</p>
+
+
+
+
+    <div class="preview preview-search-bar">
+  
+
+
+  <h6>Search big</h6>
+
+  <div class="usa-grid">
+    <div class="usa-width-one-half">
+      <div role="search">
+        <form class="usa-search usa-search-big">
+          <label class="usa-sr-only" for="search-field-big">Search big</label>
+          <input id="search-field-big" type="search" name="search">
+          <button type="submit">
+            <span class="usa-search-submit-text">Search</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <h6>Search medium</h6>
+
+  <div class="usa-grid">
+    <div class="usa-width-one-half">
+      <div role="search">
+        <form class="usa-search">
+          <label class="usa-sr-only" for="search-field">Search medium</label>
+          <input id="search-field" type="search" name="search">
+          <button type="submit">
+            <span class="usa-search-submit-text">Search</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <h6>Search small</h6>
+
+  <div class="usa-grid">
+    <div class="usa-width-one-half">
+      <div role="search">
+        <form class="usa-search usa-search-small">
+          <label class="usa-sr-only" for="search-field-small">Search small</label>
+          <input id="search-field-small" type="search" name="search">
+          <button type="submit">
+            <span class="usa-sr-only">Search</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+<div class="usa-accordion-bordered usa-code-sample">
+  
+  <button class="usa-accordion-button" aria-controls="code-search-bar">Code</button>
+  <div id="code-search-bar" class="usa-accordion-content">
+    <div class="highlight"><pre><code class="language-html" data-lang="html">
+
+
+  <span class="nt">&lt;h6&gt;</span>Search big<span class="nt">&lt;/h6&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-grid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-width-one-half"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"usa-search usa-search-big"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span> <span class="na">for=</span><span class="s">"search-field-big"</span><span class="nt">&gt;</span>Search big<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search-field-big"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-search-submit-text"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;h6&gt;</span>Search medium<span class="nt">&lt;/h6&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-grid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-width-one-half"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"usa-search"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span> <span class="na">for=</span><span class="s">"search-field"</span><span class="nt">&gt;</span>Search medium<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search-field"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-search-submit-text"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;h6&gt;</span>Search small<span class="nt">&lt;/h6&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-grid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-width-one-half"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"usa-search usa-search-small"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span> <span class="na">for=</span><span class="s">"search-field-small"</span><span class="nt">&gt;</span>Search small<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search-field-small"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+
+
+</code></pre></div>
+
+  </div>
+</div>
+
+<div class="usa-accordion-bordered">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="search-bar-docs">
+    Documentation
+  </button>
+  <div id="search-bar-docs" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Accessibility</h4>
+    <ul class="usa-content-list">
+      <li>As you customize this form template, ensure it continues to follow the <a href="/nasawds-site/form-templates/">accessibility guidelines for form templates</a> and the <a href="/nasawds-site/form-controls/">accessibility guidelines for form controls</a>.</li>
+    </ul>
+    <ul class="usa-content-list">
+      <li>Always include the word &ldquo;search&rdquo; inside the <code>&lt;button&gt;</code> element for screen readers. You can visually hide this text using the CSS class <code>usa-sr-only</code> or Sass mixin <code>@include sr-only;</code>.</li>
+    </ul>
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>There will always be users who are confused by your navigation system and who would benefit from being able to search your site.</li>
+    </ul>
+    <h5>When to consider something else</h5>
+    <ul class="usa-content-list">
+      <li>On single-page or very small sites, you may be able to get away without a search bar.</li>
+    </ul>
+    <h5>Guidance</h5>
+    <ul class="usa-content-list">
+      <li>Allow the search bar to be as wide as possible, but a minimum of 27 characters wide. This allows users to enter multiple search terms and still be able to see all of them. The more users can see their search terms, the easier it is to review, verify, and submit their search query.</li>
+      <li>The magnifying glass has been shown to be almost universally recognized by users as an indicator of search, and doesn’t need to be visually paired with the word &ldquo;Search&rdquo; as long as it remains for screen readers.</li>
+      <li>Maintain this search bar when displaying the search results with the original search terms.</li>
+      <li>On a site&rsquo;s home page the search function should appear as a search box instead of a link so users can locate it easily.</li>
+      <li>Don&rsquo;t offer advanced search as the default option. The majority of people will do a simple search with one or two search terms. If advanced search is offered, it increases the likelihood of a person making a mistake in their query.</li>
+      <li>Even if the search bar isn&rsquo;t visually displaying a label, the form field should include a label for screen reader users.</li>
+      <li>The search button itself should be a submit button for the form to reduce the number of keystrokes required to use the form.</li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+
+</main>
+
+
+<footer class="usa-footer usa-footer-medium site" role="contentinfo">
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-width-one-fourth">
+        <img class="footer-main-img" src="/nasawds-site/img/home/homepage_illustrations_best_easiest_2x.png" alt="">
+      </div>
+      <div class="usa-width-three-fourths footer-content">
+        <h3>Become part of the community</h3>
+        <p>The NASA Glenn Web Design System is based on the <a href="https://designsystem.digital.gov/">U.S. Web Design System</a> which has grown into a blossoming, open source community of government engineers, content specialists, and designers. They currently support dozens of agencies and more than 100 sites, which is fueled through an active community of contributors both in and out of government.</p>
+        <div class="usa-grid-full footer-contact-links">
+          <div class="usa-width-one-third">
+            <div class="usa-media_block">
+              <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-question.svg" alt="">
+              <div class="usa-media_block-body">
+                <h4>Running into an issue?</h4>
+                <a href="https://github.com/nasa/nasawds/issues/new">
+                  Ask questions on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="usa-width-one-third">
+            <div class="usa-media_block">
+              <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-slack.svg" alt="">
+              <div class="usa-media_block-body">
+                <h4>Engage with the community</h4>
+                <a href="https://chat.18f.gov/">
+                  Join the Slack channel
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="usa-width-one-third">
+            <div class="usa-media_block">
+              <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-envelope.svg" alt="">
+              <div class="usa-media_block-body">
+                <h4>Reach the team</h4>
+                <a href="mailto:uswds@gsa.gov">
+                  Send an email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-section-bottom">
+    <div class="usa-grid">
+      <div class="logo-links">
+        <a href="http://www.gsa.gov/">
+          <img src="/nasawds-site/img/logo-gsa.png" alt="GSA">
+        </a>
+      </div>
+      <p>The U.S. Web Design System is a project of GSA’s <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">Technology Transformation Service</a>, maintained by the Office of Products and Programs.</p>
+    </div>
+  </div>
+</footer>
+
+
+    	<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+	<script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA"></script>
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-48605964-43', 'gsa.gov');
+
+	  // anonymize user IPs (chops off the last IP triplet)
+	  ga('set', 'anonymizeIp', true);
+
+	  // forces SSL even if the page were somehow loaded over http://
+	  ga('set', 'forceSSL', true);
+
+	  ga('send', 'pageview');
+	</script>
+
+<script src="/nasawds-site/assets/js/styleguide.js"></script>
+
+<script src="/nasawds-site/assets/js/vendor/nasawds.min.js"></script>
+
+  </body>
+</html>

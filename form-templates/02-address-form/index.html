@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Address form | NASA Glenn Web Design System</title>
+<meta property="og:title" content="Address form | NASA Glenn Web Design System">
+
+
+
+<meta name="description" content="Design and build fast, accessible, mobile-friendly NASA websites backed by user research.">
+<meta property="og:description" content="Design and build fast, accessible, mobile-friendly NASA websites backed by user research.">
+
+<meta name="twitter:card" value="summary">
+<meta name="twitter:site" content="@USWDS">
+<meta property="og:type" content="article">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/form-templates/02-address-form/">
+<meta property="og:url" content="http://localhost:4000/form-templates/02-address-form/">
+
+
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/nasawds-site/assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/nasawds-site/assets/img/favicons/favicon.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/nasawds-site/assets/img/favicons/favicon-192.png">
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/nasawds-site/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/nasawds-site/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/nasawds-site/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/nasawds-site/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/nasawds-site/css/styleguide.css">
+
+  </head>
+  <body class="page-address-form layout-component ">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-header site-header usa-header-dark" role="banner">
+  <div class="usa-navbar site-header-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo-text">
+        <a href="/nasawds-site/" title="Home" aria-label="NASA Glenn Web Design System home">
+          <img src="/nasawds-site/assets/img/logo-nasa.svg" alt="NASA logo">NASA Glenn Web Design System
+        </a>
+      </em>
+    </div>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/nasawds-site/getting-started/download/" onclick="ga('send', 'event', 'Downloaded code', 'Clicked Download code from inside site');">
+      Download code
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="https://github.com/nasa/nasawds" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">
+      View on GitHub
+    </a>
+  </li>
+</ul>
+
+  </div>
+</header>  
+<nav class="site-nav-secondary sticky">
+  <ul>
+    
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/">
+  <span>
+    UI components
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/page-templates/">
+  <span>
+    Page templates
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/">
+  <span>
+    Getting started
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/design-principles/">
+  <span>
+    Design principles
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/releases/">
+  <span>
+    Release notes
+  </span>
+</a>
+
+
+    
+  </li>
+
+
+  </ul>
+</nav>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav sidenav-mobile">
+  <div class="usa-nav-inner">
+    <button class="usa-nav-close">
+      <img src="/nasawds-site/assets/img/close.svg" alt="close">
+    </button>
+    <ul class="usa-sidenav-list usa-accordion">
+      
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-ui-components"
+  
+  aria-expanded="false"
+  >
+  UI components
+</button>
+<ul id="nav-ui-components" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/">
+  <span>
+    Overview
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/typography/">
+  <span>
+    Typography
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/colors/">
+  <span>
+    Colors
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/accessibility/">
+  <span>
+    Accessibility
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/grids/">
+  <span>
+    Grids
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/buttons/">
+  <span>
+    Buttons
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/labels/">
+  <span>
+    Labels
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/tables/">
+  <span>
+    Tables
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/alerts/">
+  <span>
+    Alerts
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/accordions/">
+  <span>
+    Accordions
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/form-controls/">
+  <span>
+    Form controls
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/form-templates/">
+  <span>
+    Form templates
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/search-bar/">
+  <span>
+    Search bar
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/sidenav/">
+  <span>
+    Side navigation
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/headers/">
+  <span>
+    Headers
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/footers/">
+  <span>
+    Footers
+  </span>
+</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/nasawds-site/page-templates/">
+  <span>
+    Page templates
+  </span>
+</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-getting-started"
+  
+  aria-expanded="false"
+  >
+  Getting started
+</button>
+<ul id="nav-getting-started" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/">
+  <span>
+    Getting started
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/developers/">
+  <span>
+    For developers
+  </span>
+</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/nasawds-site/design-principles/">
+  <span>
+    Design principles
+  </span>
+</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/nasawds-site/releases/">
+  <span>
+    Release notes
+  </span>
+</a>
+
+
+  
+  </li>
+
+
+    </ul>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/nasawds-site/getting-started/download/" onclick="ga('send', 'event', 'Downloaded code', 'Clicked Download code from inside site');">
+      Download code
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="https://github.com/nasa/nasawds" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">
+      View on GitHub
+    </a>
+  </li>
+</ul>
+
+  </div>
+</nav>
+
+
+<aside class="sidenav sticky">
+  
+  
+</aside>
+
+<main id="main-content" class="main-content">
+
+  <div class="styleguide-content usa-content">
+    <header>
+      
+      <h1 id="address-form">Address form</h1>
+      
+    </header>
+
+    
+
+
+    <p class="usa-font-lead">A standard template for entering a U.S. mailing or shipping address</p>
+
+<div class="preview ">
+  
+
+
+  <form class="usa-form-large">
+    <fieldset>
+      <legend>Mailing address</legend>
+      <label for="mailing-address-1">Street address 1</label>
+      <input id="mailing-address-1" name="mailing-address-1" type="text">
+
+      <label for="mailing-address-2" class="usa-input-optional">
+        Street address 2</label>
+      <input id="mailing-address-2" name="mailing-address-2" type="text">
+
+      <div>
+        <div class="usa-input-grid usa-input-grid-medium">
+          <label for="city">City</label>
+          <input id="city" name="city" type="text">
+        </div>
+
+        <div class="usa-input-grid usa-input-grid-small">
+          <label for="state">State</label>
+          <select id="state" name="state">
+            <option value>- Select -</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+            <option value="AA">AA - Armed Forces Americas</option>
+            <option value="AE">AE - Armed Forces Africa</option>
+            <option value="AE">AE - Armed Forces Canada</option>
+            <option value="AE">AE - Armed Forces Europe</option>
+            <option value="AE">AE - Armed Forces Middle East</option>
+            <option value="AP">AP - Armed Forces Pacific</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="zip">ZIP</label>
+      <input class="usa-input-medium" id="zip" name="zip" type="text" pattern="[\d]{5}(-[\d]{4})?">
+    </fieldset>
+  </form>
+
+
+
+</div>
+
+<div class="usa-accordion-bordered usa-code-sample">
+  
+  <button class="usa-accordion-button" aria-controls="code-address-form">Code</button>
+  <div id="code-address-form" class="usa-accordion-content">
+    <div class="highlight"><pre><code class="language-html" data-lang="html">
+
+
+  <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"usa-form-large"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+      <span class="nt">&lt;legend&gt;</span>Mailing address<span class="nt">&lt;/legend&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"mailing-address-1"</span><span class="nt">&gt;</span>Street address 1<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"mailing-address-1"</span> <span class="na">name=</span><span class="s">"mailing-address-1"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"mailing-address-2"</span> <span class="na">class=</span><span class="s">"usa-input-optional"</span><span class="nt">&gt;</span>
+        Street address 2<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"mailing-address-2"</span> <span class="na">name=</span><span class="s">"mailing-address-2"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+
+      <span class="nt">&lt;div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-input-grid usa-input-grid-medium"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"city"</span><span class="nt">&gt;</span>City<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"city"</span> <span class="na">name=</span><span class="s">"city"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-input-grid usa-input-grid-small"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"state"</span><span class="nt">&gt;</span>State<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"state"</span> <span class="na">name=</span><span class="s">"state"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value</span><span class="nt">&gt;</span>- Select -<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"AL"</span><span class="nt">&gt;</span>Alabama<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"AK"</span><span class="nt">&gt;</span>Alaska<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"AZ"</span><span class="nt">&gt;</span>Arizona<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"AR"</span><span class="nt">&gt;</span>Arkansas<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"CA"</span><span class="nt">&gt;</span>California<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"CO"</span><span class="nt">&gt;</span>Colorado<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"CT"</span><span class="nt">&gt;</span>Connecticut<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"DE"</span><span class="nt">&gt;</span>Delaware<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"DC"</span><span class="nt">&gt;</span>District of Columbia<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"FL"</span><span class="nt">&gt;</span>Florida<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"GA"</span><span class="nt">&gt;</span>Georgia<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"HI"</span><span class="nt">&gt;</span>Hawaii<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"ID"</span><span class="nt">&gt;</span>Idaho<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"IL"</span><span class="nt">&gt;</span>Illinois<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"IN"</span><span class="nt">&gt;</span>Indiana<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"IA"</span><span class="nt">&gt;</span>Iowa<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"KS"</span><span class="nt">&gt;</span>Kansas<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"KY"</span><span class="nt">&gt;</span>Kentucky<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"LA"</span><span class="nt">&gt;</span>Louisiana<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"ME"</span><span class="nt">&gt;</span>Maine<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"MD"</span><span class="nt">&gt;</span>Maryland<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"MA"</span><span class="nt">&gt;</span>Massachusetts<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"MI"</span><span class="nt">&gt;</span>Michigan<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"MN"</span><span class="nt">&gt;</span>Minnesota<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"MS"</span><span class="nt">&gt;</span>Mississippi<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"MO"</span><span class="nt">&gt;</span>Missouri<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"MT"</span><span class="nt">&gt;</span>Montana<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"NE"</span><span class="nt">&gt;</span>Nebraska<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"NV"</span><span class="nt">&gt;</span>Nevada<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"NH"</span><span class="nt">&gt;</span>New Hampshire<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"NJ"</span><span class="nt">&gt;</span>New Jersey<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"NM"</span><span class="nt">&gt;</span>New Mexico<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"NY"</span><span class="nt">&gt;</span>New York<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"NC"</span><span class="nt">&gt;</span>North Carolina<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"ND"</span><span class="nt">&gt;</span>North Dakota<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"OH"</span><span class="nt">&gt;</span>Ohio<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"OK"</span><span class="nt">&gt;</span>Oklahoma<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"OR"</span><span class="nt">&gt;</span>Oregon<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"PA"</span><span class="nt">&gt;</span>Pennsylvania<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"RI"</span><span class="nt">&gt;</span>Rhode Island<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"SC"</span><span class="nt">&gt;</span>South Carolina<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"SD"</span><span class="nt">&gt;</span>South Dakota<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"TN"</span><span class="nt">&gt;</span>Tennessee<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"TX"</span><span class="nt">&gt;</span>Texas<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"UT"</span><span class="nt">&gt;</span>Utah<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"VT"</span><span class="nt">&gt;</span>Vermont<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"VA"</span><span class="nt">&gt;</span>Virginia<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"WA"</span><span class="nt">&gt;</span>Washington<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"WV"</span><span class="nt">&gt;</span>West Virginia<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"WI"</span><span class="nt">&gt;</span>Wisconsin<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"WY"</span><span class="nt">&gt;</span>Wyoming<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"AA"</span><span class="nt">&gt;</span>AA - Armed Forces Americas<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"AE"</span><span class="nt">&gt;</span>AE - Armed Forces Africa<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"AE"</span><span class="nt">&gt;</span>AE - Armed Forces Canada<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"AE"</span><span class="nt">&gt;</span>AE - Armed Forces Europe<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"AE"</span><span class="nt">&gt;</span>AE - Armed Forces Middle East<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"AP"</span><span class="nt">&gt;</span>AP - Armed Forces Pacific<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"zip"</span><span class="nt">&gt;</span>ZIP<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-input-medium"</span> <span class="na">id=</span><span class="s">"zip"</span> <span class="na">name=</span><span class="s">"zip"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">pattern=</span><span class="s">"[\d]{5}(-[\d]{4})?"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+
+
+
+</code></pre></div>
+
+  </div>
+</div>
+
+<div class="usa-accordion-bordered">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="address-form-docs">
+    Documentation
+  </button>
+  <div id="address-form-docs" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Accessibility</h4>
+    <ul class="usa-content-list">
+      <li>As you customize this form template, make sure it continues to follow the <a href="/nasawds-site/form-templates/">accessibility guidelines for form templates</a> and the <a href="/nasawds-site/form-controls/">accessibility guidelines for form controls</a>.</li>
+      <li>Also make sure that the input masking on the ZIP field, which inserts a hyphen before the four-digit extension, is accessible to people using screen readers. We are using <a href="https://github.com/filamentgroup/politespace">Filament Group&rsquo;s Politespace</a> in the above demo.</li>
+    </ul>
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>When you need to be able to parse out the specific parts of a mailing address.</li>
+    </ul>
+    <h5>When to consider something else</h5>
+    <ul class="usa-content-list">
+      <li>If you need to collect addresses that may not fit this format (for example, international addresses).</li>
+      <li> If you don’t need to be able to parse out the individual pieces of an address, consider letting users type the entire address into one large text area. </li>
+    </ul>
+    <h5>Guidance</h5>
+    <ul class="usa-content-list">
+      <li>Only label the optional inputs. Users can infer that all the others are required.</li>
+      <li>If possible, let users type their state’s abbreviation when they reach the state drop-down menu.</li>
+      <li>Support both five- and nine-digit ZIP codes. Some addresses require a nine-digit ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.</li>
+    </ul>
+    <h4 class="usa-heading">Upgrading address forms (pre version 0.14.0)</h4>
+    <p>The Design System previously leveraged <a href="https://www.filamentgroup.com/lab/politespace.html">Politespace</a> as a way to implement input masking as part of this particular form template, specifically zip code inputs. Our guidance for upgrading is outlined in the following steps:</p>
+    <ul>
+      <li>Be sure to include <a href="https://jquery.com/">jQuery</a> with your assets and include it onto your page.</li>
+      <li>Add the required Politespace files with your other 3rd party assets.</li>
+      <li>Follow <a href="https://github.com/filamentgroup/politespace#using-politespace">the Politespace documentation</a> on how to implement with your form fields.</li>
+    </ul>
+    <p>For any questions or support, please feel free to reach out to the team at <a href="mailto:uswds@gsa.gov.">uswds@gsa.gov.</a></p>
+  </div>
+</div>
+
+
+  </div>
+
+</main>
+
+
+<footer class="usa-footer usa-footer-medium site" role="contentinfo">
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-width-one-fourth">
+        <img class="footer-main-img" src="/nasawds-site/img/home/homepage_illustrations_best_easiest_2x.png" alt="">
+      </div>
+      <div class="usa-width-three-fourths footer-content">
+        <h3>Become part of the community</h3>
+        <p>The NASA Glenn Web Design System is based on the <a href="https://designsystem.digital.gov/">U.S. Web Design System</a> which has grown into a blossoming, open source community of government engineers, content specialists, and designers. They currently support dozens of agencies and more than 100 sites, which is fueled through an active community of contributors both in and out of government.</p>
+        <div class="usa-grid-full footer-contact-links">
+          <div class="usa-width-one-third">
+            <div class="usa-media_block">
+              <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-question.svg" alt="">
+              <div class="usa-media_block-body">
+                <h4>Running into an issue?</h4>
+                <a href="https://github.com/nasa/nasawds/issues/new">
+                  Ask questions on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="usa-width-one-third">
+            <div class="usa-media_block">
+              <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-slack.svg" alt="">
+              <div class="usa-media_block-body">
+                <h4>Engage with the community</h4>
+                <a href="https://chat.18f.gov/">
+                  Join the Slack channel
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="usa-width-one-third">
+            <div class="usa-media_block">
+              <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-envelope.svg" alt="">
+              <div class="usa-media_block-body">
+                <h4>Reach the team</h4>
+                <a href="mailto:uswds@gsa.gov">
+                  Send an email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-section-bottom">
+    <div class="usa-grid">
+      <div class="logo-links">
+        <a href="http://www.gsa.gov/">
+          <img src="/nasawds-site/img/logo-gsa.png" alt="GSA">
+        </a>
+      </div>
+      <p>The U.S. Web Design System is a project of GSA’s <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">Technology Transformation Service</a>, maintained by the Office of Products and Programs.</p>
+    </div>
+  </div>
+</footer>
+
+
+    	<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+	<script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA"></script>
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-48605964-43', 'gsa.gov');
+
+	  // anonymize user IPs (chops off the last IP triplet)
+	  ga('set', 'anonymizeIp', true);
+
+	  // forces SSL even if the page were somehow loaded over http://
+	  ga('set', 'forceSSL', true);
+
+	  ga('send', 'pageview');
+	</script>
+
+<script src="/nasawds-site/assets/js/styleguide.js"></script>
+
+<script src="/nasawds-site/assets/js/vendor/nasawds.min.js"></script>
+
+  </body>
+</html>

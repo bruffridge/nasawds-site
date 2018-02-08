@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>For developers | NASA Glenn Web Design System</title>
+<meta property="og:title" content="For developers | NASA Glenn Web Design System">
+
+
+
+<meta name="description" content="The UI components are built on a solid HTML foundation, progressively enhanced to provide core experiences across browsers. All users will have access to the same critical information and experiences regardless of what browser they use, although those experiences will render better in newer browsers. If JavaScript fails, users will still get a robust HTML foundation.">
+<meta property="og:description" content="The UI components are built on a solid HTML foundation, progressively enhanced to provide core experiences across browsers. All users will have access to the same critical information and experiences regardless of what browser they use, although those experiences will render better in newer browsers. If JavaScript fails, users will still get a robust HTML foundation.">
+
+<meta name="twitter:card" value="summary">
+<meta name="twitter:site" content="@USWDS">
+<meta property="og:type" content="article">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/getting-started/developers/">
+<meta property="og:url" content="http://localhost:4000/getting-started/developers/">
+
+
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/nasawds-site/assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/nasawds-site/assets/img/favicons/favicon.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/nasawds-site/assets/img/favicons/favicon-192.png">
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/nasawds-site/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/nasawds-site/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/nasawds-site/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/nasawds-site/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/nasawds-site/css/styleguide.css">
+
+  </head>
+  <body class="page-for-developers layout-styleguide ">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-header site-header usa-header-dark" role="banner">
+  <div class="usa-navbar site-header-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo-text">
+        <a href="/nasawds-site/" title="Home" aria-label="NASA Glenn Web Design System home">
+          <img src="/nasawds-site/assets/img/logo-nasa.svg" alt="NASA logo">NASA Glenn Web Design System
+        </a>
+      </em>
+    </div>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/nasawds-site/getting-started/download/" onclick="ga('send', 'event', 'Downloaded code', 'Clicked Download code from inside site');">
+      Download code
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="https://github.com/nasa/nasawds" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">
+      View on GitHub
+    </a>
+  </li>
+</ul>
+
+  </div>
+</header>  
+<nav class="site-nav-secondary sticky">
+  <ul>
+    
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/">
+  <span>
+    UI components
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/page-templates/">
+  <span>
+    Page templates
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/">
+  <span>
+    Getting started
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/design-principles/">
+  <span>
+    Design principles
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/releases/">
+  <span>
+    Release notes
+  </span>
+</a>
+
+
+    
+  </li>
+
+
+  </ul>
+</nav>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav sidenav-mobile">
+  <div class="usa-nav-inner">
+    <button class="usa-nav-close">
+      <img src="/nasawds-site/assets/img/close.svg" alt="close">
+    </button>
+    <ul class="usa-sidenav-list usa-accordion">
+      
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-ui-components"
+  
+  aria-expanded="false"
+  >
+  UI components
+</button>
+<ul id="nav-ui-components" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/">
+  <span>
+    Overview
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/typography/">
+  <span>
+    Typography
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/colors/">
+  <span>
+    Colors
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/accessibility/">
+  <span>
+    Accessibility
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/grids/">
+  <span>
+    Grids
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/buttons/">
+  <span>
+    Buttons
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/labels/">
+  <span>
+    Labels
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/tables/">
+  <span>
+    Tables
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/alerts/">
+  <span>
+    Alerts
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/accordions/">
+  <span>
+    Accordions
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/form-controls/">
+  <span>
+    Form controls
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/form-templates/">
+  <span>
+    Form templates
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/search-bar/">
+  <span>
+    Search bar
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/sidenav/">
+  <span>
+    Side navigation
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/headers/">
+  <span>
+    Headers
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/components/footers/">
+  <span>
+    Footers
+  </span>
+</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/nasawds-site/page-templates/">
+  <span>
+    Page templates
+  </span>
+</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-getting-started"
+  
+  class="usa-current"
+  aria-expanded="true"
+  >
+  Getting started
+</button>
+<ul id="nav-getting-started" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/">
+  <span>
+    Getting started
+  </span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/developers/" class="usa-current">
+  <span>
+    For developers
+  </span>
+</a>
+
+  
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/nasawds-site/design-principles/">
+  <span>
+    Design principles
+  </span>
+</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/nasawds-site/releases/">
+  <span>
+    Release notes
+  </span>
+</a>
+
+
+  
+  </li>
+
+
+    </ul>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/nasawds-site/getting-started/download/" onclick="ga('send', 'event', 'Downloaded code', 'Clicked Download code from inside site');">
+      Download code
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="https://github.com/nasa/nasawds" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">
+      View on GitHub
+    </a>
+  </li>
+</ul>
+
+  </div>
+</nav>
+
+
+<aside class="sidenav sticky">
+  
+  
+  <ul class="usa-sidenav-list">
+    
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/">
+  
+    Getting started
+  
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/nasawds-site/getting-started/developers/" class="usa-current">
+  
+    For developers
+  
+</a>
+
+  
+    
+    
+    
+    
+    
+    <ul class="usa-sidenav-sub_list">
+  
+  <li>
+    
+      
+
+
+<a href="#installation">Installation</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#css-architecture">CSS architecture</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#customization-and-theming">Customization</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#where-things-live">Where things live</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#notes-on-accessibility">Accessibility</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#contribution-guidelines">Contributions</a>
+
+    
+  </li>
+
+</ul>
+    
+  
+
+
+    
+  </li>
+
+
+  </ul>
+  
+</aside>
+
+<main id="main-content" class="main-content">
+
+  <div class="styleguide-content usa-content">
+    <header>
+      
+        
+          <p class="site-subheading">Getting started</p>
+        
+      
+      <h1 id="for-developers">For developers</h1>
+      
+    </header>
+
+    
+<p class="usa-font-lead">The UI components are built on a solid HTML foundation, progressively enhanced to provide core experiences across browsers. All users will have access to the same critical information and experiences regardless of what browser they use, although those experiences will render better in newer browsers. If JavaScript fails, users will still get a robust HTML foundation.</p>
+
+
+
+
+    <h2 id="installation">Installation</h2>
+<p>Here are a few different ways to use the Design System within your project.</p>
+<h3 id="download">Download</h3>
+<p>To use the Design System on your project, you’ll need to include the CSS and JavaScript files in each HTML page in your project.</p>
+
+<p>First, download the Design System assets:</p>
+
+<p><a class="link-download" href="https://github.com/nasa/nasawds/releases/download/v1.4.6/nasawds-1.4.6.zip">Download code</a>
+<span class="link-download-subtext">Version 1.4.6</span></p>
+
+<p>Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">nasawds-1.4.6/
+├── js/
+│   ├── nasawds.min.js.map
+│   ├── nasawds.min.js
+│   └── nasawds.js
+├── css/
+│   ├── nasawds.min.css.map
+│   ├── nasawds.min.css
+│   └── nasawds.css
+├── img/
+└── fonts/
+</code></pre></div>
+<p>Refer to these files by adding the following <code>&lt;link&gt;</code> and <code>&lt;script&gt;</code> elements
+into your HTML pages:</p>
+
+<p>Add this to your <code>&lt;head&gt;</code> element:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/path/to/your/assets/css/lib/nasawds.min.css"</span><span class="nt">&gt;</span>
+</code></pre></div>
+<p>Add this before the closing <code>&lt;/body&gt;</code> tag:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/path/to/your/assets/js/lib/nasawds.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div>
+<p>We offer two versions — a minified version, and an un-minified one. Use the minified version in a production environment or to reduce the file size
+of your downloaded assets. And the un-minified version is better if you are in a
+development environment or would like to debug the CSS or JavaScript assets in
+the browser. The examples above recommend using the minified versions.</p>
+
+<p>And that’s it — you should be set to use the Design System.</p>
+<h3 id="using-npm">Using npm</h3>
+<p>If you have <code>node</code> installed on your machine, you can use npm to install the Design System. Add <code>nasawds</code>
+to your project’s <code>package.json</code> as a dependency:</p>
+<div class="highlight"><pre><code class="language-shell" data-lang="shell">npm install --save nasawds
+</code></pre></div>
+<p>The package will be installed in <code>node_modules/nasawds</code>. You can use the un-compiled files
+found in the <code>src/</code> or the compiled files in the <code>dist/</code> directory.</p>
+<div class="highlight"><pre><code class="language-" data-lang="">node_modules/nasawds/
+├── dist/
+│   ├── css/
+│   ├── fonts/
+│   ├── img/
+│   ├── js/
+└── src/
+    ├── fonts/
+    ├── img/
+    ├── js/
+    └── stylesheets/
+</code></pre></div>
+<p><code>require(&#39;nasawds&#39;)</code> will load all of the NASA Glenn Web Design Standard&rsquo;s JavaScript onto the page. The <code>nasawds</code> module itself does not export anything.</p>
+
+<p>The main Sass (SCSS) source file is here:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">node_modules/nasawds/src/stylesheets/nasawds.scss
+</code></pre></div>
+<p>The non-minified CSS that’s been precompiled is here:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">node_modules/nasawds/dist/css/nasawds.css
+</code></pre></div><h3 id="using-another-framework-or-package-manager">Using another framework or package manager</h3>
+<p>If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the <a href="#download">download instructions</a>. Please note that the core team <a href="https://github.com/uswds/uswds/issues/877">isn’t responsible for all frameworks’ implementations</a>.</p>
+<h3 id="need-installation-help">Need installation help?</h3>
+<p>Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:</p>
+
+<p><a href="https://github.com/nasa/nasawds/issues">https://github.com/nasa/nasawds/issues</a>.</p>
+
+<p>You can also email us directly at <a href="mailto:grc-webteam@lists.nasa.gov">grc-webteam@lists.nasa.gov</a>.</p>
+<h2 id="css-architecture">CSS architecture</h2>
+<ul>
+<li>The CSS foundation of this site is built with the <strong><a href="https://sass-lang.com">Sass</a></strong> preprocessor language.</li>
+<li>Uses <strong><a href="http://bourbon.io/">Bourbon</a></strong> for its simple and lightweight Sass mixin library, and the <strong><a href="http://neat.bourbon.io/">Neat</a></strong> library for the grid framework. Bourbon and Neat are open-source products from <strong><a href="https://thoughtbot.com/">thoughtbot</a></strong>.</li>
+<li>The CSS organization and naming conventions follow <strong><a href="https://frontend.18f.gov/css/">18F’s CSS Front End Guide</a></strong>.</li>
+<li>CSS selectors are <strong>prefixed</strong> with <code>usa</code> (For example: <code>.usa-button</code>). This identifier helps the design system avoid conflicts with other styles on a site which are not part of the U.S. Web Design System.</li>
+<li>Uses a <strong><a href="https://frontend.18f.gov/css/naming/">modified BEM</a></strong> approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: <code>.usa-button-cool_feature-active</code>).</li>
+<li>Uses <strong>modular CSS</strong> for scalable, modular, and flexible code.</li>
+<li>Uses <strong>nesting</strong> when appropriate. Nest minimally with up to two levels of nesting.</li>
+<li>Hard-coded magic numbers are avoided and, if necessary, defined in the <code>core/variables</code> scss file.</li>
+<li>Media queries are built <strong>mobile first</strong>.</li>
+<li><strong>Spacing units</strong> are as much as possible defined as rem or em units so they scale appropriately with text size. Pixels can be used for detail work and should not exceed 5px (For example: 3px borders).</li>
+</ul>
+
+<p><strong>For more information, visit:</strong>
+<a href="https://frontend.18f.gov/css/">18F’s CSS Front End Guide</a></p>
+<h2 id="js-customization">JS customization</h2>
+<p><strong>Unfortunately, customizing the JavaScript for the USWDS currently requires NodeJS and a module bundler like Browserify or Webpack. We apologize for this inconvenience, and are working to resolve it in a future release of the Design System.</strong></p>
+
+<p>The JavaScript for the USWDS is separated into components in the same manner as the visual interface which is all initialized with event handlers when the DOM is ready. These components are accessible as CommonJS modules that can be required in other JavaScript files which then must be built for the browser. The components are currently not accessible in the global browser scope, but can be extended to be included by requiring <code>components</code> and setting it to a global scope:</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nb">window</span><span class="p">.</span><span class="nx">nasawds</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./components'</span><span class="p">);</span>
+</code></pre></div>
+<p>Each component has a standardized interface that can be used to extend it further. The components store a HTML class name (e.g. <code>.usa-accordion-button[aria-controls]</code>) that&rsquo;s used to link HTML elements with the JS component, so when a component is initialized, it will search through the current HTML DOM finding all elements that match its class and inialize the component JavaScript for those elements. The primary methods each component has are as follows:</p>
+
+<ul>
+<li><code>on</code>: Initialize a component&rsquo;s JavaScript behavior by passing the root element, such as <code>window.document</code>.</li>
+<li><code>off</code>: The opposite of <code>on</code>, de-initializes a component, removing any JavaScript event handlers on the component.</li>
+<li><code>hide</code>: Hide the whole component.</li>
+<li><code>show</code>: Shows a whole, hidden component.</li>
+<li><code>toggle</code>: Toggles the visibility of a component on and off based on the previous state.</li>
+</ul>
+
+<p>Some components have additional methods for manipulating specific aspects of them based on what they are and what they do. These can be found in the component&rsquo;s JS file.</p>
+<h2 id="customization-and-theming">Customization and theming</h2>
+<p>The Design System can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Design System’s global variables. If it isn’t possible to use Sass, do theming by overriding the CSS rules in the Design System set.</p>
+
+<p>To start theming through Sass, copy the <code>core/variables</code> file into your own project’s Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the import of the Design System&rsquo;s all.scss file.</p>
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// src/main.scss
+</span><span class="k">@import</span> <span class="s1">'path/to/my/scss/files/main/scss/my-custom-vars'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">'lib/nasawds/src/stylesheets/all'</span><span class="p">;</span>
+</code></pre></div><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// path/to/my/scss/files/main/scss/my-custom_vars.scss
+</span>
+<span class="c1">// Colors
+</span><span class="nv">$color-primary</span><span class="p">:</span> <span class="mh">#2c3e50</span><span class="p">;</span>
+<span class="nv">$color-secondary</span><span class="p">:</span> <span class="mh">#ad2020</span><span class="p">;</span>
+<span class="nv">$color-secondary-dark</span><span class="p">:</span> <span class="mh">#b0392e</span><span class="p">;</span>
+
+<span class="c1">// Typography
+</span><span class="nv">$font-serif</span><span class="p">:</span> <span class="s1">'Georgia'</span><span class="o">,</span> <span class="s1">'Times'</span><span class="o">,</span> <span class="nb">serif</span><span class="p">;</span>
+<span class="nv">$h2-font-size</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+<span class="nv">$h3-font-size</span><span class="p">:</span> <span class="m">1</span><span class="mi">.75rem</span><span class="p">;</span>
+<span class="nv">$heading-line-height</span><span class="p">:</span> <span class="m">1</span><span class="mi">.4</span><span class="p">;</span>
+
+<span class="c1">// Grid/breakpoints
+</span><span class="nv">$small-screen</span><span class="p">:</span>  <span class="m">540px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$medium-screen</span><span class="p">:</span> <span class="m">620px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$large-screen</span><span class="p">:</span>  <span class="m">1120px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+</code></pre></div>
+<p>NOTE: If you plan on upgrading to newer versions of the Design System in the future, or are not using your own forked version of the Design System, try to avoid making changes in the Design System folder itself. Doing so could make it impossible to upgrade in the future without undoing your custom changes.</p>
+<h3 id="main-variables-that-can-be-customized">Main variables that can be customized</h3>
+<ul>
+<li>Colors can be found in the <code>core/variables</code> <a href="https://github.com/nasa/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L35">file, line 35</a>.</li>
+<li>Font families can be found in the <code>core/variables</code> <a href="https://github.com/nasa/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L28">file, line 28</a>.</li>
+<li>Typography sizing can be found in <code>core/variables</code> <a href="https://github.com/nasa/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L13">file, line 13</a>.</li>
+<li>Grid and breakpoint settings can be found in <code>core/variables</code> <a href="https://github.com/nasa/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L108">file, line 108</a>.</li>
+</ul>
+<h2 id="where-things-live">Where things live</h2>
+<ul>
+<li><strong>HTML</strong> markup for the components is located in: <code>src/html</code> in the site root.</li>
+<li><strong>Sass</strong> styles are located in: <code>src/stylesheets/ (/core, /elements, /components)</code>. <strong>Compiled CSS</strong> is located in the <a href="https://github.com/nasa/nasawds/releases/download/v1.4.6/nasawds-1.4.6.zip">downloadable zip file</a> .</li>
+<li><strong>JS</strong> is located in: <code>src/js/components (accordion.js, toggle-field-mark.js, toggle-form-input.js, validator.js)</code>.</li>
+<li><strong>Fonts</strong> are located in: <code>src/fonts</code>.</li>
+<li><strong>Images</strong> and icons are located in: <code>src/img</code>.</li>
+</ul>
+<h2 id="browser-support">Browser support</h2>
+<p>We’ve designed the Design System to support older and newer browsers through <a href="https://en.wikipedia.org/wiki/Progressive_enhancement">progressive enhancement</a>. The current major version of the Design System (1.0) is designed to support the newest versions of Chrome, Firefox, Safari, and Internet Explorer 9 and up. The next major release (2.0) will follow the <a href="https://gds.blog.gov.uk/2012/01/25/support-for-browsers/">2% rule</a>: we will officially support any browser above 2% usage as observed by <a href="https://analytics.usa.gov/">analytics.usa.gov</a>. Currently, this means that the Design System version 2.0 will support the newest versions of Chrome, Firefox, Safari, and Internet Explorer 11 and up.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>The Design System also meets the <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0 AA accessibility guidelines</a> and conforms to the standards of <a href="http://www.section508.gov/">Section 508 of the Rehabilitation Act</a>. We’re happy to answer questions about accessibility — email us for more information.</p>
+
+  </div>
+
+</main>
+
+
+<footer class="usa-footer usa-footer-medium site" role="contentinfo">
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-width-one-fourth">
+        <img class="footer-main-img" src="/nasawds-site/img/home/homepage_illustrations_best_easiest_2x.png" alt="">
+      </div>
+      <div class="usa-width-three-fourths footer-content">
+        <h3>Become part of the community</h3>
+        <p>The NASA Glenn Web Design System is based on the <a href="https://designsystem.digital.gov/">U.S. Web Design System</a> which has grown into a blossoming, open source community of government engineers, content specialists, and designers. They currently support dozens of agencies and more than 100 sites, which is fueled through an active community of contributors both in and out of government.</p>
+        <div class="usa-grid-full footer-contact-links">
+          <div class="usa-width-one-third">
+            <div class="usa-media_block">
+              <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-question.svg" alt="">
+              <div class="usa-media_block-body">
+                <h4>Running into an issue?</h4>
+                <a href="https://github.com/nasa/nasawds/issues/new">
+                  Ask questions on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="usa-width-one-third">
+            <div class="usa-media_block">
+              <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-slack.svg" alt="">
+              <div class="usa-media_block-body">
+                <h4>Engage with the community</h4>
+                <a href="https://chat.18f.gov/">
+                  Join the Slack channel
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="usa-width-one-third">
+            <div class="usa-media_block">
+              <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-envelope.svg" alt="">
+              <div class="usa-media_block-body">
+                <h4>Reach the team</h4>
+                <a href="mailto:uswds@gsa.gov">
+                  Send an email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-section-bottom">
+    <div class="usa-grid">
+      <div class="logo-links">
+        <a href="http://www.gsa.gov/">
+          <img src="/nasawds-site/img/logo-gsa.png" alt="GSA">
+        </a>
+      </div>
+      <p>The U.S. Web Design System is a project of GSA’s <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">Technology Transformation Service</a>, maintained by the Office of Products and Programs.</p>
+    </div>
+  </div>
+</footer>
+
+
+    	<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+	<script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA"></script>
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-48605964-43', 'gsa.gov');
+
+	  // anonymize user IPs (chops off the last IP triplet)
+	  ga('set', 'anonymizeIp', true);
+
+	  // forces SSL even if the page were somehow loaded over http://
+	  ga('set', 'forceSSL', true);
+
+	  ga('send', 'pageview');
+	</script>
+
+<script src="/nasawds-site/assets/js/styleguide.js"></script>
+
+<script src="/nasawds-site/assets/js/vendor/nasawds.min.js"></script>
+
+  </body>
+</html>
