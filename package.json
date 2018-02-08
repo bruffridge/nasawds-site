@@ -45,7 +45,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bruffridge/nasawds-site.git"
+    "url": "git+https://github.com/nasa/nasawds-site.git"
   },
   "author": "18F + NASA",
   "contributors": [
@@ -66,9 +66,9 @@
   ],
   "license": "SEE LICENSE in LICENSE.md",
   "bugs": {
-    "url": "https://github.com/bruffridge/nasawds-site/issues"
+    "url": "https://github.com/nasa/nasawds-site/issues"
   },
-  "homepage": "https://github.com/bruffridge/nasawds-site#readme",
+  "homepage": "https://github.com/nasa/nasawds-site#readme",
   "dependencies": {
     "axe-core": "^2.6.1",
     "babel-preset-es2015": "^6.24.1",

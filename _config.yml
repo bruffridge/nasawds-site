@@ -22,7 +22,7 @@ incremental_regeneration_fixer:
 
 jekyll_get:
   - data: releases
-    json: 'https://api.github.com/repos/bruffridge/nasawds/releases'
+    json: 'https://api.github.com/repos/nasa/nasawds/releases'
   - data: contributing
     json: 'https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md'
     decode_content: true
@@ -33,10 +33,10 @@ jekyll_get:
 repos:
 - name: NASA Web Design System
   description: Main repository for the NASA Web Design System package
-  url: https://github.com/bruffridge/nasawds
+  url: https://github.com/nasa/nasawds
 - name: NASA Web Design System Documentation
   description: Documentation for the NASA Web Design System
-  url: https://github.com/bruffridge/nasawds-site
+  url: https://github.com/nasa/nasawds-site
 - name: U.S. Web Design System Assets
   description: U.S. Web Design System visual design assets
   url: https://github.com/uswds/uswds-assets

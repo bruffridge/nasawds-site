@@ -4,7 +4,7 @@ module USWDSVersion
   def make_version_nice(version)
     # If we're using a particular 'commit-ish' of the official repo,
     # just grab the 'commit-ish' part.
-    m = /^(?:github\:)?bruffridge\/nasawds#(.+)/i.match(version)
+    m = /^(?:github\:)?nasa\/nasawds#(.+)/i.match(version)
     if m
       version = m[1]
 

@@ -29,7 +29,7 @@ To use the Design System on your project, you’ll need to include the CSS and J
 
 First, download the Design System assets:
 
-<a class="link-download" href="https://github.com/bruffridge/nasawds/releases/download/v{{ site.data.nasawds_version }}/nasawds-{{ site.data.nasawds_version }}.zip">Download code</a>
+<a class="link-download" href="https://github.com/nasa/nasawds/releases/download/v{{ site.data.nasawds_version }}/nasawds-{{ site.data.nasawds_version }}.zip">Download code</a>
 <span class="link-download-subtext">Version {{ site.data.nasawds_version }}</span>
 
 Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:
@@ -119,7 +119,7 @@ If you’re using another framework or package manager that doesn’t support NP
 
 Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:
 
-[https://github.com/bruffridge/nasawds/issues](https://github.com/bruffridge/nasawds/issues).
+[https://github.com/nasa/nasawds/issues](https://github.com/nasa/nasawds/issues).
 
 You can also email us directly at [grc-webteam@lists.nasa.gov](mailto:grc-webteam@lists.nasa.gov).
 
@@ -194,10 +194,10 @@ $large-screen:  1120px !default;
 NOTE: If you plan on upgrading to newer versions of the Design System in the future, or are not using your own forked version of the Design System, try to avoid making changes in the Design System folder itself. Doing so could make it impossible to upgrade in the future without undoing your custom changes.
 
 ### Main variables that can be customized
-* Colors can be found in the `core/variables` [file, line 35](https://github.com/bruffridge/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L35).
-* Font families can be found in the `core/variables` [file, line 28](https://github.com/bruffridge/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L28).
-* Typography sizing can be found in `core/variables` [file, line 13](https://github.com/bruffridge/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L13).
-* Grid and breakpoint settings can be found in `core/variables` [file, line 108](https://github.com/bruffridge/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L108).
+* Colors can be found in the `core/variables` [file, line 35](https://github.com/nasa/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L35).
+* Font families can be found in the `core/variables` [file, line 28](https://github.com/nasa/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L28).
+* Typography sizing can be found in `core/variables` [file, line 13](https://github.com/nasa/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L13).
+* Grid and breakpoint settings can be found in `core/variables` [file, line 108](https://github.com/nasa/nasawds/blob/develop/src/stylesheets/core/_variables.scss#L108).
 
 
 ## Where things live

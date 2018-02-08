@@ -1,6 +1,6 @@
 # NASA Glenn Web Design System documentation
 
-This repo includes code and documentation for the NASA Glenn Web Design System website. For information on the Design System (components) themselves, please visit [nasawds](https://github.com/bruffridge/nasawds).
+This repo includes code and documentation for the NASA Glenn Web Design System website. For information on the Design System (components) themselves, please visit [nasawds](https://github.com/nasa/nasawds).
 
 Note that this README includes steps to pull the latest version of the Design System into your local instance of the documentation.
 
@@ -33,7 +33,7 @@ Now that all of your dependencies are installed, you can run your local server b
 npm start
 ```
 
-Go to `127.0.0.1:4000` in your browser — you should be viewing a local instance of [nasawds-site](https://bruffridge.github.io/nasawds-site).
+Go to `127.0.0.1:4000` in your browser — you should be viewing a local instance of [nasawds-site](https://nasa.github.io/nasawds-site).
 
 Here are a few other utility commands you may find useful:
 
@@ -50,7 +50,7 @@ Here are a few other utility commands you may find useful:
 
 Sometimes you will want to use the latest version of the `nasawds` repo. Follow these steps to do so:
 
-1. Clone the latest version of the [`nasawds` repo](https://github.com/bruffridge/nasawds/tree/develop).
+1. Clone the latest version of the [`nasawds` repo](https://github.com/nasa/nasawds/tree/develop).
 1. Run `npm install` to install the dependencies required for the package in the `nasawds` directory.
 1. Run `npm run build` to create the built version of the Design System in the `nasawds` directory.
 1. Run `npm link` in the _root level_ of the `nasawds` directory on your local machine.
