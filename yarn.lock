@@ -25,9 +25,9 @@
   version "6.0.89"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.89.tgz#154be0e6a823760cd6083aa8c48f952e2e63e0b0"
 
-"@types/node@^8.0.14":
-  version "8.0.47"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.47.tgz#968e596f91acd59069054558a00708c445ca30c2"
+"@types/node@^8.5.5":
+  version "8.9.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.9.1.tgz#5a329d73a97f3c5a626dfe0ed8c0b831fee5357a"
 
 JSONStream@^1.0.3:
   version "1.3.1"
@@ -3234,11 +3234,11 @@ nan@^2.3.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.7.0.tgz#d95bf721ec877e08db276ed3fc6eb78f9083ad46"
 
-nasawds@1.4.3:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/nasawds/-/nasawds-1.4.3.tgz#e7589721d33d92c2fc7a31eb5006806095d4ff3f"
+nasawds@1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/nasawds/-/nasawds-1.4.6.tgz#26bb2de96e5d78658901970b393219d18b5421db"
   dependencies:
-    "@types/node" "^8.0.14"
+    "@types/node" "^8.5.5"
     array-filter "^1.0.0"
     array-foreach "^1.0.2"
     browserify "^13.0.0"
