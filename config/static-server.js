@@ -8,7 +8,7 @@ const app = express();
 const SITE_PATH = path.normalize(`${__dirname}/../_site`);
 
 if (fs.existsSync(SITE_PATH)) {
-  app.use('/web-design-standards-docs', express.static(SITE_PATH));
+  app.use('/nasawds-site', express.static(SITE_PATH));
 } else {
   console.log(`Please build the site before running me.`);
   process.exit(1);
@@ -22,7 +22,7 @@ module.exports = () => {
       resolve({
         hostname,
         port,
-        url: `http://${hostname}:${port}/web-design-standards-docs`,
+        url: `http://${hostname}:${port}/nasawds-site`,
         httpServer: server,
       });
     });
