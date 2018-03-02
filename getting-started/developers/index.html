@@ -34,9 +34,6 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/getting-started/developers/">
-<meta property="og:url" content="http://localhost:4000/getting-started/developers/">
-
 
 
 <!-- Favicons
@@ -646,7 +643,18 @@
       
 
 
-<a href="#notes-on-accessibility">Accessibility</a>
+<a href="#browser-support">Browser Support</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#accessibility">Accessibility</a>
 
     
   </li>
@@ -701,11 +709,11 @@
 
 <p>First, download the Design System assets:</p>
 
-<p><a class="link-download" href="https://github.com/nasa/nasawds/releases/download/v1.4.6/nasawds-1.4.6.zip">Download code</a>
-<span class="link-download-subtext">Version 1.4.6</span></p>
+<p><a class="link-download" href="https://github.com/nasa/nasawds/releases/download/v1.5.0/nasawds-1.5.0.zip">Download code</a>
+<span class="link-download-subtext">Version 1.5.0</span></p>
 
 <p>Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:</p>
-<div class="highlight"><pre><code class="language-" data-lang="">nasawds-1.4.6/
+<div class="highlight"><pre><code class="language-" data-lang="">nasawds-1.5.0/
 ├── js/
 │   ├── nasawds.min.js.map
 │   ├── nasawds.min.js
@@ -721,10 +729,10 @@
 into your HTML pages:</p>
 
 <p>Add this to your <code>&lt;head&gt;</code> element:</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/path/to/your/assets/css/lib/nasawds.min.css"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/path/to/your/assets/css/nasawds.min.css"</span><span class="nt">&gt;</span>
 </code></pre></div>
 <p>Add this before the closing <code>&lt;/body&gt;</code> tag:</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/path/to/your/assets/js/lib/nasawds.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/path/to/your/assets/js/nasawds.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 </code></pre></div>
 <p>We offer two versions — a minified version, and an un-minified one. Use the minified version in a production environment or to reduce the file size
 of your downloaded assets. And the un-minified version is better if you are in a
@@ -835,7 +843,7 @@ found in the <code>src/</code> or the compiled files in the <code>dist/</code> d
 <h2 id="where-things-live">Where things live</h2>
 <ul>
 <li><strong>HTML</strong> markup for the components is located in: <code>src/html</code> in the site root.</li>
-<li><strong>Sass</strong> styles are located in: <code>src/stylesheets/ (/core, /elements, /components)</code>. <strong>Compiled CSS</strong> is located in the <a href="https://github.com/nasa/nasawds/releases/download/v1.4.6/nasawds-1.4.6.zip">downloadable zip file</a> .</li>
+<li><strong>Sass</strong> styles are located in: <code>src/stylesheets/ (/core, /elements, /components)</code>. <strong>Compiled CSS</strong> is located in the <a href="https://github.com/nasa/nasawds/releases/download/v1.5.0/nasawds-1.5.0.zip">downloadable zip file</a> .</li>
 <li><strong>JS</strong> is located in: <code>src/js/components (accordion.js, toggle-field-mark.js, toggle-form-input.js, validator.js)</code>.</li>
 <li><strong>Fonts</strong> are located in: <code>src/fonts</code>.</li>
 <li><strong>Images</strong> and icons are located in: <code>src/img</code>.</li>
@@ -901,7 +909,7 @@ found in the <code>src/</code> or the compiled files in the <code>dist/</code> d
     <div class="usa-grid">
       <div class="logo-links">
         <a href="http://www.gsa.gov/">
-          <img src="/nasawds-site/img/logo-gsa.png" alt="GSA">
+          <img src="/nasawds-site/img/gsa-logo.svg" alt="GSA">
         </a>
       </div>
       <p>The U.S. Web Design System is a project of GSA’s <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">Technology Transformation Service</a>, maintained by the Office of Products and Programs.</p>

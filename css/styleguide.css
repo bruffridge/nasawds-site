@@ -685,6 +685,7 @@ html {
 
 body {
   background-color: #ffffff;
+  color: #212121;
   overflow-x: hidden; }
 
 .lt-ie9 * {
@@ -1300,8 +1301,6 @@ textarea {
   height: 16rem; }
 
 select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
   appearance: none;
   background-color: #ffffff;
   background-image: url("../assets/img/arrow-both.png");
@@ -1406,7 +1405,7 @@ legend {
   cursor: not-allowed; }
 
 [type=range] {
-  -webkit-appearance: none;
+  appearance: none;
   border: none;
   padding-left: 0;
   width: 100%; }
@@ -1468,11 +1467,14 @@ legend {
   border: 1px solid #757575;
   border-radius: 2rem; }
 
+[type='file'] {
+  border: none;
+  padding-left: 0; }
+
 .usa-date-of-birth label {
   margin-top: 0; }
 .usa-date-of-birth [type=number]::-webkit-inner-spin-button,
 .usa-date-of-birth [type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
   appearance: none;
   margin: 0; }
 .usa-date-of-birth [type=number] {
@@ -1717,22 +1719,6 @@ dfn {
   font-weight: 400;
   line-height: 1.7;
   max-width: 77rem; }
-
-.usa-image-block {
-  position: relative; }
-
-.usa-image-text-block {
-  color: #ffffff;
-  left: 0;
-  margin-left: 8%;
-  position: absolute;
-  top: 0; }
-
-.usa-image-text {
-  margin-top: 0; }
-
-.usa-drop_text {
-  margin-bottom: 0; }
 
 .usa-background-dark {
   background-color: #323a45; }
@@ -2007,7 +1993,6 @@ dfn {
 
 .usa-alert-body {
   display: table-cell;
-  padding-left: 5rem;
   vertical-align: top; }
 
 .usa-alert-heading {
@@ -2029,6 +2014,8 @@ dfn {
   background-image: url("../assets/img/alerts/success.svg"); }
   .usa-alert-success::before {
     background-color: #2e8540; }
+  .usa-alert-success .usa-alert-body {
+    padding-left: 5rem; }
 
 .usa-alert-warning {
   background-color: #ffebd1;
@@ -2036,6 +2023,8 @@ dfn {
   background-image: url("../assets/img/alerts/warning.svg"); }
   .usa-alert-warning::before {
     background-color: #ff9d1e; }
+  .usa-alert-warning .usa-alert-body {
+    padding-left: 5rem; }
 
 .usa-alert-error {
   background-color: #f9e0de;
@@ -2043,6 +2032,8 @@ dfn {
   background-image: url("../assets/img/alerts/error.svg"); }
   .usa-alert-error::before {
     background-color: #dd361c; }
+  .usa-alert-error .usa-alert-body {
+    padding-left: 5rem; }
 
 .usa-alert-info {
   background-color: #e1f3f8;
@@ -2050,6 +2041,8 @@ dfn {
   background-image: url("../assets/img/alerts/info.svg"); }
   .usa-alert-info::before {
     background-color: #02bfe7; }
+  .usa-alert-info .usa-alert-body {
+    padding-left: 5rem; }
 
 .usa-alert-no_icon {
   background-image: none; }
@@ -2198,11 +2191,11 @@ dfn {
       padding-left: 0;
       /* stylelint-disable declaration-block-no-ignored-properties */
       display: inline;
-      height: initial;
+      height: auto;
       margin-left: 3px;
       position: relative;
       vertical-align: middle;
-      width: initial;
+      width: auto;
       /* stylelint-enable */ } }
   .usa-banner-button:hover {
     color: #0b3d91;
@@ -2304,10 +2297,8 @@ dfn {
     text-decoration: underline; }
 
 .usa-footer-return-to-top {
-  color: #105bd8;
   padding-bottom: 2rem;
-  padding-top: 2rem;
-  text-decoration: underline; }
+  padding-top: 2rem; }
 
 .usa-footer-primary-section {
   background-color: #f1f1f1; }
@@ -2629,26 +2620,38 @@ li.usa-footer-primary-content {
   background-image: url("../assets/img/social-icons/png/rss25.png");
   background-image: url("../assets/img/social-icons/svg/rss25.svg"); }
 
-form a {
-  border-bottom: 0; }
-form [type=submit],
-form [type=submit] {
+[type=submit],
+[type=submit] {
   display: block;
   margin-bottom: 1.5em;
   margin-top: 2.5rem; }
   @media screen and (min-width: 600px) {
-    form [type=submit],
-    form [type=submit] {
+    [type=submit],
+    [type=submit] {
       padding-left: 2.7em;
       padding-right: 2.7em;
       width: auto; } }
-form [name=password],
-form [name=confirmPassword] {
+
+[name=password],
+[name=confirmPassword] {
   margin-bottom: 1.1rem; }
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0; }
 
 @media screen and (min-width: 600px) {
   .usa-form {
     max-width: 32rem; } }
+
+@media screen and (min-width: 600px) {
+  .usa-input-tiny {
+    max-width: 6rem; } }
+
+@media screen and (min-width: 600px) {
+  .usa-input-medium {
+    max-width: 12rem; } }
 
 .usa-form-note {
   float: right;
@@ -2658,25 +2661,9 @@ form [name=confirmPassword] {
   .usa-form-note + * {
     clear: both; }
 
-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0; }
-
 @media screen and (min-width: 600px) {
   .usa-form-large {
     max-width: 46rem; } }
-
-input.usa-input-tiny {
-  /* stylelint-disable-line selector-no-qualifying-type */ }
-  @media screen and (min-width: 600px) {
-    input.usa-input-tiny {
-      max-width: 6rem; } }
-input.usa-input-medium {
-  /* stylelint-disable-line selector-no-qualifying-type */ }
-  @media screen and (min-width: 600px) {
-    input.usa-input-medium {
-      max-width: 12rem; } }
 
 @media screen and (min-width: 600px) {
   .usa-input-grid {
@@ -3033,13 +3020,17 @@ input.usa-input-medium {
   background: #ffffff;
   border-left: 1px solid #aeb0b5;
   border-right: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   overflow-y: auto;
   padding: 2rem;
-  transform: translateX(26rem);
   width: 26rem;
   z-index: 9000; }
+@keyframes slidein-left {
+  from {
+    transform: translateX(26rem); }
+  to {
+    transform: translateX(0); } }
   @media screen and (min-width: 951px) {
     .usa-nav {
       padding-top: 4.5rem;
@@ -3053,8 +3044,8 @@ input.usa-input-medium {
       transform: translateX(0);
       width: auto; } }
   .usa-nav.is-visible {
-    transform: translateX(0);
-    transition: all 0.3s ease-in-out; }
+    animation: slidein-left 0.3s ease-in-out;
+    display: flex; }
   .usa-nav nav {
     margin-top: 6rem;
     min-height: 100%; }
@@ -3371,12 +3362,15 @@ input.usa-input-medium {
   text-align: left;
   -webkit-font-smoothing: auto;
   margin: -1.2rem -1.5rem 1.5rem auto;
+  color: currentColor;
   float: right;
   height: 4.4rem;
   text-align: center;
   width: 4.4rem; }
   .usa-nav-close:hover {
     background-color: transparent; }
+  .usa-nav-close:hover {
+    color: currentColor; }
   @media screen and (min-width: 951px) {
     .usa-nav-close {
       display: none; } }
@@ -3623,7 +3617,7 @@ input.usa-input-medium {
 input[type=search] {
   /* stylelint-disable-line selector-no-qualifying-type */
   box-sizing: border-box;
-  -webkit-appearance: none; }
+  appearance: none; }
 
 [type=search],
 .usa-search-input {

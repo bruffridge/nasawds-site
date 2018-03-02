@@ -34,9 +34,6 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/page-templates/">
-<meta property="og:url" content="http://localhost:4000/page-templates/">
-
 
 
 <!-- Favicons
@@ -685,6 +682,27 @@
     <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;title&gt;</span>Page title<span class="nt">&lt;/title&gt;</span>
+
+    <span class="c">&lt;!-- Favicons
+    ================================================== --&gt;</span>
+    <span class="c">&lt;!-- 128x128 --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">type=</span><span class="s">"image/ico"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon.ico"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon.png"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- 192x192, as recommended for Android
+    http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+    --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">sizes=</span><span class="s">"192x192"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon-192.png"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon-precomposed"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon-57.png"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon-precomposed"</span> <span class="na">sizes=</span><span class="s">"72x72"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon-72.png"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon-precomposed"</span> <span class="na">sizes=</span><span class="s">"114x114"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon-114.png"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- 144x144 (precomposed) for iPad 3rd and 4th generation --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon-precomposed"</span> <span class="na">sizes=</span><span class="s">"144x144"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon-144.png"</span><span class="nt">&gt;</span>
+
     <span class="c">&lt;!-- Update the link path to where your stylesheet file is located. For example: /path/to/your/assets/css/lib/uswds.min.css --&gt;</span>
     <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/nasawds-site/css/styleguide.css"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/head&gt;</span>
@@ -736,7 +754,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-navbar"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-logo"</span> <span class="na">id=</span><span class="s">"extended-logo"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">"usa-logo-text"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span>
         <span class="na">title=</span><span class="s">"Home"</span>
         <span class="na">aria-label=</span><span class="s">"Home"</span><span class="nt">&gt;</span>
         Department of Web Design
@@ -781,8 +799,8 @@
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/form&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
 
 
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-unstyled-list usa-nav-secondary-links"</span><span class="nt">&gt;</span>
@@ -926,7 +944,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-footer-secondary_section"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-grid"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-footer-logo usa-width-one-half"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"usa-footer-logo-img"</span> <span class="na">src=</span><span class="s">"/nasawds-site/assets/img/logo-img.png"</span> <span class="na">alt=</span><span class="s">"Logo image"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"usa-footer-logo-img"</span> <span class="na">src=</span><span class="s">"/nasawds-site/assets/img/logo-img.png"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
         <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"usa-footer-logo-heading"</span><span class="nt">&gt;</span>Name of Agency<span class="nt">&lt;/h3&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-footer-contact-links usa-width-one-half"</span><span class="nt">&gt;</span>
@@ -1029,6 +1047,27 @@
     <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;title&gt;</span>Page title<span class="nt">&lt;/title&gt;</span>
+
+    <span class="c">&lt;!-- Favicons
+    ================================================== --&gt;</span>
+    <span class="c">&lt;!-- 128x128 --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">type=</span><span class="s">"image/ico"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon.ico"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon.png"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- 192x192, as recommended for Android
+    http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+    --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">sizes=</span><span class="s">"192x192"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon-192.png"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon-precomposed"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon-57.png"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon-precomposed"</span> <span class="na">sizes=</span><span class="s">"72x72"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon-72.png"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon-precomposed"</span> <span class="na">sizes=</span><span class="s">"114x114"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon-114.png"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- 144x144 (precomposed) for iPad 3rd and 4th generation --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon-precomposed"</span> <span class="na">sizes=</span><span class="s">"144x144"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/img/favicons/favicon-144.png"</span><span class="nt">&gt;</span>
+
     <span class="c">&lt;!-- Update the link path to where your stylesheet file is located. For example: /path/to/your/assets/css/lib/uswds.min.css --&gt;</span>
     <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/nasawds-site/assets/css/styleguide.css"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/head&gt;</span>
@@ -1325,7 +1364,7 @@
     <div class="usa-grid">
       <div class="logo-links">
         <a href="http://www.gsa.gov/">
-          <img src="/nasawds-site/img/logo-gsa.png" alt="GSA">
+          <img src="/nasawds-site/img/gsa-logo.svg" alt="GSA">
         </a>
       </div>
       <p>The U.S. Web Design System is a project of GSA’s <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">Technology Transformation Service</a>, maintained by the Office of Products and Programs.</p>
