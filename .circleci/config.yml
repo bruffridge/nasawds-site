@@ -25,6 +25,9 @@ jobs:
     docker:
       - image: circleci/ruby:2.3-node-browsers
     steps:
+      - run: |
+          git config --global user.email "$GH_EMAIL" > /dev/null 2>&1
+          git config --global user.name "$GH_NAME" > /dev/null 2>&1
       - checkout
       - run:
           name: Install ruby dependencies
