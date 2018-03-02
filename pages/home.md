@@ -5,7 +5,7 @@ title: "NASA Web Design System: A design system for NASA"
 class: home
 hero:
   callout: A design system for NASA
-  content: Design and build fast, accessible, mobile-friendly NASA websites backed by user research.
+  content: Design and build fast, accessible, mobile-friendly websites backed by user research.
 graphic_list:
   list_item:
     - topic: Getting started
