@@ -13,8 +13,10 @@ subnav:
   href: '#customization-and-theming'
 - text: Where things live
   href: '#where-things-live'
+- text: Browser Support
+  href: '#browser-support'
 - text: Accessibility
-  href: '#notes-on-accessibility'
+  href: '#accessibility'
 - text: Contributions
   href: '#contribution-guidelines'
 ---
@@ -54,13 +56,13 @@ into your HTML pages:
 Add this to your `<head>` element:
 
 ```html
-<link rel="stylesheet" href="/path/to/your/assets/css/lib/nasawds.min.css">
+<link rel="stylesheet" href="/path/to/your/assets/css/nasawds.min.css">
 ```
 
 Add this before the closing `</body>` tag:
 
 ```html
-<script src="/path/to/your/assets/js/lib/nasawds.min.js"></script>
+<script src="/path/to/your/assets/js/nasawds.min.js"></script>
 ```
 
 We offer two versions — a minified version, and an un-minified one. Use the minified version in a production environment or to reduce the file size
