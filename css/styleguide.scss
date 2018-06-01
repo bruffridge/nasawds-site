@@ -1133,9 +1133,7 @@ code {
 }
 
 .highlight {
-  pre {
-    max-width: $lead-max-width;
-  }
+  max-width: $lead-max-width;
 }
 
 // Code snippet boxes
@@ -1193,6 +1191,10 @@ code {
 
   .token.punctuation {
     color: $color-primary-alt-darkest;
+  }
+
+  .c {
+    color: $color-gray;
   }
 }
 
@@ -1475,6 +1477,23 @@ code {
 .page-for-developers {
   h2 {
     color: $color-primary-darker;
+  }
+}
+
+// Override max-width to ensure code blocks are wide enough
+.page-for-developers {
+  ol {
+    max-width: 100% !important;
+
+    p {
+      max-width: $text-max-width;
+    }
+  }
+}
+.page-product-roadmap {
+  .usa-label {
+    display: inline-block;
+    position: relative;
   }
 }
 
