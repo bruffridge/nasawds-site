@@ -281,7 +281,6 @@ body {
   }
 
   em {
-    font-family: $font-serif;
     font-size: 1.4rem;
     line-height: 4rem;
 
@@ -315,7 +314,7 @@ body {
 
   a {
     color: $color-gray;
-    font-size: $h5-font-size;
+    font-size: $h5-font-size - .1rem;
     font-weight: $font-bold;
     line-height: $height-nav-secondary;
     padding: 1.5rem;
@@ -477,7 +476,7 @@ h2 + .tooltip {
   color: $color-gray;
   display: block;
   letter-spacing: 0.5px;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
   margin-top: 0;
 }
 
@@ -1219,6 +1218,17 @@ code {
   }
 }
 
+.typography-helvetica-intro {
+  .text-huge {
+    font-size: 140px;
+    line-height: 1.05;
+  }
+
+  .text-tiny {
+    font-size: 15px;
+  }
+}
+
 .typography-sans-intro {
   .text-huge {
     font-size: 140px;
@@ -1291,7 +1301,8 @@ code {
   h6 {
     font-family: $font-sans;
   }
-
+}
+.sans-style, .helvetica-style {
   h1 {
     font-size: rem(44px);
   }
@@ -1337,7 +1348,7 @@ code {
       p {
         font-family: $font-serif;
         font-size: rem(15px);
-        line-height: $lead-line-height;
+        line-height: $lead-line-height + .2;
       }
 
       .usa-font-lead {

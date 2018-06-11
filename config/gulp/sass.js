@@ -44,6 +44,6 @@ gulp.task('scss-lint', function (done) {
 gulp.task('sass',
   gulp.parallel(
     'copy-doc-styles',
-    'copy-uswds-styles'
+    'copy-nasawds-styles'
   )
 );

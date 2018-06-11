@@ -9,7 +9,7 @@ hero:
 graphic_list:
   list_item:
     - topic: Getting started
-      description: Learn how to get started using the NASA Glenn Web Design System for your project, regardless of your technical stack.
+      description: Learn how to get started using the NASA Web Design System for your project, regardless of your technical stack.
       image:
         src: img/home/get-started.svg
         alt:

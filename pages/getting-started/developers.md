@@ -27,7 +27,7 @@ subnav:
   href: '#contributing-to-the-code-base'
 ---
 
-{% assign content = site.data.install-readme.decoded | markdownify | absolutify_links: 'https://github.com/uswds/uswds/blob/develop/' | split: '<h2 id="using-the-design-system">Using the Design System</h2>' | last | split: '<h2 id="reuse-of-open-source-style-guides">' | first %}
+{% assign content = site.data.install-readme.decoded | markdownify | absolutify_links: 'https://github.com/nasa/nasawds/blob/develop/' | split: '<h2 id="using-the-design-system">Using the Design System</h2>' | last | split: '<h2 id="reuse-of-open-source-style-guides">' | first %}
 
 ## Installation
 

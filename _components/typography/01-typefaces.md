@@ -5,6 +5,24 @@ parent: typography
 order: 01
 ---
 
+<h4 class="usa-heading-alt">Helvetica</h4>
+
+<div class="usa-grid-full">
+  <div class="usa-width-one-half">
+    <p>The Helvetica® typeface has been used by NASA extensively for decades, from the space shuttle to signage and printouts.</p>
+    <p>It is one of the most ubiquitous typefaces in the world, used commonly at large sizes for signs, titles, and logos. Most systems already have this font or an equivalent installed, so an additional font download is not necessary.</p>
+  </div>
+
+  <div class="typography-sans-intro usa-width-one-half usa-end-row usa-helvetica">
+    <span class="text-huge">Aa</span>
+    <div>
+      <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+      <p class="text-tiny">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+      <p class="text-tiny">0 1 2 3 4 5 6 7 8 9</p>
+    </div>
+  </div>
+</div>
+
 <h4 class="usa-heading-alt">Source Sans Pro</h4>
 
 <div class="usa-grid-full">
@@ -13,7 +31,7 @@ order: 01
     <p>Inspired by twentieth-century American gothic typeface design, its slender but open letters offer a clean and friendly simplicity. Advanced hinting allows Source Sans Pro to render well on Windows systems which run Cleartype, and across browsers and devices. Moreover, it supports a variety of languages and alphabets, including Western and European language, Vietnamese, pinyin Romanization of Chinese, and Navajo.</p>
   </div>
 
-  <div class="typography-sans-intro usa-width-one-half usa-end-row">
+  <div class="typography-helvetica-intro usa-width-one-half usa-end-row">
     <span class="text-huge">Aa</span>
     <div>
       <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>

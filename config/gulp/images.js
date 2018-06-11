@@ -32,7 +32,7 @@ gulp.task(task,
     },
     gulp.parallel(
       'copy-doc-images',
-      'copy-uswds-images'
+      'copy-nasawds-images'
     ),
   )
 );

@@ -1,12 +1,12 @@
-# NASA Glenn Web Design System documentation
+# NASA Web Design System documentation
 
-This repo includes code and documentation for the NASA Glenn Web Design System website. For information on the Design System (components) themselves, please visit [nasawds](https://github.com/nasa/nasawds).
+This repo includes code and documentation for the NASA Web Design System website. For information on the Design System (components) themselves, please visit [nasawds](https://github.com/nasa/nasawds).
 
 Note that this README includes steps to pull the latest version of the Design System into your local instance of the documentation.
 
 ## Running locally
 
-The NASA Glenn Web Design System documentation is built using Jekyll for the file framework, gulp for task management, and the node module for the Design System.
+The NASA Web Design System documentation is built using Jekyll for the file framework, gulp for task management, and the node module for the Design System.
 
 ### Before you start
 

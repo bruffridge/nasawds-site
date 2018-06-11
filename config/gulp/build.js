@@ -63,9 +63,9 @@ function spawnP(cmd, args, opts) {
 // the case, we'll want to build those assets.
 gulp.task('build-nasawds-if-needed', function () {
   const rootDir = path.normalize(path.join(__dirname, '..', '..'));
-  const uswdsDir = path.join(rootDir, 'node_modules', 'nasawds');
-  const fractalIndex = path.join(uswdsDir, 'build', 'index.html');
-  const gulpfile = path.join(uswdsDir, 'gulpfile.js');
+  const nasawdsDir = path.join(rootDir, 'node_modules', 'nasawds');
+  const fractalIndex = path.join(nasawdsDir, 'build', 'index.html');
+  const gulpfile = path.join(nasawdsDir, 'gulpfile.js');
 
   if (fs.existsSync(fractalIndex)) {
     dutil.logMessage('build-nasawds-if-needed', 'NASAWDS is already built.');
@@ -81,7 +81,7 @@ gulp.task('build-nasawds-if-needed', function () {
       ));
     }
 
-    const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
+    const sharedOpts = { stdio: 'inherit', cwd: nasawdsDir };
     return spawnP('npm', [ 'run', 'federalist' ], sharedOpts);
   }
 });
