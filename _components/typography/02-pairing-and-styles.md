@@ -129,7 +129,7 @@ order: 02
             font-family: ‘Source Sans Pro’<br>
             font-weight: 400<br>
             font-size: 13px<br>
-            line-height: 1.2em/16px<br>
+            line-height: 1.5em/20px<br>
             text-transform: uppercase
           </p>
         </div>
@@ -285,7 +285,7 @@ order: 02
             font-family: ‘Source Sans Pro’<br>
             font-weight: 400<br>
             font-size: 13px<br>
-            line-height: 1.2em/16px<br>
+            line-height: 1.5em/20px<br>
             text-transform: uppercase
           </p>
         </div>
