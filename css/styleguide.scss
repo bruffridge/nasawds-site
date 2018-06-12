@@ -473,10 +473,12 @@ h2 + .tooltip {
 
 .site-subheading {
   @include h6;
+  @include font-smoothing;
+  letter-spacing: -.021em;
+  font-family: $helvetica;
   color: $color-gray;
   display: block;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   margin-top: 0;
 }
 
