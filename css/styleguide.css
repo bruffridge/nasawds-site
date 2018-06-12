@@ -1,11 +1,5 @@
 @charset "UTF-8";
 /*! nasawds @version */
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -405,10 +399,9 @@ th {
 /* stylelint-enable */
 .usa-grid,
 .usa-grid-full {
-  max-width: 1200px;
+  max-width: 1040px;
   margin-left: auto;
-  margin-right: auto;
-  max-width: 1040px; }
+  margin-right: auto; }
   .usa-grid::after,
   .usa-grid-full::after {
     clear: both;
@@ -689,7 +682,8 @@ body {
   overflow-x: hidden; }
 
 .lt-ie9 * {
-  filter: none !important;
+  -webkit-filter: none !important;
+          filter: none !important;
   /* stylelint-disable-line declaration-no-important */ }
 
 [hidden] {
@@ -716,7 +710,9 @@ button,
   margin-top: 0.5em;
   margin-right: 0.5em;
   margin-bottom: 0.5em;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: #105bd8;
   border: 0;
   border-radius: 5px;
@@ -1231,7 +1227,9 @@ img {
 input,
 textarea,
 select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 0.1rem solid #5b616b;
   border-radius: 0;
   box-sizing: border-box;
@@ -1292,6 +1290,12 @@ select {
   color: #757575;
   content: ' (optional)'; }
 
+.usa-input-label-helper {
+  color: #757575; }
+
+.usa-input-label-required {
+  color: #99231b; }
+
 label {
   display: block;
   margin-top: 3rem;
@@ -1301,7 +1305,9 @@ textarea {
   height: 16rem; }
 
 select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: #ffffff;
   background-image: url("../assets/img/arrow-both.png");
   background-image: none, url("../assets/img/arrow-both.svg"), url("../assets/img/arrow-both.png");
@@ -1312,7 +1318,8 @@ select {
   select::-ms-expand {
     display: none; }
   select:-webkit-autofill {
-    appearance: menulist; }
+    -webkit-appearance: menulist;
+            appearance: menulist; }
   select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000000; }
@@ -1321,7 +1328,7 @@ option:first-child {
   font-weight: 700; }
 
 legend {
-  font-size: 3rem;
+  font-size: 3.4rem;
   font-weight: 700; }
 
 .usa-fieldset-inputs label {
@@ -1405,7 +1412,9 @@ legend {
   cursor: not-allowed; }
 
 [type=range] {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
   padding-left: 0;
   width: 100%; }
@@ -1475,7 +1484,8 @@ legend {
   margin-top: 0; }
 .usa-date-of-birth [type=number]::-webkit-inner-spin-button,
 .usa-date-of-birth [type=number]::-webkit-outer-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0; }
 .usa-date-of-birth [type=number] {
   -moz-appearance: textfield; }
@@ -1495,7 +1505,7 @@ legend {
   background-color: #5b616b;
   border-radius: 2px;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-right: 0.5rem;
   padding: 0.1rem 0.7rem;
   text-transform: uppercase; }
@@ -1518,22 +1528,6 @@ li {
   margin-bottom: 0.5em; }
   li:last-child {
     margin-bottom: 0; }
-
-h1 + ul,
-h1 + ol,
-h2 + ul,
-h2 + ol,
-h3 + ul,
-h3 + ol,
-h4 + ul,
-h4 + ol,
-h5 + ul,
-h5 + ol,
-h6 + ul,
-h6 + ol,
-p + ul,
-p + ol {
-  margin-top: 0; }
 
 .usa-unstyled-list {
   margin-top: 0;
@@ -1574,7 +1568,7 @@ td {
   padding-left: 0; }
 
 caption {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
   font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   margin-bottom: 1.2rem;
@@ -1635,34 +1629,35 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   clear: both;
-  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  line-height: 1.3;
-  margin-bottom: .5em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -.021em;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
   margin-top: 1.5em; }
 
-h6 {
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
-
 h1 {
-  font-size: 4rem;
+  font-size: 4.4rem;
   font-weight: 700; }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3.4rem;
   font-weight: 700; }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700; }
 
 h4 {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-weight: 700; }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700; }
 
 h6 {
@@ -1685,6 +1680,15 @@ dfn {
 .usa-content-list {
   max-width: 66ch; }
 
+.usa-helvetica p,
+.usa-helvetica a,
+.usa-helvetica li,
+.usa-helvetica span {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+.usa-helvetica a {
+  border-bottom: none;
+  font-weight: 700; }
+
 .usa-sans p,
 .usa-sans a,
 .usa-sans li,
@@ -1698,15 +1702,17 @@ dfn {
 .usa-serif a,
 .usa-serif li,
 .usa-serif span {
-  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif; }
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-size: 1.5rem;
+  line-height: 1.7; }
 
 .usa-display {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 0; }
   @media screen and (min-width: 481px) {
     .usa-display {
-      font-size: 4rem;
+      font-size: 4.4rem;
       font-weight: 700; } }
   @media screen and (min-width: 600px) {
     .usa-display {
@@ -1714,10 +1720,9 @@ dfn {
       font-weight: 700; } }
 
 .usa-font-lead {
-  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.7;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.5;
   max-width: 77rem; }
 
 .usa-background-dark {
@@ -2066,7 +2071,7 @@ dfn {
   padding-bottom: 3px;
   padding-left: 1.5rem;
   background-color: transparent;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-top: 2rem;
   width: 100%; }
   @media screen and (min-width: 600px) {
@@ -2084,12 +2089,11 @@ dfn {
         margin-top: 0; } }
 
 .usa-banner-inner {
-  max-width: 1200px;
+  max-width: 1040px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  max-width: 1040px; }
+  padding-left: 1.5rem; }
   .usa-banner-inner::after {
     clear: both;
     content: "";
@@ -2133,7 +2137,7 @@ dfn {
   align-items: center;
   border-bottom: 1px solid #aeb0b5;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   min-height: 5.6rem;
   padding-right: 3rem; }
   @media screen and (min-width: 481px) {
@@ -2155,7 +2159,7 @@ dfn {
       .usa-banner-header-expanded img {
         margin-right: 0.7rem; } }
   .usa-banner-header-expanded p {
-    line-height: 1.3;
+    line-height: 1.2;
     vertical-align: top; }
     @media screen and (min-width: 481px) {
       .usa-banner-header-expanded p {
@@ -2283,7 +2287,12 @@ dfn {
     .usa-footer .usa-footer-primary-link {
       border-top: none; } }
   .usa-footer .usa-footer-primary-link:hover {
+    cursor: pointer;
     text-decoration: underline; }
+    @media screen and (min-width: 600px) {
+      .usa-footer .usa-footer-primary-link:hover {
+        cursor: auto;
+        text-decoration: none; } }
 .usa-footer .usa-footer-primary-link ~ li a,
 .usa-footer .usa-footer-secondary-link {
   text-decoration: none; }
@@ -2501,7 +2510,7 @@ li.usa-footer-primary-content {
       .usa-footer-big ul:last-child {
         border-bottom: none; } }
   .usa-footer-big ul li:not(.usa-footer-primary-link) {
-    line-height: 1.3;
+    line-height: 1.2;
     padding-bottom: 0.35em;
     padding-top: 0.35em; }
   .usa-footer-big ul .usa-footer-primary-link {
@@ -2620,21 +2629,9 @@ li.usa-footer-primary-content {
   background-image: url("../assets/img/social-icons/png/rss25.png");
   background-image: url("../assets/img/social-icons/svg/rss25.svg"); }
 
-[type=submit],
-[type=submit] {
-  display: block;
-  margin-bottom: 1.5em;
-  margin-top: 2.5rem; }
-  @media screen and (min-width: 600px) {
-    [type=submit],
-    [type=submit] {
-      padding-left: 2.7em;
-      padding-right: 2.7em;
-      width: auto; } }
-
-[name=password],
-[name=confirmPassword] {
-  margin-bottom: 1.1rem; }
+@media screen and (min-width: 600px) {
+  [type=submit] {
+    margin-top: calc(3rem - .2em); } }
 
 fieldset {
   border: none;
@@ -2656,7 +2653,7 @@ fieldset {
 .usa-form-note {
   float: right;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 0 0 1.5rem; }
   .usa-form-note + * {
     clear: both; }
@@ -2774,8 +2771,11 @@ fieldset {
         display: block; } }
 
 .usa-logo-text {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   margin: 0; }
@@ -2783,7 +2783,7 @@ fieldset {
     .usa-logo-text {
       display: block;
       font-size: 2.4rem;
-      line-height: 1.3; } }
+      line-height: 1.2; } }
 
 .usa-menu-btn {
   /* stylelint-disable declaration-block-no-ignored-properties */
@@ -2855,14 +2855,13 @@ fieldset {
     line-height: 1; } }
 @media screen and (min-width: 951px) {
   .usa-header-extended .usa-navbar {
-    max-width: 1200px;
+    max-width: 1040px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 3rem;
     padding-left: 3rem;
     display: block;
-    height: auto;
-    max-width: 1040px; }
+    height: auto; }
     .usa-header-extended .usa-navbar::after {
       clear: both;
       content: "";
@@ -2875,13 +2874,12 @@ fieldset {
     width: 100%; } }
 @media screen and (min-width: 951px) {
   .usa-header-extended .usa-nav-inner {
-    max-width: 1200px;
+    max-width: 1040px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 3rem;
     padding-left: 1.5rem;
     margin-top: -1px;
-    max-width: 1040px;
     position: relative; }
     .usa-header-extended .usa-nav-inner::after {
       clear: both;
@@ -3000,12 +2998,11 @@ fieldset {
 
 @media screen and (min-width: 951px) {
   .usa-nav-container {
-    max-width: 1200px;
+    max-width: 1040px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 3rem;
-    padding-left: 3rem;
-    max-width: 1040px; }
+    padding-left: 3rem; }
     .usa-nav-container::after {
       clear: both;
       content: "";
@@ -3026,11 +3023,20 @@ fieldset {
   padding: 2rem;
   width: 26rem;
   z-index: 9000; }
+@-webkit-keyframes slidein-left {
+  from {
+    -webkit-transform: translateX(26rem);
+            transform: translateX(26rem); }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
 @keyframes slidein-left {
   from {
-    transform: translateX(26rem); }
+    -webkit-transform: translateX(26rem);
+            transform: translateX(26rem); }
   to {
-    transform: translateX(0); } }
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
   @media screen and (min-width: 951px) {
     .usa-nav {
       padding-top: 4.5rem;
@@ -3041,10 +3047,12 @@ fieldset {
       float: right;
       overflow-y: visible;
       position: relative;
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
       width: auto; } }
   .usa-nav.is-visible {
-    animation: slidein-left 0.3s ease-in-out;
+    -webkit-animation: slidein-left 0.3s ease-in-out;
+            animation: slidein-left 0.3s ease-in-out;
     display: flex; }
   .usa-nav nav {
     margin-top: 6rem;
@@ -3119,7 +3127,7 @@ fieldset {
       .usa-nav-primary > li > a {
         padding: 1.3rem 1.5rem 2.2rem;
         color: #5b616b;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: 700;
         line-height: 1; } }
     @media screen and (min-width: 951px) {
@@ -3149,7 +3157,7 @@ fieldset {
       .usa-nav-primary button {
         padding: 1.3rem 1.5rem 2.2rem;
         color: #5b616b;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: 700;
         line-height: 1;
         width: initial; } }
@@ -3263,7 +3271,7 @@ fieldset {
   .usa-nav-secondary-links .usa-header-search-button {
     color: #5b616b;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-decoration: none; }
     .usa-nav-secondary-links a:hover,
     .usa-nav-secondary-links .usa-header-search-button:hover {
@@ -3309,10 +3317,10 @@ fieldset {
     margin-bottom: 0; }
   .usa-nav-submenu li {
     border: none;
-    font-size: 1.5rem; }
+    font-size: 1.6rem; }
   .usa-nav-submenu a {
     padding-left: 2.8rem;
-    line-height: 1.3; }
+    line-height: 1.2; }
     .usa-nav-submenu a:hover, .usa-nav-submenu a.usa-current {
       /* stylelint-disable-line selector-no-qualifying-type */
       border: none;
@@ -3349,7 +3357,7 @@ fieldset {
       padding-left: 1.5rem;
       text-decoration: underline; } }
   .usa-nav-submenu li {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 0; }
 
 .usa-nav-close {
@@ -3595,7 +3603,7 @@ fieldset {
       width: calc(100% - 11.6rem); }
     .usa-search.usa-search-big [type=submit],
     .usa-search.usa-search-big .usa-search-submit {
-      font-size: 2rem;
+      font-size: 2.4rem;
       height: 4.4rem;
       width: 11.6rem; } }
   @media screen and (min-width: 481px) {
@@ -3617,7 +3625,9 @@ fieldset {
 input[type=search] {
   /* stylelint-disable-line selector-no-qualifying-type */
   box-sizing: border-box;
-  appearance: none; }
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
 
 [type=search],
 .usa-search-input {
@@ -3732,10 +3742,10 @@ input[type=search] {
     margin-bottom: 0; }
   .usa-sidenav-sub_list li {
     border: none;
-    font-size: 1.5rem; }
+    font-size: 1.6rem; }
   .usa-sidenav-sub_list a {
     padding-left: 2.8rem;
-    line-height: 1.3; }
+    line-height: 1.2; }
     .usa-sidenav-sub_list a:hover, .usa-sidenav-sub_list a.usa-current {
       /* stylelint-disable-line selector-no-qualifying-type */
       border: none;
@@ -3944,7 +3954,6 @@ body {
 .site-logo a {
   color: #ffffff; }
 .site-logo em {
-  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 1.4rem;
   line-height: 4rem; }
   @media screen and (min-width: 951px) {
@@ -4099,10 +4108,13 @@ h2 + .tooltip a {
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -.021em;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   color: #5b616b;
   display: block;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.3rem;
   margin-top: 0; }
 
 a.cta img {
@@ -4163,7 +4175,7 @@ footer.site {
     width: 4rem; }
   .footer-contact-links .usa-media_block {
     clear: both;
-    line-height: 1.3;
+    line-height: 1.2;
     margin-top: 2rem; }
     @media screen and (min-width: 600px) {
       .footer-contact-links .usa-media_block {
@@ -4564,7 +4576,7 @@ code {
     letter-spacing: -0.2em;
     content: '\00a0'; }
 
-.highlight pre {
+.highlight {
   max-width: 77rem; }
 
 .usa-code-sample pre,
@@ -4607,6 +4619,8 @@ code {
     color: #2e8540; }
   [class*="language-"] .token.punctuation {
     color: #046b99; }
+  [class*="language-"] .c {
+    color: #5b616b; }
 
 .alignment-example {
   border-left: 2px solid #0b3d91;
@@ -4625,6 +4639,12 @@ code {
   .text-tiny:first-child {
     margin-top: 0; }
 
+.typography-helvetica-intro .text-huge {
+  font-size: 140px;
+  line-height: 1.05; }
+.typography-helvetica-intro .text-tiny {
+  font-size: 15px; }
+
 .typography-sans-intro .text-huge {
   font-size: 140px;
   line-height: 1.05; }
@@ -4638,7 +4658,7 @@ code {
   font-size: 13px; }
 
 .serif-robust .usa-display-alt {
-  font-size: 4rem;
+  font-size: 4.4rem;
   font-weight: 300; }
 .serif-robust .usa-font-lead {
   font-weight: 300; }
@@ -4648,9 +4668,9 @@ code {
 .serif-robust.serif-body .usa-font-example p {
   font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 1.5rem;
-  line-height: 1.7; }
+  line-height: 1.5; }
 .serif-robust.serif-body .usa-font-example .usa-font-lead {
-  font-size: 2rem; }
+  font-size: 2.4rem; }
   .serif-robust.serif-body .usa-font-example .usa-font-lead .usa-font-lead-alt {
     font-size: 1.7rem;
     font-weight: 400; }
@@ -4662,33 +4682,34 @@ code {
 .sans-style h5,
 .sans-style h6 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
-.sans-style h1 {
+
+.sans-style h1, .helvetica-style h1 {
   font-size: 4.4rem; }
-.sans-style h2 {
+.sans-style h2, .helvetica-style h2 {
   font-size: 3.4rem; }
-.sans-style h3 {
+.sans-style h3, .helvetica-style h3 {
   font-size: 2.4rem; }
-.sans-style h4 {
+.sans-style h4, .helvetica-style h4 {
   font-size: 1.9rem; }
-.sans-style h5 {
+.sans-style h5, .helvetica-style h5 {
   font-size: 1.6rem; }
-.sans-style h6 {
+.sans-style h6, .helvetica-style h6 {
   font-size: 1.3rem; }
-.sans-style .usa-display {
+.sans-style .usa-display, .helvetica-style .usa-display {
   font-size: 5.9rem; }
-.sans-style .usa-display-alt {
+.sans-style .usa-display-alt, .helvetica-style .usa-display-alt {
   font-size: 4.4rem;
   font-weight: 300; }
-.sans-style .usa-font-lead {
+.sans-style .usa-font-lead, .helvetica-style .usa-font-lead {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 2.2rem;
   font-weight: 300;
   line-height: 1.5; }
-.sans-style.serif-body .usa-font-example p {
+.sans-style.serif-body .usa-font-example p, .helvetica-style.serif-body .usa-font-example p {
   font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 1.5rem;
   line-height: 1.7; }
-.sans-style.serif-body .usa-font-example .usa-font-lead {
+.sans-style.serif-body .usa-font-example .usa-font-lead, .helvetica-style.serif-body .usa-font-example .usa-font-lead {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 2.2rem;
   font-weight: 300;
@@ -4780,6 +4801,15 @@ code {
 
 .page-for-developers h2 {
   color: #0b3d91; }
+
+.page-for-developers ol {
+  max-width: 100% !important; }
+  .page-for-developers ol p {
+    max-width: 66ch; }
+
+.page-product-roadmap .usa-label, .page-product-roadmap .usa-label-big {
+  display: inline-block;
+  position: relative; }
 
 .usa-center {
   text-align: center; }
@@ -4893,7 +4923,7 @@ article {
   article .post-date {
     text-transform: none; }
   article.post-excerpt .post-title {
-    font-size: 3rem;
+    font-size: 3.4rem;
     font-weight: 700; }
   article.post-excerpt .post-content p {
     margin-bottom: 0;

@@ -17,8 +17,8 @@
 ================================================== -->
   
 
-<title>Q1 2017 Analytics Update | NASA Web Design System</title>
-<meta property="og:title" content="Q1 2017 Analytics Update | NASA Web Design System">
+<title>How the Defense Digital Service uses the Design System for a Ruby app | NASA Web Design System</title>
+<meta property="og:title" content="How the Defense Digital Service uses the Design System for a Ruby app | NASA Web Design System">
 
 
 <meta name="description" content="Design and build fast, accessible, mobile-friendly NASA websites backed by user research.">
@@ -60,7 +60,7 @@
 <link rel="stylesheet" href="/nasawds-site/css/styleguide.css">
 
   </head>
-  <body class="page-q1-2017-analytics-update layout-post ">
+  <body class="page-how-the-defense-digital-service-uses-the-design-system-for-a-ruby-app layout-post ">
     <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 <header class="usa-header site-header usa-header-dark" role="banner">
   <div class="usa-navbar site-header-navbar">
@@ -515,36 +515,58 @@
   <div class="styleguide-content usa-content">
   
     
-<article id="whats-new-updates-2017-03-27-u-s-web-design-standards-exposure-analytics">
+<article id="whats-new-updates-2018-03-22-dds-case-study">
   <header class="post-meta">
     <p class="post-category site-subheading">
-      updates
+      case study
     </p>
 
     <h1 class="post-title">
       
-      Q1 2017 Analytics Update
+      How the Defense Digital Service uses the Design System for a Ruby app
       
     </h1>
 
-    <time class="post-date site-subheading" datetime="2017-03-27T00:00:00">
-      March 27, 2017
+    <time class="post-date site-subheading" datetime="2018-03-22T00:00:00">
+      March 22, 2018
     </time>
   </header>
 
   <div class="post-content">
   
-    <p>Thanks to the data that’s collected through the Data Analytics Platform, the U.S. Web Design Standards is able to pull out the web analytics for the known sites that are using the Standards. We use this information to keep track of how the general exposure of the Standards has trended from quarter to quarter. In the future, the team hopes to use the source of data to learn more about the trends of users as they continue to use sites that are using the U.S Web Design Standards.</p>
+    <p>The U.S. Web Design System (USWDS) is a library of design and code guidelines to help agencies create trustworthy, accessible, and consistent digital services. The Design System is being used on over one hundred government sites, with an audience of 120 million users. In this 12th post in our series, we sat down with Jason Garber, front-end web developer at the U.S. Digital Service (USDS)’s Defense Digital Service, to talk about his work creating a <a href="https://en.wikipedia.org/wiki/RubyGems">Ruby gem</a> for the new <a href="https://www.move.mil/">Move.mil</a> that integrates the Design System into a Ruby on Rails application.</p>
 
-<p>##Latest Analytics January - March 2017</p>
+<p><strong>USWDS team:</strong> How did you hear about the U.S. Web Design System?</p>
 
-<p>###Total Users Exposed - 68,868,781</p>
+<p><strong>Jason Garber:</strong> The military has a really complicated system for moving service members’ property and we are working to improve this experience. I’m working on a Ruby on Rails app that will support part of the project, <a href="https://www.move.mil/">Move.mil</a>, and found out about the Design System from a designer on the team who started using them to speed up the design process.</p>
 
-<p>Total New Users Exposed - 59,951,812</p>
+<p>As we were looking to see how we could most easily integrate the Design System, I found an existing, unmaintained Ruby gem that hadn’t gotten a lot of love. I thought I could quickly spin up an updated version that works with our app, and pulls in the latest version of the Design System. It wasn’t terribly difficult, but there was some manual labor involved. Overall, I’m pretty happy with how it’s turned out and whenever the Design System team publishes a new version, I’ll update the gem to keep it fresh.</p>
 
-<p>Total Sessions - 134,442,417</p>
+<p><strong>USWDS team:</strong> Were there any challenges in working with the Design System?</p>
 
-<p>Total Pageviews - 424,001,431</p>
+<p><strong>Garber:</strong> There were some challenges specific to exposing assets in a gem to a Rails app. Rails’ Asset Pipeline provides a Rails-specific group of helpers for generating asset paths in development and production environments. Anywhere the Design System reference an asset, I manually updated the Sass (SCSS) files to use these helpers. Now that I’ve got it down, updating the gem isn’t terribly difficult. For me, coming into the U.S. Digital Service and having the Design System there certainly made our lives easier.</p>
+
+<p><strong>USWDS team:</strong> How did it make your lives easier?</p>
+
+<p><strong>Garber:</strong> As a front-end developer, I don’t have to spend a bunch of time making a grid system, or thinking about what markup to use, I can reference the Design System, which has great documentation. It saved us a ton of time spinning up a prototype that we could show to service members when we’re doing user testing. We can ask them how this new site compares to what they’re currently using. We couldn’t have gotten a prototype in front of our users as quickly without the Design System.</p>
+
+<p><strong>USWDS team:</strong> Were there any unintended consequences or surprises in using the Design System?</p>
+
+<p><strong>Garber:</strong> Inevitably, you run into something you need to build that doesn’t exist in the Design System and you have to build it by hand.</p>
+
+<p><strong>USWDS team:</strong> Is there anything the Design System team could do to help you in your efforts?</p>
+
+<p><strong>Garber:</strong> Nothing springs to mind: the documentation is great, Fractal is coming along, and being in the <a href="https://chat.18f.gov/">#uswds-public Slack channel</a> is fantastic. I don’t participate a ton in there, but it’s nice to see the conversation. If I do have a quick question, it’s a great alternative to filing a GitHub issue and I appreciate it.</p>
+
+<p>I’m pretty happy with the level of engagement from the Design System team. They have been pretty responsive answering questions. The conversation so far has been very welcoming and helpful. It’s great seeing so many people who are actually involved in building the Design System, also responding to questions.</p>
+
+<p><strong>USWDS team:</strong> Advice for other agencies?</p>
+
+<p><strong>Garber:</strong> I think it’s great that the Design System exists. On the one hand, government is so large that it would be difficult to prescribe that every site should use the Design System—to meet every need would be impossible. But, to have the Design System as a starting point, or “guard rails,” is great. Going to any government website and seeing at least some consistency across the board is a great way to build trust.</p>
+
+<hr />
+
+<p>We’re looking to learn more <a href="https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md">from agencies that have used the Design System</a>. If you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at <a href="mailto:uswds@gsa.gov">uswds@gsa.gov</a>. You can also chat with the team in the <a href="https://chat.18f.gov/">public Slack channel for the Design System</a>.</p>
 
   
   </div>
