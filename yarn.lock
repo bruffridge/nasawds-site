@@ -4048,9 +4048,9 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-nasawds@1.6.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/nasawds/-/nasawds-1.5.0.tgz#4392f6755e99942cadb8bfff6f47ddc5535b11b3"
+nasawds@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/nasawds/-/nasawds-2.0.0.tgz#9715cf8abe96ec5a18883ca317453a57079d00b5"
   dependencies:
     "@types/node" "^8.5.5"
     array-filter "^1.0.0"
