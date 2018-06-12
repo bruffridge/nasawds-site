@@ -19,13 +19,13 @@ jobs:
             - vendor/bundle
       - restore_cache:
           keys:
-            - v1-node-cache-{{ checksum "package-lock.json" }}
+            - v1-node-cache-{{ checksum "yarn.lock" }}
             - v1-node-cache
       - run:
           name: Install node dependencies
           command: npm install --ignore-scripts --verbose
       - save_cache:
-          key: v1-node-cache-{{ checksum "package-lock.json" }}
+          key: v1-node-cache-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
       - run:
