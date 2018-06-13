@@ -68,13 +68,13 @@ acorn-jsx@^3.0.0:
     acorn "^3.0.4"
 
 acorn-node@^1.2.0, acorn-node@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/acorn-node/-/acorn-node-1.3.0.tgz#5f86d73346743810ef1269b901dbcbded020861b"
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/acorn-node/-/acorn-node-1.4.0.tgz#95b9c8ebcb44b72b69754bdcdc527c1eb6bc4413"
   dependencies:
-    acorn "^5.4.1"
+    acorn "^5.6.2"
     xtend "^4.0.1"
 
-acorn@5.X, acorn@^5.0.3, acorn@^5.2.1, acorn@^5.4.1, acorn@^5.5.0:
+acorn@5.X, acorn@^5.0.3, acorn@^5.2.1, acorn@^5.5.0, acorn@^5.6.2:
   version "5.6.2"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.6.2.tgz#b1da1d7be2ac1b4a327fb9eab851702c5045b4e7"
 
@@ -4048,9 +4048,9 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-nasawds@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/nasawds/-/nasawds-2.0.0.tgz#9715cf8abe96ec5a18883ca317453a57079d00b5"
+nasawds@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/nasawds/-/nasawds-2.0.1.tgz#92d22a916ca731ed6fa1154599dcfae7321c870a"
   dependencies:
     "@types/node" "^8.5.5"
     array-filter "^1.0.0"
