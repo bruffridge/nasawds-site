@@ -1328,6 +1328,7 @@ option:first-child {
   font-weight: 700; }
 
 legend {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 3.4rem;
   font-weight: 700; }
 
@@ -1698,13 +1699,17 @@ dfn {
   border-bottom: none;
   font-weight: 700; }
 
+.usa-serif-body p:not(.usa-font-lead),
+.usa-serif-body li {
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-size: 1.5rem;
+  line-height: 1.7; }
+
 .usa-serif p,
 .usa-serif a,
 .usa-serif li,
 .usa-serif span {
-  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  font-size: 1.5rem;
-  line-height: 1.7; }
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif; }
 
 .usa-display {
   font-size: 2.4rem;
@@ -1723,7 +1728,8 @@ dfn {
   font-size: 2.2rem;
   font-weight: 300;
   line-height: 1.5;
-  max-width: 77rem; }
+  max-width: 77rem;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
 .usa-background-dark {
   background-color: #323a45; }
@@ -3667,6 +3673,8 @@ input[type=search] {
   background-color: #f1f1f1; }
 
 .usa-section-dark {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   background-color: #212121;
   color: #ffffff; }
   .usa-section-dark h1,
