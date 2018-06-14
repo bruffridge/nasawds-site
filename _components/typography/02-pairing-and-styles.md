@@ -53,7 +53,7 @@ order: 02
             font-weight: 700<br>
             font-size: 59px<br>
             line-height: 1.2em/71px<br>
-            letter-spacing: -.04em
+            letter-spacing: -.021em
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -65,7 +65,7 @@ order: 02
             font-weight: 300<br>
             font-size: 44px<br>
             line-height: 1.2em/53px<br>
-            letter-spacing: -.04em
+            letter-spacing: -.021em
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -77,7 +77,7 @@ order: 02
             font-weight: 700<br>
             font-size: 44px<br>
             line-height: 1.2em/53px<br>
-            letter-spacing: -.04em
+            letter-spacing: -.021em
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -89,7 +89,7 @@ order: 02
             font-weight: 700<br>
             font-size: 34px<br>
             line-height: 1.2em/41px<br>
-            letter-spacing: -.04em
+            letter-spacing: -.021em
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -100,8 +100,7 @@ order: 02
             font-family: ‘Helvetica’<br>
             font-weight: 700<br>
             font-size: 24px<br>
-            line-height: 1.2em/29px<br>
-            letter-spacing: -.04em
+            line-height: 1.2em/29px
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -112,8 +111,7 @@ order: 02
             font-family: ‘Helvetica’<br>
             font-weight: 700<br>
             font-size: 19px<br>
-            line-height: 1.2em/23px<br>
-            letter-spacing: -.04em
+            line-height: 1.2em/23px
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -124,8 +122,7 @@ order: 02
             font-family: ‘Helvetica’<br>
             font-weight: 700<br>
             font-size: 16px<br>
-            line-height: 1.2em/19px<br>
-            letter-spacing: -.04em
+            line-height: 1.2em/19px
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -137,8 +134,7 @@ order: 02
             font-weight: 400<br>
             font-size: 13px<br>
             line-height: 1.5em/20px<br>
-            text-transform: uppercase<br>
-            letter-spacing: -.04em
+            text-transform: uppercase
           </p>
         </div>
         <div class="usa-font-example usa-width-one-half">
@@ -217,7 +213,7 @@ order: 02
             font-weight: 700<br>
             font-size: 59px<br>
             line-height: 1.2em/71px<br>
-            letter-spacing: -.04em
+            letter-spacing: -.021em
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -229,7 +225,7 @@ order: 02
             font-weight: 300<br>
             font-size: 44px<br>
             line-height: 1.2em/53px<br>
-            letter-spacing: -.04em
+            letter-spacing: -.021em
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -241,7 +237,7 @@ order: 02
             font-weight: 700<br>
             font-size: 44px<br>
             line-height: 1.2em/53px<br>
-            letter-spacing: -.04em
+            letter-spacing: -.021em
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -253,7 +249,7 @@ order: 02
             font-weight: 700<br>
             font-size: 34px<br>
             line-height: 1.2em/41px<br>
-            letter-spacing: -.04em
+            letter-spacing: -.021em
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -264,8 +260,7 @@ order: 02
             font-family: ‘Helvetica’<br>
             font-weight: 700<br>
             font-size: 24px<br>
-            line-height: 1.2em/29px<br>
-            letter-spacing: -.04em
+            line-height: 1.2em/29px
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -276,8 +271,7 @@ order: 02
             font-family: ‘Helvetica’<br>
             font-weight: 700<br>
             font-size: 19px<br>
-            line-height: 1.2em/23px<br>
-            letter-spacing: -.04em
+            line-height: 1.2em/23px
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -288,8 +282,7 @@ order: 02
             font-family: ‘Helvetica’<br>
             font-weight: 700<br>
             font-size: 16px<br>
-            line-height: 1.2em/19px<br>
-            letter-spacing: -.04em
+            line-height: 1.2em/19px
           </p>
         </div>
         <div class="usa-width-one-half">
@@ -301,8 +294,7 @@ order: 02
             font-weight: 400<br>
             font-size: 13px<br>
             line-height: 1.5em/20px<br>
-            text-transform: uppercase<br>
-            letter-spacing: -.04em
+            text-transform: uppercase
           </p>
         </div>
         <div class="usa-font-example usa-width-one-half">
