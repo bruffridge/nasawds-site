@@ -523,32 +523,24 @@
 
 
     <div class="preview ">
-  
-
-
   <fieldset>
-    <legend>Date of birth</legend>
-    <span class="usa-form-hint" id="dobHint">For example: 04 28 1986</span>
-
-    <div class="usa-date-of-birth">
-      <div class="usa-form-group usa-form-group-month">
-        <label for="date_of_birth_1">Month</label>
-        <input class="usa-input-inline" aria-describedby="dobHint" id="date_of_birth_1" name="date_of_birth_1" type="number" min="1" max="12" value="" />
-      </div>
-      <div class="usa-form-group usa-form-group-day">
-        <label for="date_of_birth_2">Day</label>
-        <input class="usa-input-inline" aria-describedby="dobHint" id="date_of_birth_2" name="date_of_birth_2" type="number" min="1" max="31" value="" />
-      </div>
-      <div class="usa-form-group usa-form-group-year">
-        <label for="date_of_birth_3">Year</label>
-        <input class="usa-input-inline" aria-describedby="dobHint" id="date_of_birth_3" name="date_of_birth_3" type="number" min="1900" max="2000" value="" />
-      </div>
+  <legend>Date of birth</legend>
+  <span class="usa-form-hint" id="dobHint">For example: 04 28 1986</span>
+  <div class="usa-date-of-birth">
+    <div class="usa-form-group usa-form-group-month">
+      <label for="date_of_birth_1">Month</label>
+      <input class="usa-input-inline" aria-describedby="dobHint" id="date_of_birth_1" name="date_of_birth_1" type="number" min="1" max="12" value="" />
     </div>
-  </fieldset>
-
-
-
-
+    <div class="usa-form-group usa-form-group-day">
+      <label for="date_of_birth_2">Day</label>
+      <input class="usa-input-inline" aria-describedby="dobHint" id="date_of_birth_2" name="date_of_birth_2" type="number" min="1" max="31" value="" />
+    </div>
+    <div class="usa-form-group usa-form-group-year">
+      <label for="date_of_birth_3">Year</label>
+      <input class="usa-input-inline" aria-describedby="dobHint" id="date_of_birth_3" name="date_of_birth_3" type="number" min="1900" max="2000" value="" />
+    </div>
+  </div>
+</fieldset>
 </div>
 
 <div class="usa-accordion-bordered usa-code-sample">
@@ -556,32 +548,24 @@
   <button class="usa-accordion-button" aria-controls="code-date-input">Code</button>
   <div id="code-date-input" class="usa-accordion-content">
     
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-
-
-  <span class="nt">&lt;fieldset&gt;</span>
-    <span class="nt">&lt;legend&gt;</span>Date of birth<span class="nt">&lt;/legend&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-form-hint"</span> <span class="na">id=</span><span class="s">"dobHint"</span><span class="nt">&gt;</span>For example: 04 28 1986<span class="nt">&lt;/span&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-date-of-birth"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-form-group usa-form-group-month"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_1"</span><span class="nt">&gt;</span>Month<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">id=</span><span class="s">"date_of_birth_1"</span> <span class="na">name=</span><span class="s">"date_of_birth_1"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"12"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-form-group usa-form-group-day"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_2"</span><span class="nt">&gt;</span>Day<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">id=</span><span class="s">"date_of_birth_2"</span> <span class="na">name=</span><span class="s">"date_of_birth_2"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"31"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-form-group usa-form-group-year"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_3"</span><span class="nt">&gt;</span>Year<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">id=</span><span class="s">"date_of_birth_3"</span> <span class="na">name=</span><span class="s">"date_of_birth_3"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1900"</span> <span class="na">max=</span><span class="s">"2000"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;fieldset&gt;</span>
+  <span class="nt">&lt;legend&gt;</span>Date of birth<span class="nt">&lt;/legend&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-form-hint"</span> <span class="na">id=</span><span class="s">"dobHint"</span><span class="nt">&gt;</span>For example: 04 28 1986<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-date-of-birth"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-form-group usa-form-group-month"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_1"</span><span class="nt">&gt;</span>Month<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">id=</span><span class="s">"date_of_birth_1"</span> <span class="na">name=</span><span class="s">"date_of_birth_1"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"12"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/fieldset&gt;</span>
-
-
-
-
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-form-group usa-form-group-day"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_2"</span><span class="nt">&gt;</span>Day<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">id=</span><span class="s">"date_of_birth_2"</span> <span class="na">name=</span><span class="s">"date_of_birth_2"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"31"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-form-group usa-form-group-year"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_3"</span><span class="nt">&gt;</span>Year<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">id=</span><span class="s">"date_of_birth_3"</span> <span class="na">name=</span><span class="s">"date_of_birth_3"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1900"</span> <span class="na">max=</span><span class="s">"2000"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span>
 </code></pre></div></div>
 
 
