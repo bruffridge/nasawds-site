@@ -473,7 +473,6 @@ h2 + .tooltip {
 .site-subheading {
   @include h6;
   @include font-smoothing;
-  letter-spacing: $heading-letter-spacing;
   font-family: $helvetica;
   color: $color-gray;
   display: block;
@@ -556,7 +555,6 @@ footer.site {
   h4 {
     font-family: $font-sans;
     font-weight: $font-normal;
-    letter-spacing: 0;
     -webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: auto;
     margin-bottom: 0;
