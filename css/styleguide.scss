@@ -556,6 +556,9 @@ footer.site {
   h4 {
     font-family: $font-sans;
     font-weight: $font-normal;
+    letter-spacing: 0;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
     margin-bottom: 0;
     margin-top: 3px;
   }
