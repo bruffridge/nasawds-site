@@ -1681,9 +1681,19 @@ dfn {
 .usa-content ul:not(.usa-accordion):not(.usa-accordion-bordered),
 .usa-content ol:not(.usa-accordion):not(.usa-accordion-bordered) {
   max-width: 66ch; }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .usa-content p,
+    .usa-content ul:not(.usa-accordion):not(.usa-accordion-bordered),
+    .usa-content ol:not(.usa-accordion):not(.usa-accordion-bordered) {
+      /* IE10+ CSS styles go here */
+      max-width: 80ch; } }
 
 .usa-content-list {
   max-width: 66ch; }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .usa-content-list {
+      /* IE10+ CSS styles go here */
+      max-width: 80ch; } }
 
 .usa-helvetica p,
 .usa-helvetica a,
@@ -1704,7 +1714,8 @@ dfn {
   font-weight: 700; }
 
 .usa-serif-body p:not(.usa-font-lead),
-.usa-serif-body li {
+.usa-serif-body ul:not(.usa-accordion):not(.usa-accordion-bordered),
+.usa-serif-body ol:not(.usa-accordion):not(.usa-accordion-bordered) {
   font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 1.5rem;
   line-height: 1.7; }
@@ -2064,6 +2075,10 @@ dfn {
 
 .usa-alert-paragraph {
   width: 66ch; }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .usa-alert-paragraph {
+      /* IE10+ CSS styles go here */
+      max-width: 80ch; } }
 
 .usa-alert {
   margin-top: 1.5em; }
