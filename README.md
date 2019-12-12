@@ -1,4 +1,4 @@
-This repo is no longer maintained. Documentation for the latest version of nasawds can be found [here](https://github.com/nasa/nasawds).
+This repo is no longer maintained. Documentation for the latest version of nasawds can be found [here](https://github.com/bruffridge/nasawds).
 
 # NASA Web Design System documentation
 
