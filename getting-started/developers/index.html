@@ -33,6 +33,9 @@
 
 
 
+<link rel="canonical" href="http://localhost:4000/getting-started/developers/">
+<meta property="og:url" content="http://localhost:4000/getting-started/developers/">
+
 
 
 <!-- Favicons
@@ -61,6 +64,12 @@
 
   </head>
   <body class="page-for-developers layout-styleguide ">
+    <div class="usa-alert usa-alert-warning" >
+      <div class="usa-alert-body">
+        <h3 class="usa-alert-heading">No longer maintained.</h3>
+        <p class="usa-alert-text">The documentation for the latest version of NASAWDS is available <a href="https://www.github.com/nasa/nasawds">here</a>. For versions 2 and below of NASAWDS, this site will remain available for reference. However, some information may be inaccurate, and some links may not work as expected.</p>
+      </div>
+    </div>
     <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 <header class="usa-header site-header usa-header-dark" role="banner">
   <div class="usa-navbar site-header-navbar">
@@ -661,91 +670,167 @@
     
 <h2 id="installation">Installation</h2>
 
-<p>There are a few different ways to use the Design System within your project. Which one you choose depends on the needs of your project and how you are most comfortable working. Here are a few notes on what to consider when deciding which installation method to use:</p>
+<h1 id="united-states-web-design-system">United States Web Design System</h1>
 
-<p><em>Download the Design System if:</em></p>
+<p><a href="https://circleci.com/gh/uswds/uswds/tree/develop"><img src="https://circleci.com/gh/uswds/uswds/tree/develop.svg?style=shield" alt="CircleCI Build Status" /></a> <a href="https://codeclimate.com/github/uswds/uswds/test_coverage"><img src="https://api.codeclimate.com/v1/badges/c10cd4505d61d161cd3a/test_coverage" alt="Test Coverage" /></a></p>
+
+<p>The <a href="https://designsystem.digital.gov">United States Web Design System</a> includes a library of open source UI components and a visual style guide for U.S. federal government websites.</p>
+
+<p>This repository is for the design system code itself. We maintain <a href="https://github.com/uswds/uswds-site">another repository for the documentation and website</a>. To see the design system and its documentation on the web, visit <a href="https://designsystem.digital.gov">https://designsystem.digital.gov</a>.</p>
+
+<h2 id="contents">Contents</h2>
+
 <ul>
-  <li>You are not familiar with <code class="highlighter-rouge">npm</code> and package management.</li>
+  <li><a href="#background">Background</a></li>
+  <li><a href="#recent-updates">Recent updates</a></li>
+  <li><a href="#getting-started">Getting started</a></li>
+  <li><a href="#using-the-design-system">Using the design system</a>
+    <ul>
+      <li><a href="#download">Download</a></li>
+      <li><a href="#install-using-npm">Install using <code class="highlighter-rouge">npm</code></a>
+        <ul>
+          <li><a href="#using-the-uswds-package">Using the USWDS package</a></li>
+          <li><a href="#sass-and-theme-settings">Sass and theme settings</a></li>
+          <li><a href="#sass-compilation-requirements">Sass compilation requirements</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+        </ul>
+      </li>
+      <li><a href="#use-another-framework-or-package-manager">Use another framework or package manager</a></li>
+    </ul>
+  </li>
+  <li><a href="#css-architecture">CSS architecture</a></li>
+  <li><a href="#js-customization">JS customization</a></li>
+  <li><a href="#customization-theming-and-tokens">Customization, theming, and tokens</a>
+    <ul>
+      <li><a href="#using-tokens-in-theme-settings">Using tokens in theme settings</a></li>
+      <li><a href="#set-the-base-asset-paths-fonts-and-images">Set the base asset paths (fonts and images)</a></li>
+      <li><a href="#main-variables-that-can-be-customized">Main variables that can be customized</a></li>
+    </ul>
+  </li>
+  <li><a href="#where-things-live">Where things live</a></li>
+  <li><a href="#browser-support">Browser support</a></li>
+  <li><a href="#accessibility">Accessibility</a></li>
+  <li><a href="#fractal">Fractal</a>
+    <ul>
+      <li><a href="#template-compatibility">Template compatibility</a></li>
+    </ul>
+  </li>
+  <li><a href="#need-installation-help">Need installation help?</a></li>
+  <li><a href="#contributing-to-the-code-base">Contributing to the code base</a></li>
+  <li><a href="#reuse-of-open-source-style-guides">Reuse of open-source style guides</a></li>
+  <li><a href="#licenses-and-attribution">Licenses and attribution</a></li>
 </ul>
 
-<p><em>Use the Design System <code class="highlighter-rouge">npm</code> package if:</em></p>
+<h2 id="background">Background</h2>
+
+<p>USWDS components and style guide follow industry-standard accessibility guidelines and use the best practices of existing style libraries and modern web design. The <a href="https://www.usds.gov/">U.S. Digital Service</a> and <a href="https://18f.gsa.gov/">18F</a> created USWDS for designers and developers. USWDS is a project of GSA’s <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">Technology Transformation Service</a>, maintained by the Office of Products and Programs. They are designed for use by government product teams who want to create beautiful, easy-to-use online experiences for the public. To learn more about the project, check out this <a href="https://18f.gsa.gov/2015/09/28/web-design-standards/">blog post</a> and to view websites and applications check out our list <a href="https://github.com/nasa/nasawds/blob/develop/docs/WHO_IS_USING_USWDS.md">here</a>.</p>
+
+<h2 id="recent-updates">Recent updates</h2>
+
+<p>Information about the most recent release of the design system can always be found in the <a href="https://github.com/uswds/uswds/releases">release history</a>. We include details about significant updates and any backwards incompatible changes along with a list of all changes.</p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>We’re glad you’d like to use the design system — here’s how you can get started:</p>
+
 <ul>
-  <li>You are familiar with using <code class="highlighter-rouge">npm</code> and package management.</li>
+  <li>Designers: <a href="https://designsystem.digital.gov/getting-started/designers/">Check out our Getting Started for Designers information</a>.
+    <ul>
+      <li><a href="https://github.com/uswds/uswds-assets/archive/master.zip">Design files of all the assets included in the design system are available for download</a>.</li>
+    </ul>
+  </li>
+  <li>Developers: <a href="#using-the-design-system">Follow the instructions in this README to get started.</a>
+    <ul>
+      <li><a href="https://github.com/uswds/uswds/releases/latest">CSS, JavaScript, image, and font files of all the assets on this site are available for download</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="using-the-design-system">Using the design system</h2>
+
+<p>How you implement the design system depends on the needs of your project and your workstyle. We recommend implementing the design system with <code class="highlighter-rouge">npm</code>, but we also provide a direct download if <code class="highlighter-rouge">npm</code> will not work for you or your project.</p>
+
+<ul>
+  <li>
+    <p><strong><a href="#download">Download the design system</a></strong> if you are not familiar with <code class="highlighter-rouge">npm</code> and package management.</p>
+  </li>
+  <li>
+    <p><strong><a href="#install-using-npm">Use the design system <code class="highlighter-rouge">npm</code> package</a></strong> if you are familiar with using <code class="highlighter-rouge">npm</code> and package management.</p>
+  </li>
 </ul>
 
 <h3 id="download">Download</h3>
 
 <ol>
   <li>
-    <p>Download the <a href="https://github.com/uswds/uswds/releases/latest">USWDS zip file</a> from the latest release and open that file.</p>
+    <p>Download the <a href="https://github.com/uswds/uswds/releases/tag/v2.5.0">USWDS zip file</a> from the latest USWDS release and open that file.</p>
 
     <p>After extracting the zip file you should see the following file and folder structure:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> uswds-1.0.0/
- ├── css/
- │   ├── uswds.min.css.map
- │   ├── uswds.min.css
- │   └── uswds.css
- ├── fonts/
- ├── img/
- ├── js/
- │   ├── uswds.min.js.map
- │   ├── uswds.min.js
- │   └── uswds.js
- └── scss/
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uswds-2.5.0/
+├── css/
+│   ├── uswds.min.css.map
+│   ├── uswds.min.css
+│   └── uswds.css
+├── fonts/
+├── img/
+├── js/
+│   ├── uswds.min.js.map
+│   ├── uswds.min.js
+│   └── uswds.js
+└── scss/
 
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Copy these files and folders into a relevant place in your project’s code base. Here is an example structure for how this might look:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> example-project/
- ├── assets/
- │   ├── uswds-1.0.0/
- │   ├── stylesheets/
- │   ├── images/
- │   └── javascript/
- └── index.html
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>example-project/
+├── assets/
+│   ├── uswds-2.5.0/
+│   ├── stylesheets/
+│   ├── images/
+│   └── javascript/
+└── index.html
 </code></pre></div>    </div>
 
-    <p>You’ll notice in our example above that we also outline a <code class="highlighter-rouge">stylesheets</code>, <code class="highlighter-rouge">images</code> and <code class="highlighter-rouge">javascript</code> folder in your <code class="highlighter-rouge">assets</code> folder. These folders are to help organize any assets that are unique to your project.</p>
+    <p>You’ll notice in our example above that we also outline a <code class="highlighter-rouge">stylesheets</code>, <code class="highlighter-rouge">images</code> and <code class="highlighter-rouge">javascript</code> folder in your <code class="highlighter-rouge">assets</code> folder. These folders are to help organize any assets that are unique to your project and separate from the design system assets.</p>
   </li>
   <li>
-    <p>To use the Design System on your project, you’ll need to reference the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS (<em>C</em>ascading <em>S</em>tyle <em>S</em>heets)</a> and JavaScript files in each HTML page or dynamic templates in your project. (We also provide Sass (SCSS) files in the zip file which you can compile to CSS. See <a href="#sass">Sass</a>.)</p>
+    <p>Reference the CSS and JavaScript files in each HTML page or dynamic templates in your project. We also provide Sass (.scss) files in the zip package which you can use to generate new CSS with project-specific settings. See <a href="#sass-and-theme-settings">Sass and theme settings</a> for more information.</p>
 
     <p>Here is an example of how to reference these assets in your <code class="highlighter-rouge">index.html</code> file:</p>
 
-    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">&lt;!DOCTYPE html&gt;</span>
- <span class="nt">&lt;html&gt;</span>
- <span class="nt">&lt;head&gt;</span>
-   <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
-   <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
-   <span class="nt">&lt;title&gt;</span>My Example Project<span class="nt">&lt;/title&gt;</span>
-   <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/uswds-1.0.0/css/uswds.min.css"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;/head&gt;</span>
- <span class="nt">&lt;body&gt;</span>
-
-   <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"assets/uswds-1.0.0/js/uswds.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
- <span class="nt">&lt;/body&gt;</span>
- <span class="nt">&lt;/html&gt;</span>
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;title&gt;</span>My Example Project<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/uswds-2.5.0/css/uswds.min.css"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"assets/uswds-2.5.0/js/uswds.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </code></pre></div>    </div>
   </li>
 </ol>
 
-<p>We offer both files, the CSS and the JavaScript, in two versions — a minified version, and an un-minified one. (In the examples above, we are using the minified files.) Use the minified files in a production environment or to reduce the file size of your downloaded assets. And the un-minified files are better if you are in a development environment or would like to debug the CSS or JavaScript assets in the browser.</p>
+<p>We offer both the CSS and the JavaScript in two versions — minified and un-minified. (In the examples above, we are using the minified files.) Use the minified files in a production environment or to reduce the file size of your downloaded assets. Use the un-minified files if you are in a development environment or would like to debug the CSS or JavaScript assets in the browser.</p>
 
-<p>And that’s it — you should now be able to copy our code samples into your <code class="highlighter-rouge">index.html</code> and start using the Design System.</p>
+<p>And that’s it — you should now be able to copy our code samples into your <code class="highlighter-rouge">index.html</code> and start using the design system.</p>
 
 <h3 id="install-using-npm">Install using npm</h3>
 
-<p><code class="highlighter-rouge">npm</code> is a package manager for Node based projects. The U.S. Web Design System maintains a <a href="https://www.npmjs.com/package/uswds"><code class="highlighter-rouge">uswds</code> package</a> for you to utilize both the pre-compiled and compiled files on your project.</p>
+<p><code class="highlighter-rouge">npm</code> is a package manager for Node-based projects. USWDS maintains a <a href="https://www.npmjs.com/package/uswds"><code class="highlighter-rouge">uswds</code> package</a> that includes both the pre-compiled and compiled files — just like the direct download. <code class="highlighter-rouge">npm</code> packages make it easy to update and install the design system from the command line.</p>
 
 <ol>
   <li>
     <p>Install <code class="highlighter-rouge">Node/npm</code>. Below is a link to find the install method that coincides with your operating system:</p>
 
     <ul>
-      <li>Node v4.2.3+, <a href="https://nodejs.org/en/download/">Installation guides</a></li>
+      <li>Node v12.13.0 (current LTS), <a href="https://nodejs.org/en/download/">Installation guides</a></li>
     </ul>
 
     <p><strong>Note for Windows users:</strong> If you are using Windows and are unfamiliar with <code class="highlighter-rouge">Node</code> or <code class="highlighter-rouge">npm</code>, we recommend following <a href="http://blog.teamtreehouse.com/install-node-js-npm-windows">Team Treehouse’s tutorial</a> for more information.</p>
@@ -753,8 +838,8 @@
   <li>
     <p>Make sure you have installed it correctly:</p>
 
-    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code> npm <span class="nt">-v</span>
- 3.10.8 <span class="c"># This line may vary depending on what version of Node you've installed.</span>
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nt">-v</span>
+6.13.0 <span class="c"># This line may vary depending on what version of Node you've installed.</span>
 </code></pre></div>    </div>
   </li>
   <li>
@@ -763,12 +848,12 @@
   <li>
     <p>Add <code class="highlighter-rouge">uswds</code> to your project’s <code class="highlighter-rouge">package.json</code>:</p>
 
-    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code> npm <span class="nb">install</span> <span class="nt">--save</span> uswds
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">--save</span> uswds@latest
 </code></pre></div>    </div>
   </li>
 </ol>
 
-<p>The <code class="highlighter-rouge">uswds</code> module is now installed as a dependency. You can use the un-compiled files found in the <code class="highlighter-rouge">src/</code> or the compiled files in the <code class="highlighter-rouge">dist/</code> directory.</p>
+<p>The <code class="highlighter-rouge">uswds</code> module is now installed as a dependency. You can use the un-compiled files found in the <code class="highlighter-rouge">node_modules/uswds/dist/</code> directory.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node_modules/uswds/
 ├── dist/
@@ -777,63 +862,102 @@
 │   ├── img/
 │   ├── js/
 │   └── scss/
-└── src/
-    |── components/
-    ├── fonts/
-    ├── img/
-    ├── js/
-    └── stylesheets/
 </code></pre></div></div>
 
-<h4 id="importing-assets">Importing assets</h4>
+<p><strong>Note:</strong> We do <em>not</em> recommend directly editing the design system files in <code class="highlighter-rouge">node_modules</code>. One of the benefits of using a package manager is its ease of upgrade and installation. If you make customizations to the files in the package, any upgrade or re-installation will wipe them out.</p>
 
-<p>Since you are already using <code class="highlighter-rouge">npm</code>, the U.S. Web Design System team recommends leveraging the ability to write custom scripts. Here are some links to how we do this with our docs website using <code class="highlighter-rouge">npm</code> + <a href="http://gulpjs.com/"><code class="highlighter-rouge">gulp</code></a>:</p>
+<h4 id="using-the-uswds-package">Using the USWDS package</h4>
 
-<p><a href="https://github.com/uswds/uswds-site/blob/master/package.json#L28">Link to <code class="highlighter-rouge">npm</code> scripts example in <code class="highlighter-rouge">uswds-site</code></a></p>
+<p>If you want to take full advantage of USWDS custom settings and add build new styles and components with the USWDS toolset, you’ll need a way to access the assets in the USWDS package and compile custom CSS from the USWDS source files.</p>
 
-<p><a href="https://github.com/uswds/uswds-site/blob/master/gulpfile.js">Link to gulpfile.js example in <code class="highlighter-rouge">uswds-site</code></a></p>
+<p>USWDS uses the task manager <a href="http://gulpjs.com/">Gulp</a> as a way to add USWDS assets to a project and compile our CSS from the package source. Gulp is a useful and powerful tool, but it can be difficult to set up if you are new to it.</p>
 
-<h4 id="sass">Sass</h4>
+<p>The <a href="https://github.com/uswds/uswds-gulp"><code class="highlighter-rouge">uswds-gulp</code> repo</a> is made for developers new to Gulp or those who just want a simple setup to get started quickly. The repo contains files and instructions for installing Gulp 4.0 in your project, initializing USWDS, and compiling CSS from the source files.</p>
 
-<p>The Design System is easily customizable using the power of <a href="http://sass-lang.com/">Sass (Syntactically Awesome Style Sheets)</a>. The main Sass (SCSS) source file is located here:</p>
+<h4 id="sass-and-theme-settings">Sass and theme settings</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node_modules/uswds/src/stylesheets/uswds.scss
+<p>The design system is customizable using the power of <a href="http://sass-lang.com/">Sass (Syntactically Awesome Style Sheets)</a>. The critical files you’ll need in your project are those in <code class="highlighter-rouge">dist/scss/theme</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scss
+├── components/
+├── core/
+├── elements/
+├── lib/
+├── packages/
+├── settings/
+├── theme/
+│   ├── _uswds-theme-color.scss
+│   ├── _uswds-theme-components.scss
+│   ├── _uswds-theme-custom-styles.scss
+│   ├── _uswds-theme-general.scss
+│   ├── _uswds-theme-spacing.scss
+│   ├── _uswds-theme-typography.scss
+│   ├── _uswds-theme-utilities.scss
+│   ├── styles.scss
 </code></pre></div></div>
 
-<p>Global variables are defined in the <code class="highlighter-rouge">node_modules/uswds/src/stylesheets/core/_variables.scss</code> file. Custom theming can be done by copying the <code class="highlighter-rouge">_variables.scss</code> file into your own project’s Sass folder, changing applicable variable values, and importing it before <code class="highlighter-rouge">uswds.scss</code>.</p>
+<ul>
+  <li><code class="highlighter-rouge">_uswds-theme-color.scss</code>: theme color settings</li>
+  <li><code class="highlighter-rouge">_uswds-theme-components.scss</code>: theme component settings</li>
+  <li><code class="highlighter-rouge">_uswds-theme-custom-styles.scss</code>: additional project CSS for customizing or adding to what USWDS provides</li>
+  <li><code class="highlighter-rouge">_uswds-theme-general.scss</code>: General theme settings</li>
+  <li><code class="highlighter-rouge">_uswds-theme-spacing.scss</code>: Theme spacing settings</li>
+  <li><code class="highlighter-rouge">_uswds-theme-typography.scss</code>: Theme typography settings</li>
+  <li><code class="highlighter-rouge">_uswds-theme-utilities.scss</code>: Utility class output settings</li>
+  <li><code class="highlighter-rouge">styles.scss</code>: The primary Sass file that you’ll compile. It collects theme settings, USWDS source files, and custom CSS</li>
+</ul>
 
-<p>Below is an example of how you might setup your main Sass file to achieve this:</p>
+<p><code class="highlighter-rouge">styles.scss</code> looks something like the following code. It adds all the project theme settings, then adds USWDS source, and finally adds your project’s custom styles:</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="s1">'variables.scss'</span><span class="p">;</span> <span class="nn">#</span> <span class="nt">Custom</span> <span class="nt">Sass</span> <span class="nt">variables</span> <span class="nt">file</span>
-<span class="o">@</span><span class="nt">import</span> <span class="s1">'node_modules/uswds/src/stylesheets/uswds.scss'</span><span class="p">;</span>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="s2">"uswds-theme-general"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"uswds-theme-typography"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"uswds-theme-spacing"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"uswds-theme-color"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"uswds-theme-utilities"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"uswds"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"uswds-theme-custom-styles"</span><span class="p">;</span>
 </code></pre></div></div>
 
-<p>You can now use your copied version of <code class="highlighter-rouge">_variables.scss</code> to override any styles to create a more custom look and feel to your application.</p>
+<p><strong>Technical note:</strong> The <code class="highlighter-rouge">@import 'uswds'</code> statement above needs to reference the <code class="highlighter-rouge">uswds.scss</code> file in <code class="highlighter-rouge">node_modules/uswds/dist/scss</code>. The gulpfile in <a href="https://github.com/uswds/uswds-gulp"><code class="highlighter-rouge">uswds-gulp</code></a> is set up to do this automatically, using <code class="highlighter-rouge">gulp-sass</code> and <code class="highlighter-rouge">includePaths</code>.</p>
 
-<p>The Design System uses <a href="https://github.com/sindresorhus/gulp-autoprefixer">gulp-autoprefixer</a> to automatically add vendor prefixes to the precompiled stylesheets (<code class="highlighter-rouge">css/uswds.min.css</code> and <code class="highlighter-rouge">css/uswds.css</code>) however prefixes will not be applied when using the Sass source files directly. If your project requires the use of Sass and vendor prefixes we recommend incorportaing a plugin such as <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> into your build process.</p>
+<h4 id="sass-compilation-requirements">Sass compilation requirements</h4>
+
+<p>The design system requires <strong>autoprefixing</strong> to work properly. This is included in the <a href="https://github.com/uswds/uswds-gulp"><code class="highlighter-rouge">uswds-gulp</code></a> package.</p>
+
+<p><strong>Autoprefixing</strong> uses a service like <a href="https://github.com/sindresorhus/gulp-autoprefixer">gulp-autoprefixer</a> to automatically add vendor prefixes to the precompiled stylesheets. Don’t add vendor prefixes to your custom styles manually — it is more reliable to use autoprefixing. We use the following autoprefixer settings:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'&gt; 2%','Last 2 versions', 'IE 11'
+</code></pre></div></div>
+
+<blockquote>
+  <p>Note: <strong>media query sorting</strong> is no longer required as of USWDS 2.5.0. We minify and sort media queries with <a href="https://github.com/css/csso">csso</a> to improve performance and file size, but utility classes now output with the proper cascade with no additional postprocessing.</p>
+</blockquote>
+
+<p>We recommend using a <strong>minifier</strong> like <a href="https://github.com/css/csso">csso</a> to compress your final compiled CSS and <strong>sourcemaps</strong> like <a href="https://www.npmjs.com/package/gulp-sourcemaps"><code class="highlighter-rouge">gulp-sourcemaps</code></a> to keep track of the location of all the source Sass for easier debugging.</p>
 
 <h4 id="javascript">JavaScript</h4>
-<p><code class="highlighter-rouge">require('uswds')</code> will load all of the U.S. Web Design System’s JavaScript onto the page. Add this line to whatever initializer you use to load JavaScript into your application.</p>
+
+<p><code class="highlighter-rouge">require('uswds')</code> will load all of USWDS’s JavaScript onto the page. Add this line to whatever initializer you use to load JavaScript into your application.</p>
 
 <h3 id="use-another-framework-or-package-manager">Use another framework or package manager</h3>
 
 <p>If you’re using another framework or package manager that doesn’t support <code class="highlighter-rouge">npm</code>, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the <a href="#download">download instructions</a>. Please note that the core team <a href="https://github.com/uswds/uswds/issues/877">isn’t responsible for all frameworks’ implementations</a>.</p>
 
-<p>If you’re interested in maintaining a package that helps us distribute the U.S. Web Design System, the project’s build system can help you create distribution bundles to use in your project. Please read our <a href="https://github.com/nasa/nasawds/blob/develop/CONTRIBUTING.md#building-the-project-locally-with--gulp-">contributing guidelines</a> to locally build distributions for your framework or package manager.</p>
+<p>If you’re interested in maintaining a package that helps us distribute USWDS, the project’s build system can help you create distribution bundles to use in your project. Please read our <a href="https://github.com/nasa/nasawds/blob/develop/CONTRIBUTING.md#building-the-project-locally-with--gulp-">contributing guidelines</a> to locally build distributions for your framework or package manager.</p>
 
 <h2 id="css-architecture">CSS architecture</h2>
 
 <ul>
   <li>The CSS foundation of this site is built with the <strong><a href="https://sass-lang.com">Sass</a></strong> preprocessor language.</li>
-  <li>Uses <strong><a href="http://bourbon.io/">Bourbon</a></strong> for its simple and lightweight Sass mixin library, and the <strong><a href="http://neat.bourbon.io/">Neat</a></strong> library for the grid framework. Bourbon and Neat are open-source products from <strong><a href="https://thoughtbot.com/">thoughtbot</a></strong>.</li>
-  <li>The CSS organization and naming conventions follow <strong><a href="https://frontend.18f.gov/css/">18F’s CSS Front End Guide</a></strong>.</li>
-  <li>CSS selectors are <strong>prefixed</strong> with <code class="highlighter-rouge">usa</code> (For example: <code class="highlighter-rouge">.usa-button</code>). This identifier helps the design system avoid conflicts with other styles on a site which are not part of the U.S. Web Design System.</li>
-  <li>Uses a <strong><a href="https://frontend.18f.gov/css/naming/">modified BEM</a></strong> approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: <code class="highlighter-rouge">.usa-button-cool_feature-active</code>).</li>
+  <li>The CSS organization and naming conventions follow <strong><a href="https://frontend.18f.gov/css/">18F’s Front End Guide</a></strong>.</li>
+  <li>We format our code with <a href="https://prettier.io/">Prettier</a>, per the formatting section of the <strong><a href="https://frontend.18f.gov/css/formatting/">18F Front End Guide</a></strong>.</li>
+  <li>CSS selectors are <strong>prefixed</strong> with <code class="highlighter-rouge">usa</code> (For example: <code class="highlighter-rouge">.usa-button</code>). This identifier helps the design system avoid conflicts with other styles on a site which are not part of USWDS.</li>
+  <li>Uses a <strong><a href="http://getbem.com/">BEM</a></strong> approach for naming CSS selectors. Blocks are separated from elements with two underscores (<code class="highlighter-rouge">__</code>). Multi-word blocks use single hyphens instead of spaces. Modifier classes are additive — proper markup requires the base class <em>and</em> the modifier class or classes. Modifier classes consist of the base class plus a modifier suffix, separated by two hyphens (<code class="highlighter-rouge">--</code>) as in <code class="highlighter-rouge">.usa-button.usa-button--secondary</code> or <code class="highlighter-rouge">usa-accordion.usa-accordion--bordered</code>.</li>
   <li>Uses <strong>modular CSS</strong> for scalable, modular, and flexible code.</li>
   <li>Uses <strong>nesting</strong> when appropriate. Nest minimally with up to two levels of nesting.</li>
-  <li>Hard-coded magic numbers are avoided and, if necessary, defined in the <code class="highlighter-rouge">core/variables</code> scss file.</li>
+  <li>Hard-coded magic numbers are avoided.</li>
   <li>Media queries are built <strong>mobile first</strong>.</li>
-  <li><strong>Spacing units</strong> are as much as possible defined as rem or em units so they scale appropriately with text size. Pixels can be used for detail work and should not exceed 5px (For example: 3px borders).</li>
+  <li><strong>Spacing units</strong> are set with the <code class="highlighter-rouge">units()</code> function as described in <a href="https://designsystem.digital.gov/design-tokens/spacing-units/">the USWDS 2.0 documentation</a>. In general, we use spacing in multiples of <code class="highlighter-rouge">8px</code> — expressed as a multiple in <code class="highlighter-rouge">units([multiple])</code>. For instance <code class="highlighter-rouge">units(2)</code> is the equivalent of <code class="highlighter-rouge">2 * 8px</code> or <code class="highlighter-rouge">16px</code>. In the final, compiled CSS, this value will be expressed in rem, as a multiple of the base font size set with <code class="highlighter-rouge">$theme-base-font-size</code>.</li>
 </ul>
 
 <p><strong>For more information, visit:</strong>
@@ -841,14 +965,14 @@
 
 <h2 id="js-customization">JS customization</h2>
 
-<p><strong>Unfortunately, customizing the JavaScript for the USWDS currently requires NodeJS and a module bundler like Browserify or Webpack. We apologize for this inconvenience, and are working to resolve it in a future release of the Design System.</strong></p>
+<p><strong>Unfortunately, customizing the JavaScript for the USWDS currently requires NodeJS and a module bundler like Browserify or Webpack. We apologize for this inconvenience, and are working to resolve it in a future release of the design system.</strong></p>
 
 <p>The JavaScript for the USWDS is separated into components in the same manner as the visual interface which is all initialized with event handlers when the DOM is ready. These components are accessible as CommonJS modules that can be required in other JavaScript files which then must be built for the browser. The components are currently not accessible in the global browser scope, but can be extended to be included by requiring <code class="highlighter-rouge">components</code> and setting it to a global scope:</p>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">window</span><span class="p">.</span><span class="nx">uswds</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./components'</span><span class="p">);</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">window</span><span class="p">.</span><span class="nx">uswds</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"./components"</span><span class="p">);</span>
 </code></pre></div></div>
 
-<p>Each component has a standardized interface that can be used to extend it further. The components store a HTML class name (e.g. <code class="highlighter-rouge">.usa-accordion-button[aria-controls]</code>) that’s used to link HTML elements with the JS component, so when a component is initialized, it will search through the current HTML DOM finding all elements that match its class and inialize the component JavaScript for those elements. The primary methods each component has are as follows:</p>
+<p>Each component has a standardized interface that can be used to extend it further. The components store a HTML class name (e.g. <code class="highlighter-rouge">.usa-accordion__button[aria-controls]</code>) that’s used to link HTML elements with the JS component, so when a component is initialized, it will search through the current HTML DOM finding all elements that match its class and inialize the component JavaScript for those elements. The primary methods each component has are as follows:</p>
 
 <ul>
   <li><code class="highlighter-rouge">on</code>: Initialize a component’s JavaScript behavior by passing the root element, such as <code class="highlighter-rouge">window.document</code>.</li>
@@ -860,87 +984,113 @@
 
 <p>Some components have additional methods for manipulating specific aspects of them based on what they are and what they do. These can be found in the component’s JS file.</p>
 
-<h2 id="customization-and-theming">Customization and theming</h2>
+<h2 id="customization-theming-and-tokens">Customization, theming, and tokens</h2>
 
-<p>The Design System can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Design System’s global variables. If it isn’t possible to use Sass, do theming by overriding the CSS rules in the Design System set.</p>
+<p>USWDS 2.0 provides extensive support for theming via its theme settings files introduced in <a href="#sass-and-theme-settings">Sass and theme settings</a>, above.</p>
 
-<p>To start theming through Sass, copy the <code class="highlighter-rouge">core/variables</code> file into your own project’s Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the import of the Design System’s all.scss file.</p>
+<p>Set theme settings with USWDS design tokens, not with values directly. They tend to be quoted strings like <code class="highlighter-rouge">'desktop'</code> or <code class="highlighter-rouge">'md'</code> or unitless numbers like <code class="highlighter-rouge">2</code> or <code class="highlighter-rouge">-1.5</code>. Tokens are the values <em>passed into</em> the USWDS functions and mixins that parse them. They are the <em>keys</em> that, through the mechanism of a function or mixin, unlock a <em>value</em> — they are not the values themselves.</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// src/main.scss</span>
-<span class="k">@import</span> <span class="s1">'path/to/my/scss/files/main/scss/my-custom-vars'</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s1">'lib/uswds/src/stylesheets/all'</span><span class="p">;</span>
+<p>Visit the <a href="https://designsystem.digital.gov/design-tokens/">Design tokens section</a> of USWDS 2.0 documentation for more on the available tokens for <a href="https://designsystem.digital.gov/design-tokens/color">color</a>, <a href="https://designsystem.digital.gov/design-tokens/spacing-units">spacing units</a>, <a href="https://designsystem.digital.gov/design-tokens/typesetting/font-size/">font size</a>, and more.</p>
+
+<h3 id="using-tokens-in-theme-settings">Using tokens in theme settings</h3>
+
+<p>The following is an example of theme settings from <code class="highlighter-rouge">_uswds-theme-spacing.scss</code>:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$theme-site-max-width</span><span class="p">:</span> <span class="s2">"desktop"</span><span class="p">;</span>
+<span class="nv">$theme-site-margins-breakpoint</span><span class="p">:</span> <span class="s2">"desktop"</span><span class="p">;</span>
+<span class="nv">$theme-site-margins-width</span><span class="p">:</span> <span class="m">4</span><span class="p">;</span>
+<span class="nv">$theme-site-margins-mobile-width</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
 </code></pre></div></div>
 
-<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// path/to/my/scss/files/main/scss/my-custom_vars.scss</span>
+<p>The USWDS uses those tokens to build component styles:</p>
 
-<span class="c1">// Colors</span>
-<span class="nv">$color-primary</span><span class="p">:</span> <span class="mh">#2c3e50</span><span class="p">;</span>
-<span class="nv">$color-secondary</span><span class="p">:</span> <span class="mh">#ad2020</span><span class="p">;</span>
-<span class="nv">$color-secondary-dark</span><span class="p">:</span> <span class="mh">#b0392e</span><span class="p">;</span>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.usa-example</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">u-padding-x</span><span class="p">(</span><span class="nv">$theme-site-margins-mobile-width</span><span class="p">);</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="nf">units</span><span class="p">(</span><span class="nv">$theme-site-max-width</span><span class="p">);</span>
 
-<span class="c1">// Typography</span>
-<span class="nv">$font-serif</span><span class="p">:</span> <span class="s1">'Georgia'</span><span class="o">,</span> <span class="s1">'Times'</span><span class="o">,</span> <span class="nb">serif</span><span class="p">;</span>
-<span class="nv">$h2-font-size</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
-<span class="nv">$h3-font-size</span><span class="p">:</span> <span class="m">1</span><span class="mi">.75rem</span><span class="p">;</span>
-<span class="nv">$heading-line-height</span><span class="p">:</span> <span class="m">1</span><span class="mi">.4</span><span class="p">;</span>
-
-<span class="c1">// Grid/breakpoints</span>
-<span class="nv">$small-screen</span><span class="p">:</span>  <span class="m">540px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-<span class="nv">$medium-screen</span><span class="p">:</span> <span class="m">620px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-<span class="nv">$large-screen</span><span class="p">:</span>  <span class="m">1120px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+  <span class="k">@include</span> <span class="nd">at-media</span><span class="p">(</span><span class="nv">$theme-site-margins-breakpoint</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">u-padding-x</span><span class="p">(</span><span class="nv">$theme-site-margins-width</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
-<h3 id="set-the-base-asset-path-fonts-and-images">Set the base asset path (fonts and images)</h3>
-<p>If you copy the USWDS <code class="highlighter-rouge">dist</code> directory to a folder on your project or your fonts and images are in the same folder, set the location of the directory with <code class="highlighter-rouge">$asset-path: path/to/my/assets/</code>. The default is set to <code class="highlighter-rouge">$asset-path: ../</code>. This will be appended to the font and image path variables so you only need to set this variable. You can also set the font and image paths individually:</p>
+<p>This is the functional equivalent of:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$font-path: path/to/my/fonts;
-$image-path: path/to/my/images;
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.usa-example</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">u-padding-x</span><span class="p">(</span><span class="m">2</span><span class="p">);</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="nf">units</span><span class="p">(</span><span class="s2">"desktop"</span><span class="p">);</span>
+
+  <span class="k">@include</span> <span class="nd">at-media</span><span class="p">(</span><span class="s2">"desktop"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">u-padding-x</span><span class="p">(</span><span class="m">4</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
-<p>NOTE: If you plan on upgrading to newer versions of the Design System in the future, or are not using your own forked version of the Design System, try to avoid making changes in the Design System folder itself. Doing so could make it impossible to upgrade in the future without undoing your custom changes.</p>
+<p>Which, if <code class="highlighter-rouge">$theme-respect-user-font-size</code> is set to <code class="highlighter-rouge">true</code> would output something like:</p>
 
-<h3 id="main-variables-that-can-be-customized">Main variables that can be customized</h3>
-<ul>
-  <li>Colors can be found in the <code class="highlighter-rouge">core/variables</code> <a href="https://github.com/uswds/uswds/blob/develop/src/stylesheets/core/_variables.scss#L35">file, line 35</a>.</li>
-  <li>Font families can be found in the <code class="highlighter-rouge">core/variables</code> <a href="https://github.com/uswds/uswds/blob/develop/src/stylesheets/core/_variables.scss#L28">file, line 28</a>.</li>
-  <li>Typography sizing can be found in <code class="highlighter-rouge">core/variables</code> <a href="https://github.com/uswds/uswds/blob/develop/src/stylesheets/core/_variables.scss#L13">file, line 13</a>.</li>
-  <li>Grid and breakpoint settings can be found in <code class="highlighter-rouge">core/variables</code> <a href="https://github.com/uswds/uswds/blob/develop/src/stylesheets/core/_variables.scss#L87">file, line 87</a>.</li>
-</ul>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.usa-example</span> <span class="p">{</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">64rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">64em</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.usa-example</span> <span class="p">{</span>
+    <span class="nl">padding-left</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+    <span class="nl">padding-right</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In general, USWDS sets <strong>variables</strong> with <strong>tokens</strong>, and passes those variables into <strong>functions and mixins</strong> in the source Sass.</p>
+
+<h3 id="set-the-base-asset-paths-fonts-and-images">Set the base asset paths (fonts and images)</h3>
+
+<p>The values of <code class="highlighter-rouge">$theme-font-path</code> and <code class="highlighter-rouge">$theme-image-path</code> will be appended to USWDS font paths and image paths, respectively:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$theme-font-path:   '../fonts';
+$theme-image-path:  '../img';
+</code></pre></div></div>
 
 <h2 id="where-things-live">Where things live</h2>
 
 <ul>
-  <li><strong>HTML</strong> markup for the components is located in: <code class="highlighter-rouge">src/html</code> in the site root.</li>
-  <li><strong>Sass</strong> styles are located in: <code class="highlighter-rouge">src/stylesheets/ (/core, /elements, /components)</code>. <strong>Compiled CSS</strong> is located in the <a href="https://github.com/uswds/uswds/releases/latest">downloadable zip file</a>.</li>
-  <li><strong>JS</strong> is located in: <code class="highlighter-rouge">src/js/components (accordion.js, toggle-field-mark.js, toggle-form-input.js, validator.js)</code>.</li>
-  <li><strong>Fonts</strong> are located in: <code class="highlighter-rouge">src/fonts</code>.</li>
-  <li><strong>Images</strong> and icons are located in: <code class="highlighter-rouge">src/img</code>.</li>
+  <li><strong>HTML</strong> markup for the components is located in: <code class="highlighter-rouge">src/components</code> in the site root. These, however, are written in the templating language Nunjucks. It’s best to get HTML source markup directly from <a href="https://designsystem.digital.gov/components">designsystem.digital.gov/components</a></li>
+  <li><strong>Sass</strong> stylesheets are located in: <code class="highlighter-rouge">dist/scss/ (/core, /elements, /components)</code>. <strong>Compiled CSS</strong> is located in the <a href="https://github.com/uswds/uswds/releases/latest">downloadable zip file</a>.</li>
+  <li><strong>JS</strong> is located in: <code class="highlighter-rouge">src/js (/components, /utils)</code>.</li>
+  <li><strong>Fonts</strong> are located in: <code class="highlighter-rouge">dist/fonts</code>.</li>
+  <li><strong>Images</strong> and icons are located in: <code class="highlighter-rouge">dist/img</code>.</li>
 </ul>
 
 <h2 id="browser-support">Browser support</h2>
 
-<p>We’ve designed the Design System to support older and newer browsers through <a href="https://en.wikipedia.org/wiki/Progressive_enhancement">progressive enhancement</a>. The current major version of the Design System (1.0) is designed to support the newest versions of Chrome, Firefox, Safari, and Internet Explorer 9 and up. The next major release (2.0) will follow the <a href="https://gds.blog.gov.uk/2012/01/25/support-for-browsers/">2% rule</a>: we will officially support any browser above 2% usage as observed by <a href="https://analytics.usa.gov/">analytics.usa.gov</a>. Currently, this means that the Design System version 2.0 will support the newest versions of Chrome, Firefox, Safari, and Internet Explorer 11 and up.</p>
+<p>We’ve designed the design system to support older and newer browsers through <a href="https://en.wikipedia.org/wiki/Progressive_enhancement">progressive enhancement</a>. The current major version of the design system (2.0) follows the <a href="https://gds.blog.gov.uk/2012/01/25/support-for-browsers/">2% rule</a>: we officially support any browser above 2% usage as observed by <a href="https://analytics.usa.gov/">analytics.usa.gov</a>. Currently, this means that the design system version 2.0 supports the newest versions of Chrome, Firefox, Safari, and Internet Explorer 11 and up.</p>
 
 <h2 id="accessibility">Accessibility</h2>
 
-<p>The Design System also meets the <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0 AA accessibility guidelines</a> and conforms to the standards of <a href="http://www.section508.gov/">Section 508 of the Rehabilitation Act</a>. We’re happy to answer questions about accessibility — email us for more information.</p>
+<p>The design system also meets the <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0 AA accessibility guidelines</a> and conforms to the standards of <a href="http://www.section508.gov/">Section 508 of the Rehabilitation Act</a>. We’re happy to answer questions about accessibility — email us for more information.</p>
 
 <h2 id="fractal">Fractal</h2>
 
-<p>We’re using <a href="http://fractal.build">Fractal</a> to generate an interactive component library for the Design System. You can run it locally after <code class="highlighter-rouge">npm install</code> with:</p>
+<p>We’re using <a href="http://fractal.build">Fractal</a> to generate an interactive component library for the design system. You can run it locally after <code class="highlighter-rouge">npm install</code> with:</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm start
 </code></pre></div></div>
 
-<p>Then, visit <a href="http://localhost:3000/">http://localhost:3000/</a> to see the Design System in action.</p>
+<p>Then, visit <a href="http://localhost:3000/">http://localhost:3000/</a> to see the design system in action.</p>
 
 <p><em><strong>Optional</strong>: To re-build when code changes are made, run the following command from the project directory in a separate terminal window:</em></p>
+
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run watch
 </code></pre></div></div>
 
 <h3 id="template-compatibility">Template compatibility</h3>
 
 <p>Many of our Fractal view templates are compatible with <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> (for JavaScript/Node), <a href="http://jinja.pocoo.org/docs/2.9/">Jinja</a> (Python), and <a href="https://twig.sensiolabs.org/">Twig</a> (PHP) out of the box. Components that reference other components use a Fractal-specific <code class="highlighter-rouge">{% render %}</code> tag that will either need to be implemented in other environments or replaced with the appropriate <code class="highlighter-rouge">{% include %}</code> tags.</p>
+
+<h2 id="long-term-support-of-v1x">Long-term support of v1.x</h2>
+
+<p>Version 1.x is in <a href="https://en.wikipedia.org/wiki/Maintenance_mode">maintenence mode</a> and will be supporting critical bug fixes through January 2020.</p>
 
 <h2 id="need-installation-help">Need installation help?</h2>
 
@@ -952,7 +1102,7 @@ $image-path: path/to/my/images;
 
 <h2 id="contributing-to-the-code-base">Contributing to the code base</h2>
 
-<p>For complete instructions on how to contribute code, please read <a href="https://github.com/nasa/nasawds/blob/develop/CONTRIBUTING.md">CONTRIBUTING.md</a>. These instructions also include guidance on how to set up your own copy of the Design System style guide website for development.</p>
+<p>For complete instructions on how to contribute code, please read <a href="https://github.com/nasa/nasawds/blob/develop/CONTRIBUTING.md">CONTRIBUTING.md</a>. These instructions also include guidance on how to set up your own copy of the design system style guide website for development.</p>
 
 <p>If you would like to learn more about our workflow process, check out the <a href="https://github.com/uswds/uswds/wiki/Workflow">Workflow</a> and <a href="https://github.com/uswds/uswds/wiki/Issue-label-glossary">Issue label Glossary</a> pages on the wiki.</p>
 
@@ -1001,7 +1151,7 @@ $image-path: path/to/my/images;
               <img class="usa-media_block-img" src="/nasawds-site/img/home/icon-envelope.svg" alt="">
               <div class="usa-media_block-body">
                 <h4>Reach the team</h4>
-                <a href="mailto:uswds@gsa.gov">
+                <a href="mailto:uswds@support.digitalgov.gov">
                   Send an email
                 </a>
               </div>
