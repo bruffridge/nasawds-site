@@ -1,3 +1,5 @@
+This repo is no longer maintained. Documentation for the latest version of nasawds can be found [here](https://github.com/bruffridge/nasawds).
+
 # NASA Web Design System documentation
 
 This repo includes code and documentation for the NASA Web Design System website. For information on the Design System (components) themselves, please visit [nasawds](https://github.com/nasa/nasawds).
